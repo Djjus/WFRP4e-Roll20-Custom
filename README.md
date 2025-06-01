@@ -5,7 +5,7 @@
 
 - NOTICE - March 28th 2025
 
-Unfortunatley roll20 have decided to delist this page due to disagreeing with soem of the sheet content they had been approving for years. So in short i will no long be publish a comunity sheet for roll20.
+Unfortunatley roll20 have decided to delist this sheet due to disagreeing with some of the sheet content they had been approving for years. So in short i will no long be publishing a comunity sheet for roll20.
 But the sheet will contiune as a private endevor and I will update this repo occasionally. Anybody that wishes can download the 3 files requires to run a custom sheet on roll20. All sheets at the time of delisting will be running version v1.76.
 
 -----------------------------
