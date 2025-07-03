@@ -5,7 +5,7 @@
 
 - NOTICE - March 28th 2025
 
-Unfortunatley roll20 have decided to delist this sheet due to disagreeing with some of the sheet content they had been approving for years. So in short i will no long be publishing a comunity sheet for roll20.
+Unfortunatley roll20 have decided to delist this page due to disagreeing with soem of the sheet content they had been approving for years. So in short i will no long be publish a comunity sheet for roll20.
 But the sheet will contiune as a private endevor and I will update this repo occasionally. Anybody that wishes can download the 3 files requires to run a custom sheet on roll20. All sheets at the time of delisting will be running version v1.76.
 
 -----------------------------
@@ -91,6 +91,11 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 - NOTICE - March 28th 2025
 
 Unfortunatley roll20 have decided to delist this sheet due to disagreeing with much of the content included they had been approving for years, talent intergation etc. So in short i will no long be publish a comunity sheet for roll20. But the sheet will contiune as a private endevor and I will update this repo occasionally. Anybody that wishes can still use them wit hthe Custom sheet feature on roll20, download the 3 files (Warhammer 4e Character Sheet.html, translation.json, Warhammer 4e Character Sheet.css) and cut & paste the the data inside to the correct tabs in the Custom sheet configuration section on your roll20 game (see https://wiki.roll20.net/Using_Custom_Character_Sheets). All sheets at the time of delisting will be running version v1.76. Sorry.
+
+
+July 3rd 2025 v1.76c
+
+- Dwarf skill Runesmithing added to AutoXP.
 
 
 Apr 11nd 2025 v1.76b
