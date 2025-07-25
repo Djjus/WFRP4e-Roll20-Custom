@@ -5,8 +5,7 @@
 
 - NOTICE - March 28th 2025
 
-Unfortunatley roll20 have decided to delist this page due to disagreeing with soem of the sheet content they had been approving for years. So in short i will no long be publish a comunity sheet for roll20.
-But the sheet will contiune as a private endevor and I will update this repo occasionally. Anybody that wishes can download the 3 files requires to run a custom sheet (GM needs Pro account) on roll20. All sheets at the time of delisting will be running version v1.76.
+Unfortunatley roll20 have decided to delist this sheet due to disagreeing with much of the content included they had been approving for years, talent intergation etc. So in short i will no long be publish a comunity sheet for roll20. But the sheet will contiune as a private endevor and I will update this repo occasionally. Anybody that wishes (GM with Roll20 Pro account) can still use them with the Custom sheet feature on roll20, download the 3 files (Warhammer 4e Character Sheet.html, translation.json, Warhammer 4e Character Sheet.css) and cut & paste the the data inside to the correct tabs in the Custom sheet configuration section on your roll20 game (see https://wiki.roll20.net/Using_Custom_Character_Sheets). All sheets at the time of delisting will be running version v1.76. Sorry.
 
 -----------------------------
 
@@ -85,12 +84,18 @@ Multiple conditions: You can be subject to the same Condition more than once; in
 Note conditions are not intended for out of combat situations, GM simply makes the roll difficulty harder with a custom roll modifier (-20 etc) if any particular condition is to apply to a situational roll. 
 
  
+///// ============ Major Updates being worked on, with no release date ============ /////  
+
+- Character Maker
+
+ 
 ///// ============ Change Log ============ /////  
 
 
-- NOTICE - March 28th 2025
+July 24rd 2025 v1.76d
 
-Unfortunatley roll20 have decided to delist this sheet due to disagreeing with much of the content included they had been approving for years, talent intergation etc. So in short i will no long be publish a comunity sheet for roll20. But the sheet will contiune as a private endevor and I will update this repo occasionally. Anybody that wishes can still use them wit hthe Custom sheet feature on roll20, download the 3 files (Warhammer 4e Character Sheet.html, translation.json, Warhammer 4e Character Sheet.css) and cut & paste the the data inside to the correct tabs in the Custom sheet configuration section on your roll20 game (see https://wiki.roll20.net/Using_Custom_Character_Sheets). All sheets at the time of delisting will be running version v1.76. Sorry.
+- Added Talent Supportive as Situational modifier bonus in roll output
+- Added labelled Icon in roll output to remind player of the specific Talent bonues effect "You can choose to either use your rolled SL, or the number rolled on your units die" for Attractive/Argumentative/Cardsharp/Diceman/Supportative.
 
 
 July 3rd 2025 v1.76c
@@ -104,6 +109,8 @@ Apr 11nd 2025 v1.76b
 
 
 Mar 28nd 2025 v1.76a
+
+NOTICE: Unfortunatley roll20 have decided to delist this sheet due to disagreeing with much of the content included they had been approving for years, talent intergation etc. So in short i will no long be publish a comunity sheet for roll20. But the sheet will contiune as a private endevor and I will update this repo occasionally. Anybody that wishes (GM with Roll20 Pro account) can still use them with the Custom sheet feature on roll20, download the 3 files (Warhammer 4e Character Sheet.html, translation.json, Warhammer 4e Character Sheet.css) and cut & paste the the data inside to the correct tabs in the Custom sheet configuration section on your roll20 game (see https://wiki.roll20.net/Using_Custom_Character_Sheets). All sheets at the time of delisting will be running version v1.76. Sorry.
 
 - Fix distracting text showing melee attacks when it should not
 - Fix Impact bonus from x2 size not working after using melee reset button until VsSize was changed again

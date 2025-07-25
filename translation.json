@@ -1486,6 +1486,7 @@
 	"RITUALS": "Rituals",
 	"SUPER-NUMERATE": "Super Numerate",
 	"SUPPORTIVE": "Supportive",
+	"SUPPORTIVE-SIT": "Social Tests to influence a superior",
 	"SURE-SHOT": "Sure Shot",
 	"SURE-SHOT-EFFECT": "Sure Shot: Ingore",
 	"SURE-SHOT-EFFECT2": "AP on HitLoc",
@@ -1840,6 +1841,7 @@
 	"SALVO": "Salvo",
 	"CHAR-ROLL": "Char Roll",
 	"TARGET-SL": "Target SL",
+	"OR-UNIT": "You can choose to either use the rolled SL, or the units die",
 	
 	"OOPS-TABLE": "Fumble/Oops Rules",
 	"HOUSERULE2-OOPS-TABLE": "Houserule 2: Extended Rules V1.1 (by FighterChimp on Ratcatcher Guild Discord)",
@@ -1867,7 +1869,7 @@
 	"DEMOLISHER-EFFECT2": "Demolisher Ranged: Decreases cover by 1 lvl",
 	"DRAGON-BELCHER": "Dragon Belcher",
 	"DRAGON-BELCHER-EFFECT": "Dragon Belcher: Additional Broken +",
-	
+
 	"ENTRENCHMENT": "Entrenchment",
 	"ENTRENCHMENT-SIT": "Trade when constructing protective cover",
 	"FORGEFIRE": "Forgefire",

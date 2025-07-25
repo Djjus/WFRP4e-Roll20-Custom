@@ -34812,7 +34812,7 @@
 		<div class="spacer-xl"></div>
 		<!-- FOOTER -->
 		<div class="row footer">
-			<div class="col-1 small-label center">Sheet version 1.76c : Jul 3rd 2025 | by Djjus & Pote</div>
+			<div class="col-1 small-label center">Sheet version 1.76d : Jul 24rd 2025 | by Djjus & Pote</div>
 		</div>
 			</div>
 		</div>
@@ -36740,10 +36740,10 @@
 									<div class="col-100-100" style="color: black; font-size: 9px; padding-left: 3px; line-height: 10px" data-i18n="CUSTOM-MODIFIERS">Custom & Situational Bonus:</div>
 
 							{{#rollGreater() argumetative 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{argumetative}}SL <span  data-i18n="ARGUMENTATIVE" data-i18n-title="ARGUMENTATIVE-SIT"></span></div>
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{argumetative}}SL <span  data-i18n="ARGUMENTATIVE" data-i18n-title="ARGUMENTATIVE-SIT"></span> <span  style="font-family: dicefontd10; font-size: 14px;" data-i18n-title="OR-UNIT">K</span> </div>
 							{{/rollGreater() argumetative 0}}
 							{{#rollGreater() attractive 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{attractive}}SL <span  data-i18n="ATTRACTIVE" data-i18n-title="ATTRACTIVE-SIT"></span></div>
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{attractive}}SL <span  data-i18n="ATTRACTIVE" data-i18n-title="ATTRACTIVE-SIT"></span> <span  style="font-family: dicefontd10; font-size: 14px;" data-i18n-title="OR-UNIT">K</span></div>
 							{{/rollGreater() attractive 0}}
 							{{#rollGreater() alleycat 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{alleycat}}SL <span  data-i18n="ALLEY-CAT" data-i18n-title="ALLEY-CAT-SIT"></span></div>
@@ -36751,6 +36751,15 @@
 							{{#rollGreater() arboreal 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{arboreal}}SL <span  data-i18n="ARBOREAL"></span></div>
 							{{/rollGreater() arboreal 0}}
+							{{#rollGreater() acute1 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{acute1}}SL <span  data-i18n="ACUTE-SENSE" data-i18n-title="ACUTE-SENSE-SIT"></span> {{acute1name}} </div>
+							{{/rollGreater() acute1 0}}
+							{{#rollGreater() acute2 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{acute2}}SL <span  data-i18n="ACUTE-SENSE" data-i18n-title="ACUTE-SENSE-SIT"></span> {{acute2name}} </div>
+							{{/rollGreater() acute2 0}}
+							{{#rollGreater() beneathnotice 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{beneathnotice}}SL <span  data-i18n="BENEATH-NOTICE" data-i18n-title="BENEATH-NOTICE-SIT"></span></div>
+							{{/rollGreater() beneathnotice 0}}
 							{{#rollGreater() blather 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{blather}}SL <span  data-i18n="BLATHER" data-i18n-title="BLATHER-SIT"></span></div>
 							{{/rollGreater() blather 0}}
@@ -36766,18 +36775,9 @@
 							{{#rollGreater() combataware 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{combataware}}SL <span  data-i18n="COMBAT-AWARE" data-i18n-title="COMBAT-AWARE-SIT"></span></div>
 							{{/rollGreater() combataware 0}}
-							{{#rollGreater() detectartefact 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{detectartefact}}SL <span  data-i18n="DETECT-ARTEFACT" data-i18n-title="DETECT-ARTEFACT-SIT"></span></div>
-							{{/rollGreater() detectartefact 0}}
-							{{#rollGreater() acute1 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{acute1}}SL <span  data-i18n="ACUTE-SENSE" data-i18n-title="ACUTE-SENSE-SIT"></span> {{acute1name}} </div>
-							{{/rollGreater() acute1 0}}
-							{{#rollGreater() acute2 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{acute2}}SL <span  data-i18n="ACUTE-SENSE" data-i18n-title="ACUTE-SENSE-SIT"></span> {{acute2name}} </div>
-							{{/rollGreater() acute2 0}}
-							{{#rollGreater() beneathnotice 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{beneathnotice}}SL <span  data-i18n="BENEATH-NOTICE" data-i18n-title="BENEATH-NOTICE-SIT"></span></div>
-							{{/rollGreater() beneathnotice 0}}
+							{{#rollGreater() cardsharp 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{cardsharp}}SL <span  data-i18n="CARDSHARP" data-i18n-title="CARDSHARP-SIT"></span>  <span  style="font-family: dicefontd10; font-size: 14px;" data-i18n-title="OR-UNIT">K</span></div>
+							{{/rollGreater() cardsharp 0}}
 							{{#rollGreater() carouser 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{carouser}}SL <span  data-i18n="CAROUSER" data-i18n-title="CAROUSER-SIT"></span></div>
 							{{/rollGreater() carouser 0}}
@@ -36788,8 +36788,11 @@
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{crackthewhip}}SL <span  data-i18n="CRACK-THE-WHIP" data-i18n-title="CRACK-THE-WHIP-SIT"></span></div>
 							{{/rollGreater() crackthewhip 0}}
 							{{#rollGreater() diceman 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{diceman}}SL <span  data-i18n="DICEMAN" data-i18n-title="DICEMAN-SIT"></span></div>
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{diceman}}SL <span  data-i18n="DICEMAN" data-i18n-title="DICEMAN-SIT"></span> <span  style="font-family: dicefontd10; font-size: 14px;" data-i18n-title="OR-USE">K</span></div>
 							{{/rollGreater() diceman 0}}
+							{{#rollGreater() detectartefact 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{detectartefact}}SL <span  data-i18n="DETECT-ARTEFACT" data-i18n-title="DETECT-ARTEFACT-SIT"></span></div>
+							{{/rollGreater() detectartefact 0}}
 							{{#rollGreater() masterofdisguise 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{masterofdisguise}}SL <span  data-i18n="MASTER-OF-DISGUISE" data-i18n-title="MASTER-OF-DISGUISE-SIT"></span></div>
 							{{/rollGreater() masterofdisguise 0}}
@@ -36934,6 +36937,9 @@
 							{{#rollGreater() strider3 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{strider3}}SL <span  data-i18n="STRIDER" data-i18n-title="STRIDER-SIT"></span> {{strider3name}} </div>
 							{{/rollGreater() strider3 0}}
+							{{#rollGreater() supportive 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{supportive}}SL <span  data-i18n="SUPPORTIVE" data-i18n-title="SUPPORTIVE-SIT"></span> <span  style="font-family: dicefontd10; font-size: 14px;" data-i18n-title="OR-UNIT">K</span></div>
+							{{/rollGreater() supportive 0}}
 							{{#rollGreater() trapper 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{trapper}}SL <span  data-i18n="TRAPPER" data-i18n-title="TRAPPER-SIT"></span></div>
 							{{/rollGreater() trapper 0}}
@@ -36959,11 +36965,6 @@
 							{{#rollGreater() waterman 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{waterman}}SL <span  data-i18n="WATERMAN" data-i18n-title="WATERMAN-SIT"></span></div>
 							{{/rollGreater() waterman 0}}
-							{{#rollGreater() cardsharp 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{cardsharp}}SL <span  data-i18n="CARDSHARP" data-i18n-title="CARDSHARP-SIT"></span></div>
-											<div class="col-11-24 pad-l-md pad-r-md rt-key" style="color: #858585;" data-i18n="CARDSHARP">Cardsharp</div>
-											<div class="col-13-24 pad-r-sm rt-key rt-no-border" style="color: #858585;" >(<span  style="background-color: yellow">{{computed::test}}</span>) <span style="margin-right: 3px" data-i18n="UNIT-DIE">Unit Die</span></div>
-							{{/rollGreater() cardsharp 0}}
 							{{#RTdualwield}}{{#rollGreater() dualwield 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585"><span  data-i18n="DUAL-WIELDER" data-i18n-title="DUAL-WIELDER-SIT"></span> <span class="chat-button-ripostedmg" style="height: 10px" data-i18n-title="USE-DW" >{{RTdualwield}}</span></div>
 							{{/rollGreater() dualwield 0}}{{/RTdualwield}}
@@ -52655,8 +52656,8 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	else if (trigger === 'bribery') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{briber=[[@{Talent_BriberLvl}]]}}';
 	addsl = '+@{Talent_BriberLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addsl<', addsl);}    
-	else if (trigger === 'charm') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{argumetative=[[@{Talent_ArgumentativeLvl}]]}} {{attractive=[[@{Talent_AttractiveLvl}]]}} {{blather=[[@{Talent_BlatherLvl}]]}} {{carouser=[[@{Talent_CarouserLvl}]]}} {{cattongued=[[@{Talent_CattonguedLvl}]]}} {{etiquette1=[[@{Talent_Etiquette1Lvl}]]}} {{etiquette1name=@{Talent_Etiquette1}}} {{etiquette2=[[@{Talent_Etiquette2Lvl}]]}} {{etiquette2name=@{Talent_Etiquette2}}} {{etiquette3=[[@{Talent_Etiquette3Lvl}]]}} {{etiquette3name=@{Talent_Etiquette3}}} {{etiquette4=[[@{Talent_Etiquette4Lvl}]]}} {{etiquette4name=@{Talent_Etiquette4}}} {{etiquette5=[[@{Talent_Etiquette5Lvl}]]}} {{etiquette5name=@{Talent_Etiquette5}}} {{etiquette6=[[@{Talent_Etiquette6Lvl}]]}} {{etiquette6name=@{Talent_Etiquette6}}} {{impzeal=[[@{Talent_ImpassionedZealLvl}]]}} {{nobleblood=[[@{Talent_NobleBloodLvl}]]}} {{panhandle=[[@{Talent_PanhandleLvl}]]}}';
-	sitmods = '+@{Talent_ArgumentativeLvl}+@{Talent_AttractiveLvl}+@{Talent_BlatherLvl}+@{Talent_CarouserLvl}+@{Talent_CattonguedLvl}+@{Talent_Etiquette1Lvl}+@{Talent_Etiquette2Lvl}+@{Talent_Etiquette3Lvl}+@{Talent_Etiquette4Lvl}+@{Talent_Etiquette5Lvl}+@{Talent_Etiquette6Lvl}+@{Talent_ImpassionedZealLvl}+@{Talent_NobleBloodLvl}+@{Talent_PanhandleLvl}';
+	else if (trigger === 'charm') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{argumetative=[[@{Talent_ArgumentativeLvl}]]}} {{attractive=[[@{Talent_AttractiveLvl}]]}} {{blather=[[@{Talent_BlatherLvl}]]}} {{carouser=[[@{Talent_CarouserLvl}]]}} {{cattongued=[[@{Talent_CattonguedLvl}]]}} {{etiquette1=[[@{Talent_Etiquette1Lvl}]]}} {{etiquette1name=@{Talent_Etiquette1}}} {{etiquette2=[[@{Talent_Etiquette2Lvl}]]}} {{etiquette2name=@{Talent_Etiquette2}}} {{etiquette3=[[@{Talent_Etiquette3Lvl}]]}} {{etiquette3name=@{Talent_Etiquette3}}} {{etiquette4=[[@{Talent_Etiquette4Lvl}]]}} {{etiquette4name=@{Talent_Etiquette4}}} {{etiquette5=[[@{Talent_Etiquette5Lvl}]]}} {{etiquette5name=@{Talent_Etiquette5}}} {{etiquette6=[[@{Talent_Etiquette6Lvl}]]}} {{etiquette6name=@{Talent_Etiquette6}}} {{impzeal=[[@{Talent_ImpassionedZealLvl}]]}} {{nobleblood=[[@{Talent_NobleBloodLvl}]]}} {{panhandle=[[@{Talent_PanhandleLvl}]]}} {{supportive=[[@{Talent_SupportiveLvl}]]}}';
+	sitmods = '+@{Talent_ArgumentativeLvl}+@{Talent_AttractiveLvl}+@{Talent_BlatherLvl}+@{Talent_CarouserLvl}+@{Talent_CattonguedLvl}+@{Talent_Etiquette1Lvl}+@{Talent_Etiquette2Lvl}+@{Talent_Etiquette3Lvl}+@{Talent_Etiquette4Lvl}+@{Talent_Etiquette5Lvl}+@{Talent_Etiquette6Lvl}+@{Talent_ImpassionedZealLvl}+@{Talent_NobleBloodLvl}+@{Talent_PanhandleLvl}+@{Talent_SupportiveLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen}-@{DrunkMod})`).replaceAll('>sitmod<', sitmods);}
 	else if (trigger === 'charmanimal') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{animalaffinity=[[@{Talent_AnimalAffinityLvl}]]}}';
 	addsl = '+@{Talent_AnimalAffinityLvl}';
@@ -52674,8 +52675,8 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	sitmods = '+@{Talent_CardsharpLvl}+@{Talent_CardsharpLvl}+@{Talent_DicemanLvl}';
 	addsl = '+@{Talent_SuperNumerateLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen}`).replaceAll('>sitmod<', sitmods).replaceAll('>addsl<', addsl);}
-	else if (trigger === 'gossip') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{carouser=[[@{Talent_CarouserLvl}]]}} {{gregarious=[[@{Talent_GregariousLvl}]]}} {{etiquette1=[[@{Talent_Etiquette1Lvl}]]}} {{etiquette1name=@{Talent_Etiquette1}}} {{etiquette2=[[@{Talent_Etiquette2Lvl}]]}} {{etiquette2name=@{Talent_Etiquette2}}} {{etiquette3=[[@{Talent_Etiquette3Lvl}]]}} {{etiquette3name=@{Talent_Etiquette3}}} {{etiquette4=[[@{Talent_Etiquette4Lvl}]]}} {{etiquette4name=@{Talent_Etiquette4}}} {{etiquette5=[[@{Talent_Etiquette5Lvl}]]}} {{etiquette5name=@{Talent_Etiquette5}}} {{etiquette6=[[@{Talent_Etiquette6Lvl}]]}} {{etiquette6name=@{Talent_Etiquette6}}} {{nobleblood=[[@{Talent_NobleBloodLvl}]]}}';
-	sitmods = '+@{Talent_CarouserLvl}+@{Talent_Etiquette1Lvl}+@{Talent_Etiquette2Lvl}+@{Talent_Etiquette3Lvl}+@{Talent_Etiquette4Lvl}+@{Talent_Etiquette5Lvl}+@{Talent_Etiquette6Lvl}+@{Talent_GregariousLvl}+@{Talent_NobleBloodLvl}';
+	else if (trigger === 'gossip') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{carouser=[[@{Talent_CarouserLvl}]]}} {{gregarious=[[@{Talent_GregariousLvl}]]}} {{etiquette1=[[@{Talent_Etiquette1Lvl}]]}} {{etiquette1name=@{Talent_Etiquette1}}} {{etiquette2=[[@{Talent_Etiquette2Lvl}]]}} {{etiquette2name=@{Talent_Etiquette2}}} {{etiquette3=[[@{Talent_Etiquette3Lvl}]]}} {{etiquette3name=@{Talent_Etiquette3}}} {{etiquette4=[[@{Talent_Etiquette4Lvl}]]}} {{etiquette4name=@{Talent_Etiquette4}}} {{etiquette5=[[@{Talent_Etiquette5Lvl}]]}} {{etiquette5name=@{Talent_Etiquette5}}} {{etiquette6=[[@{Talent_Etiquette6Lvl}]]}} {{etiquette6name=@{Talent_Etiquette6}}} {{nobleblood=[[@{Talent_NobleBloodLvl}]]}} {{supportive=[[@{Talent_SupportiveLvl}]]}}';
+	sitmods = '+@{Talent_CarouserLvl}+@{Talent_Etiquette1Lvl}+@{Talent_Etiquette2Lvl}+@{Talent_Etiquette3Lvl}+@{Talent_Etiquette4Lvl}+@{Talent_Etiquette5Lvl}+@{Talent_Etiquette6Lvl}+@{Talent_GregariousLvl}+@{Talent_NobleBloodLvl}+@{Talent_SupportiveLvl}';
 	sitfail = '+@{Talent_GregariousLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen}-@{DrunkMod})`).replaceAll('>sitmod<', sitmods).replaceAll('>sitfail<', sitfail);}
 	else if (trigger === 'haggle') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{nobleblood=[[@{Talent_NobleBloodLvl}]]}}';
@@ -52686,9 +52687,9 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	sladd = '+@{Talent_MenacingLvl}';
 	addsl = '+@{Talent_MenacingLvl}+@{Talent_MenacingLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen}-@{DrunkMod})`).replaceAll('>sitmod<', sitmods).replaceAll('>sladd<', sladd).replaceAll('>addsl<', addsl);}
-	else if (trigger === 'leadership') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{warleader=[[@{Talent_WarLeaderLvl}]]}} {{commandingpresence=[[@{Talent_CommandingPresenceLvl}]]}} {{inspiring=[[@{Talent_InspiringLvl}]]}} {{nobleblood=[[@{Talent_NobleBloodLvl}]]}} {{masterandcommander=[[@{Talent_MasterAndCommanderLvl}]]}}';
+	else if (trigger === 'leadership') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{warleader=[[@{Talent_WarLeaderLvl}]]}} {{commandingpresence=[[@{Talent_CommandingPresenceLvl}]]}} {{inspiring=[[@{Talent_InspiringLvl}]]}} {{nobleblood=[[@{Talent_NobleBloodLvl}]]}} {{masterandcommander=[[@{Talent_MasterAndCommanderLvl}]]}} {{supportive=[[@{Talent_SupportiveLvl}]]}}';
 	addsl = '+@{Talent_CommandingPresenceLvl}+@{Talent_MasterAndCommanderLvl}';
-	sitmods = '+@{Talent_WarLeaderLvl}+@{Talent_InspiringLvl}+@{Talent_NobleBloodLvl}';
+	sitmods = '+@{Talent_WarLeaderLvl}+@{Talent_InspiringLvl}+@{Talent_NobleBloodLvl}+@{Talent_SupportiveLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen}-@{DrunkMod})`).replaceAll('>addsl<', addsl).replaceAll('>sitmod<', sitmods);}
 	else if (trigger === 'row') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{strongback=[[@{Talent_StrongBackLvl}]]}} {{pilot=[[@{Talent_PilotLvl}]]}}'
 	addsl = '+@{Talent_StrongBackLvl}';
