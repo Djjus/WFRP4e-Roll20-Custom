@@ -92,10 +92,18 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 ///// ============ Change Log ============ /////  
 
 
+Aug 18th 2025 v1.76e
+
+- Added 3 more Acute Sense (upto 5) , to cover all the normal senses. (Issue #3)
+- Added a 9th Arcane Lore, to allow upto 9 lores per PC. Allows all 8 colors + 1 Dark Lore. (Issue #3)
+- Removed Small/Large Talents. These are not real talents and have no functionality in the game, Size is a Create trait now. (Issue #3)
+- AutoXP fixes, fixed a number of Auto XP issues with either XP not adding to total or not showing in text correctly in the XP tab   (Issue #2 https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/2)
+
+
 July 24rd 2025 v1.76d
 
-- Added Talent Supportive as Situational modifier bonus in roll output
-- Added labelled Icon in roll output to remind player of the specific Talent bonues effect "You can choose to either use your rolled SL, or the number rolled on your units die" for Attractive/Argumentative/Cardsharp/Diceman/Supportative.
+- Added Talent Supportive test bonus as Situational modifier bonus in roll output
+- Added labelled Icon in roll output to remind player of the specific Talent bonues effect "You can choose to either use your rolled SL, or the number rolled on your units die" for Attractive/Argumentative/Cardsharp/Diceman/Supportive.
 
 
 July 3rd 2025 v1.76c

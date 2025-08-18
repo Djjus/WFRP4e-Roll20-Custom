@@ -7,7 +7,7 @@
 		<input type="radio" class="useBackground" style="display: none;" name="attr_background" value="3" />
 		<input type="radio" class="useBackground" style="display: none;" name="attr_background" value="4" />
 		<input type="radio" class="useBackground" style="display: none;" name="attr_background" value="5" />
-		<div class='background'> 
+		<div class="background"> 
 			<input type="checkbox" name="attr_Charmaker" class="hidden hider" value="0" checked />
 			<input type="checkbox" name="attr_Charmaker" class="hidden hider" value="1" />
 				<div class="center" style="z-index: 1000; position: absolute; background: white; width: 700px; height: 500px; left: 59px; top: 59px; border: black solid">
@@ -916,13 +916,13 @@
 					<span data-i18n="MAGIC">Magic</span><span style="font-family: pictos;"> n</span>
 				</span>
 			</div>
-			<div class="col-1-10 pad-r-sm center"style="position: relative ; left: 3px">
+			<div class="col-1-10 pad-r-sm center" style="position: relative; left: 3px">
 				<input type="checkbox" name="attr_MeleeMode_hide" class="tab-gmwhisper"  value="1"/>
 				<span class="tab-gmwhisper" style="width: 65px;">
 					<span data-i18n="MELEE">Melee</span><span style="font-family: pictos;"> n</span>
 				</span>
 			</div>
-			<div class="col-1-10 pad-r-sm center"style="position: relative ; left: 3px">
+			<div class="col-1-10 pad-r-sm center" style="position: relative; left: 3px">
 				<input type="checkbox" name="attr_RangedMode_hide" class="tab-gmwhisper"  value="1"/>
 				<span class="tab-gmwhisper" style="width: 70px;">
 					<span data-i18n="RANGED">Ranged</span><span style="font-family: pictos;"> n</span>
@@ -1451,7 +1451,6 @@
 		<input type="checkbox" name="attr_MeleeMainType" class="hidden hider" value="1" />
 				<div class="col-1-2 center" style="width: 80%; float: left;">
 						<input class="combat-actions-np" type="value" name="attr_Used_MainRangedWeaponName" style="height: 24px;padding-bottom: 1px;padding-left: 4px;" value=" Equip Weapons " readonly />
-					</button>
 				</div>
 
 				<div class="col-1-2 center inline-block" style="width: 20%;">
@@ -1515,12 +1514,10 @@
 		<input type="checkbox" name="attr_MeleeOffType" class="hidden hider" value="0" checked />
 				<div class="col-1-2 center" style="width: 80%; float: left;">
 						<input class="combat-actions-np" type="value" name="attr_Used_DefenseWeapon" style="height: 24px;padding-bottom: 1px;padding-left: 4px;" value=" Equip Weapons " readonly />
-					</button>
 				</div>
 		<input type="checkbox" name="attr_MeleeOffType" class="hidden hider" value="1" />
 				<div class="col-1-2 center" style="width: 80%; float: left;">
 						<input class="combat-actions-np" type="value" name="attr_Used_OffRangedWeaponName" style="height: 24px;padding-bottom: 1px;padding-left: 4px;" value=" Equip Weapons " readonly />
-					</button>
 				</div>
 
 				<div class="col-1-2 center" style="width: 20%;">
@@ -1533,17 +1530,14 @@
 				</div>
 			</div>
 
-		
 			<div class="col-1-5 center nowrap" style="float: left;">
 				<div class="col-1-2 center" style="width: 85%; float: left;">
 						<input class="combat-actions-np" type="value" name="attr_Used_RangedWeaponName" style="height: 24px;padding-bottom: 1px;" value=" Equip Weapons " readonly />
-					</button>
 				</div>
 				<div class="col-1-2 center" style="width: 15%;">
 					<button type="action" class="combat-actions" name="act_RangedAtk" style="font-family: dicefontd20;">t</button>
 					<button type="action" class="hidden" name="act_RangedAtkreroll"></button>
 						<span></span>
-					</button>
 				</div>
 			</div>
 		</div>
@@ -1569,7 +1563,7 @@
 							<option value="(@{ChannellingLight})" data-i18n="LIGHT">Light</option>
 							<option value="(@{ChannellingDeath})" data-i18n="DEATH">Death</option>
 							<option value="(@{ChannellingShadows})" data-i18n="SHADOWS">Shadows</option>
-							<option value="(@{ChannellingHighMagic})" data-i18n="HIGH-MAGIC">High Magic</option>
+							<option value="(@{d})" data-i18n="HIGH-MAGIC">High Magic</option>
 							<option value="(@{ChannellingWitch})" data-i18n="WITCH">Witch</option>
 							<option value="(@{ChannellingDark})" data-i18n="DARK">Dark</option>
 							<option value="(@{ChannellingChaos})" data-i18n="CHAOS">Chaos</option>
@@ -2318,7 +2312,7 @@
 				<span data-i18n="BITE"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_Biteroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Bite Free Attack - Cost 1 Adv">t</Button>
+				<button type="action" name="act_Biteroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Bite Free Attack - Cost 1 Adv">t</button>
 				</div>
 				</div>
 		<input type="checkbox" name="attr_Trait_ChillGrasp" class="hidden hider" value="1" />
@@ -2327,7 +2321,7 @@
 				<span data-i18n="CHILLGRASP"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_ChillGrasproll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Chill Grasp Free Attack - Cost 2 Adv">t</Button>
+				<button type="action" name="act_ChillGrasproll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Chill Grasp Free Attack - Cost 2 Adv">t</button>
 				</div>
 				</div>
 		<input type="checkbox" name="attr_Trait_GhostlyHowl" class="hidden hider" value="1" />
@@ -2336,7 +2330,7 @@
 				<span data-i18n="GHOSTLYH"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_GhostlyHowlroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Ghostly Howl Free Attack - Cost All Adv (Min 2)">t</Button>
+				<button type="action" name="act_GhostlyHowlroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Ghostly Howl Free Attack - Cost All Adv (Min 2)">t</button>
 				</div>
 				</div>
 		<input type="checkbox" name="attr_Trait_Breath" class="hidden hider" value="1" />
@@ -2345,7 +2339,7 @@
 				<span data-i18n="BREATH"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_Breathroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Breath Free Attack - Cost 2 Adv">t</Button>
+				<button type="action" name="act_Breathroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Breath Free Attack - Cost 2 Adv">t</button>
 				</div>
 				</div>
 		<input type="checkbox" name="attr_Trait_Horns" class="hidden hider" value="1" />
@@ -2354,7 +2348,7 @@
 				<span data-i18n="HORNS"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_Hornsroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Horns Free Attack - After Charging">t</Button>
+				<button type="action" name="act_Hornsroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Horns Free Attack - After Charging">t</button>
 				</div>
 				</div>
 		<input type="checkbox" name="attr_Show_Stomp" class="hidden hider" value="1" />
@@ -2363,7 +2357,7 @@
 				<span data-i18n="STOMP"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_Stomproll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Stomp Free Attack - Cost 1 Adv and only if target is smaller">t</Button>
+				<button type="action" name="act_Stomproll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Stomp Free Attack - Cost 1 Adv and only if target is smaller">t</button>
 				</div>
 				</div>
 		<input type="checkbox" name="attr_Trait_Tail" class="hidden hider" value="1" />
@@ -2372,7 +2366,7 @@
 				<span data-i18n="TAIL-ATTACK"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_Tailroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Tail Free Attack - Cost 1 Adv">t</Button>
+				<button type="action" name="act_Tailroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Tail Free Attack - Cost 1 Adv">t</button>
 				</div>
 				</div>
 		<input type="checkbox" name="attr_Trait_Tentacles" class="hidden hider" value="1" />
@@ -2381,7 +2375,7 @@
 				<span data-i18n="TENTACLES"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_Tentaclesroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Tentacles Free Attack - 1 per Tentacle">t</Button>
+				<button type="action" name="act_Tentaclesroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Tentacles Free Attack - 1 per Tentacle">t</button>
 				</div>
 				</div>
 		<input type="checkbox" name="attr_Trait_Vomit" class="hidden hider" value="1" />
@@ -2390,7 +2384,7 @@
 				<span data-i18n="VOMIT"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_Vomitroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Vomit Free Attack - Cost 3 Adv">t</Button>
+				<button type="action" name="act_Vomitroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Vomit Free Attack - Cost 3 Adv">t</button>
 				</div>
 				</div>
 		<input type="checkbox" name="attr_Show_Distract" class="hidden hider" value="1" />
@@ -2399,7 +2393,7 @@
 				<span data-i18n="DISTRACT_TALENT"></span>
 				</div>
 				<div class="col-1-4">
-				<button type="action" name="act_Distractroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Free Action">t</Button>
+				<button type="action" name="act_Distractroll" value="1" style="height: 12px; width: 12px; font-family: dicefontd20; margin-right: 1px;" title="Free Action">t</button>
 				</div>
 				</div>
 			</div>
@@ -2974,10 +2968,10 @@
 							<button type="action" class="roll" name="act_npcdexterity" style=" font-family: dicefontd20">t</button>
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<button type="action" class="roll" name="act_npcintelligence" tyle=" font-family: dicefontd20">t</button>
+							<button type="action" class="roll" name="act_npcintelligence" style="font-family: dicefontd20">t</button>
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<button type="action" class="roll" name="act_npcwillpower"  font-family: dicefontd20">t</button>
+							<button type="action" class="roll" name="act_npcwillpower" style="font-family: dicefontd20">t</button>
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<button type="action" class="roll" name="act_npcfellowship" style=" font-family: dicefontd20">t</button>
@@ -4657,7 +4651,7 @@
 									<option value="0" data-i18n="CHANNELLINGLIGHT">Channelling (Light)</option>
 									<option value="0" data-i18n="CHANNELLINGDEATH">Channelling (Death)</option>
 									<option value="0" data-i18n="CHANNELLINGSHADOWS">Channelling (Shadows)</option>
-									<option value="0" data-i18n="CHANNELLINGHIGHMAGIC">Channelling (High Magic)</option>
+									<option value="0" data-i18n="d">Channelling (High Magic)</option>
 									<option value="0" data-i18n="CHANNELLINGWITCH">Channelling (Witch)</option>
 									<option value="0" data-i18n="CHANNELLINGDARK">Channelling (Dark)</option>
 									<option value="0" data-i18n="CHANNELLINGCHAOS">Channelling (Chaos)</option>
@@ -5901,7 +5895,7 @@
 								<button type="action" class="roll-flex" name="act_npcattack3roll" ><span data-i18n="ABB-ATK">Atk</span></button>
 							</div>
 							<div class="col-8-100 center">
-								<button type="action" class="roll-flex" name="act_npcopposed3roll" >OPP</span></button>		
+								<button type="action" class="roll-flex" name="act_npcopposed3roll" ><span data-i18n="OPP">OPP</span></button>		
 		<label style="display: inline; margin-left: 2px;" class="talsetshow-check">
 		<input class="talsetshow-check__hide" type="hidden" name="attr_npc-weaponconf-hide3" value="0"/>
 		<input class="talsetshow-check__hide" type="checkbox" name="attr_npc-weaponconf-hide3" value="1"/><span class="talsetshow-check__span" style="color: #666666" checked="unchecked">y</span></label></div>
@@ -10973,7 +10967,7 @@
 						</div>
 									<span class="spacer"></span>
 		</div>
-	<div class="npc-page11">
+			<div class="npc-page11">
 
 
 						<span class="spacer"></span>
@@ -11933,7 +11927,7 @@
 						</div>
 						<div class="col-1" style="padding-left: 5px; padding-right: 5px;">
 							<div class="row sub-header">
-								<div class="col-7-20 center small-label vert-middle pad-r-sm" data-i18n="CORRUPTION">Corruption</span></div>
+								<div class="col-7-20 center small-label vert-middle pad-r-sm" data-i18n="CORRUPTION">Corruption</div>
 								<div class="col-3-20 center small-label vert-middle pad-r-sm"><span data-i18n="MAX">Max</span><label class="talsetshow-check" style="display: inline; padding-right: 0px">
 									<input class="talsetshow-check__hide" type="hidden" name="attr_Maxcorruption_settings_hide" value="0"/>
 									<input class="talsetshow-check__hide" type="checkbox" name="attr_Maxcorruption_settings_hide" value="1"/><span class="talsetshow-check__span" checked="unchecked">y</span>
@@ -20515,7 +20509,7 @@
 				<input type="checkbox" name="attr_AcuteSense_talents_settings_hide" class="hidden hider" value="1" />
 						<div class="row">
 							<div class="col-3-4 left">-
-								<span data-i18n="SENSE" class="nowrap"></span></span>
+								<span data-i18n="SENSE" class="nowrap"></span>
 								(
 							<div class="col-12-25">
 							<input class="center" style="height: 13px" type="text" name="attr_Talent_AcuteSense1" placeholder="type" />
@@ -20529,7 +20523,7 @@
 				<input type="checkbox" name="attr_AcuteSense_talents_settings_hide" class="hidden hider" value="1" />
 						<div class="row">
 							<div class="col-3-4 left">-
-								<span data-i18n="SENSE" class="nowrap"></span></span>
+								<span data-i18n="SENSE" class="nowrap"></span>
 								(
 							<div class="col-12-25">
 							<input class="center" style="height: 13px" type="text" name="attr_Talent_AcuteSense2" placeholder="type" />
@@ -20538,6 +20532,48 @@
 							</div>
 							<div class="col-1-4 center">
 						<input class="meleeshow-check" type="checkbox" name="attr_ShowAcuteSense2" value="1"/>
+							</div>
+						</div>
+				<input type="checkbox" name="attr_AcuteSense_talents_settings_hide" class="hidden hider" value="1" />
+						<div class="row">
+							<div class="col-3-4 left">-
+								<span data-i18n="SENSE" class="nowrap"></span>
+								(
+							<div class="col-12-25">
+							<input class="center" style="height: 13px" type="text" name="attr_Talent_AcuteSense3" placeholder="type" />
+							</div>
+								)
+							</div>
+							<div class="col-1-4 center">
+						<input class="meleeshow-check" type="checkbox" name="attr_ShowAcuteSense3" value="1"/>
+							</div>
+						</div>
+				<input type="checkbox" name="attr_AcuteSense_talents_settings_hide" class="hidden hider" value="1" />
+						<div class="row">
+							<div class="col-3-4 left">-
+								<span data-i18n="SENSE" class="nowrap"></span>
+								(
+							<div class="col-12-25">
+							<input class="center" style="height: 13px" type="text" name="attr_Talent_AcuteSense4" placeholder="type" />
+							</div>
+								)
+							</div>
+							<div class="col-1-4 center">
+						<input class="meleeshow-check" type="checkbox" name="attr_ShowAcuteSense4" value="1"/>
+							</div>
+						</div>
+				<input type="checkbox" name="attr_AcuteSense_talents_settings_hide" class="hidden hider" value="1" />
+						<div class="row">
+							<div class="col-3-4 left">-
+								<span data-i18n="SENSE" class="nowrap"></span>
+								(
+							<div class="col-12-25">
+							<input class="center" style="height: 13px" type="text" name="attr_Talent_AcuteSense5" placeholder="type" />
+							</div>
+								)
+							</div>
+							<div class="col-1-4 center">
+						<input class="meleeshow-check" type="checkbox" name="attr_ShowAcuteSense5" value="1"/>
 							</div>
 						</div>
 						<div class="row">
@@ -20695,6 +20731,20 @@
 							</div>
 							<div class="col-1-4 center">
 						<input class="meleeshow-check" type="checkbox" name="attr_ShowArcaneMagic8" value="1"/>
+							</div>
+						</div>
+				<input type="checkbox" name="attr_Acrane_talents_settings_hide" class="hidden hider" value="1" />
+						<div class="row">
+							<div class="col-3-4 left">-
+								<span data-i18n="MAGIC-LORE" class="nowrap"></span>
+								(
+							<div class="col-10-19">
+							<input class="center" style="height: 13px" type="text" name="attr_Talent_ArcaneMagic9" placeholder="type" />
+							</div>
+								)
+							</div>
+							<div class="col-1-4 center">
+						<input class="meleeshow-check" type="checkbox" name="attr_ShowArcaneMagic9" value="1"/>
 							</div>
 						</div>
 						<div class="row">
@@ -21613,14 +21663,6 @@
 						</div>
 						<div class="row">
 							<div class="col-3-4 left">
-								<span data-i18n="NPC-SIZE-LARGE" class="nowrap"></span>
-							</div>
-							<div class="col-1-4 center">
-						<input class="meleeshow-check" type="checkbox" name="attr_ShowLarge" value="1"/>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-3-4 left">
 								<span data-i18n="LIGHTNING-REFLEXES" class="nowrap"></span>
 							</div>
 							<div class="col-1-4 center">
@@ -21880,9 +21922,6 @@
 						<input class="meleeshow-check" type="checkbox" name="attr_ShowPilot" value="1"/>
 							</div>
 						</div>
-					</div>
-
-					<div class="col-19-100 vert-top" >
 						<div class="row">
 							<div class="col-3-4 left">
 								<span data-i18n="PUBLIC-SPEAKER" class="nowrap"></span>
@@ -21891,6 +21930,9 @@
 						<input class="meleeshow-check" type="checkbox" name="attr_ShowPublicSpeaker" value="1"/>
 							</div>
 						</div>
+					</div>
+
+					<div class="col-19-100 vert-top" >
 						<div class="row">
 							<div class="col-3-4 left">
 								<span data-i18n="PURE-SOUL" class="nowrap"></span>
@@ -22199,14 +22241,6 @@
 						</div>
 						<div class="row">
 							<div class="col-3-4 left">
-								<span data-i18n="SMALL" class="nowrap"></span>
-							</div>
-							<div class="col-1-4 center">
-						<input class="meleeshow-check" type="checkbox" name="attr_ShowSmall" value="1"/>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-3-4 left">
 								<span data-i18n="SNIPER" class="nowrap"></span>
 							</div>
 							<div class="col-1-4 center">
@@ -22306,17 +22340,6 @@
 						<input class="meleeshow-check" type="checkbox" name="attr_ShowStrider3" value="1"/>
 							</div>
 						</div>
-					</div>
-
-					<div class="col-19-100 vert-top" >
-						<div class="row">
-							<div class="col-3-4 left">
-								<span data-i18n="SPRINTER" class="nowrap"></span>
-							</div>
-							<div class="col-1-4 center">
-						<input class="meleeshow-check" type="checkbox" name="attr_ShowSprinter" value="1"/>
-							</div>
-						</div>
 						<div class="row">
 							<div class="col-3-4 left">
 								<span data-i18n="STRIKE-MIGHTY-BLOW" class="nowrap"></span>
@@ -22333,6 +22356,9 @@
 						<input class="meleeshow-check" type="checkbox" name="attr_ShowStrikeToInjure" value="1"/>
 							</div>
 						</div>
+					</div>
+
+					<div class="col-19-100 vert-top" >
 						<div class="row">
 							<div class="col-3-4 left">
 								<span data-i18n="STRIKE-TO-STUN" class="nowrap"></span>
@@ -23000,6 +23026,84 @@
 							<button class="right" type="compendium" value="Talents:Acute Sense" data-i18n-title="COMPENDIUM-LINK"></button>
 							<span style="font-family: pictos; color: #55b800;" data-i18n-title="INTEGRATION" >j</span>
 						</div>
+		<input type="checkbox" name="attr_ShowAcuteSense3" class="hidden hider" value="1" />
+						<div class="col-1-2 vert-top">
+							<div class="col-1-10 center vert-middle">
+								<input type="checkbox" name="attr_CarrierAcuteSense3" value="1" />
+							</div>
+							<div class="col-1-2 left vert-middle">
+								<span data-i18n="ACUTE-SENSE">Acute Sense</span>
+								 (
+							<div class="col-1-4">
+							<input class="center" style="height: 13px" type="value" name="attr_Talent_AcuteSense3_dis" value="@{Talent_AcuteSense3}" disabled />
+							</div>
+								)
+							</div>
+							<div class="col-8-100 center talents-border2">
+								<span data-i18n="ABBREVIATE-INITIATIVE"></span>
+							</div>
+							<div class="col-8-100 center vert-middle">
+								<input class="center" type="number" name="attr_Talent_AcuteSense3Lvl" value="0" min="0" />
+								<input class="hidden" type="number" name="attr_Talent_AcuteSense3XP" value="0" />
+							</div>
+							<div class="col-8-100 center vert-middle">
+								<input class="center" type="number" name="attr_Talent_AcuteSense3Max" value="@{InitiativeBonus}" disabled />
+							</div>
+							<button class="right" type="compendium" value="Talents:Acute Sense" data-i18n-title="COMPENDIUM-LINK"></button>
+							<span style="font-family: pictos; color: #55b800;" data-i18n-title="INTEGRATION" >j</span>
+						</div>
+		<input type="checkbox" name="attr_ShowAcuteSense4" class="hidden hider" value="1" />
+						<div class="col-1-2 vert-top">
+							<div class="col-1-10 center vert-middle">
+								<input type="checkbox" name="attr_CarrierAcuteSense4" value="1" />
+							</div>
+							<div class="col-1-2 left vert-middle">
+								<span data-i18n="ACUTE-SENSE">Acute Sense</span>
+								 (
+							<div class="col-1-4">
+							<input class="center" style="height: 13px" type="value" name="attr_Talent_AcuteSense4_dis" value="@{Talent_AcuteSense4}" disabled />
+							</div>
+								)
+							</div>
+							<div class="col-8-100 center talents-border2">
+								<span data-i18n="ABBREVIATE-INITIATIVE"></span>
+							</div>
+							<div class="col-8-100 center vert-middle">
+								<input class="center" type="number" name="attr_Talent_AcuteSense4Lvl" value="0" min="0" />
+								<input class="hidden" type="number" name="attr_Talent_AcuteSense4XP" value="0" />
+							</div>
+							<div class="col-8-100 center vert-middle">
+								<input class="center" type="number" name="attr_Talent_AcuteSense4Max" value="@{InitiativeBonus}" disabled />
+							</div>
+							<button class="right" type="compendium" value="Talents:Acute Sense" data-i18n-title="COMPENDIUM-LINK"></button>
+							<span style="font-family: pictos; color: #55b800;" data-i18n-title="INTEGRATION" >j</span>
+						</div>
+		<input type="checkbox" name="attr_ShowAcuteSense5" class="hidden hider" value="1" />
+						<div class="col-1-2 vert-top">
+							<div class="col-1-10 center vert-middle">
+								<input type="checkbox" name="attr_CarrierAcuteSense5" value="1" />
+							</div>
+							<div class="col-1-2 left vert-middle">
+								<span data-i18n="ACUTE-SENSE">Acute Sense</span>
+								 (
+							<div class="col-1-4">
+							<input class="center" style="height: 13px" type="value" name="attr_Talent_AcuteSense5_dis" value="@{Talent_AcuteSense5}" disabled />
+							</div>
+								)
+							</div>
+							<div class="col-8-100 center talents-border2">
+								<span data-i18n="ABBREVIATE-INITIATIVE"></span>
+							</div>
+							<div class="col-8-100 center vert-middle">
+								<input class="center" type="number" name="attr_Talent_AcuteSense5Lvl" value="0" min="0" />
+								<input class="hidden" type="number" name="attr_Talent_AcuteSense5XP" value="0" />
+							</div>
+							<div class="col-8-100 center vert-middle">
+								<input class="center" type="number" name="attr_Talent_AcuteSense5Max" value="@{InitiativeBonus}" disabled />
+							</div>
+							<button class="right" type="compendium" value="Talents:Acute Sense" data-i18n-title="COMPENDIUM-LINK"></button>
+							<span style="font-family: pictos; color: #55b800;" data-i18n-title="INTEGRATION" >j</span>
+						</div>
 		<input type="checkbox" name="attr_ShowAethyricAttunement" class="hidden hider" value="1" />
 						<div class="col-1-2 vert-top">
 							<div class="col-1-10 center vert-middle">
@@ -23333,6 +23437,35 @@
 							</div>
 							<div class="col-8-100 center vert-middle">
 								<input class="center" type="number" name="attr_Talent_ArcaneMagic8Max" value="1" disabled />
+							</div>
+							<button class="right" type="compendium" value="Talents:Arcane Magic (Lore)" data-i18n-title="COMPENDIUM-LINK"></button>
+							<span style="font-family: pictos; color: #55b800;" data-i18n-title="INTEGRATION" >j</span>
+						</div>
+		<input type="checkbox" name="attr_ShowArcaneMagic9" class="hidden hider" value="1" />
+						<div class="col-1-2 vert-top">
+							<div class="col-1-10 center vert-middle">
+								<input type="checkbox" name="attr_CarrierArcaneMagic9" value="1" />
+							</div>
+							<div class="col-2-5 left vert-middle">
+								<span data-i18n="ARCANE-MAGIC">Arcane Magic</span>
+								 (
+							<div class="col-1-3">
+							<input class="center" style="height: 13px" type="value" name="attr_Talent_ArcaneMagic9_dis" value="@{Talent_ArcaneMagic9}" disabled />
+							</div>
+								)
+							</div>
+							<div class="col-1-10 right vert-middle" style="height: 20px;margin-right: 1px;">
+								<span style="text-align: right; font-size: 9px" data-i18n="LEARNED-SPELLS">Learned Spells:</span>
+							</div>
+							<div class="col-8-100 center vert-middle">
+								<input class="center" type="number" name="attr_Talent_ArcaneMagic9Spells" value="0" min="0" />
+							</div>
+							<div class="col-8-100 center vert-middle">
+								<input class="center" type="number" name="attr_Talent_ArcaneMagic9Lvl" value="0" min="0" max="1" />
+								<input class="hidden" type="number" name="attr_Talent_ArcaneMagic9XP" value="0" />
+							</div>
+							<div class="col-8-100 center vert-middle">
+								<input class="center" type="number" name="attr_Talent_ArcaneMagic9Max" value="1" disabled />
 							</div>
 							<button class="right" type="compendium" value="Talents:Arcane Magic (Lore)" data-i18n-title="COMPENDIUM-LINK"></button>
 							<span style="font-family: pictos; color: #55b800;" data-i18n-title="INTEGRATION" >j</span>
@@ -24406,6 +24539,7 @@
 							</div>
 							<div class="col-8-100 center vert-middle">
 								<input class="center" type="number" name="attr_Talent_DoomedMax" value="1" disabled />
+								<input class="hidden" type="number" name="attr_Talent_DoomedXP" value="0" />
 							</div>
 							<button class="right" type="compendium" value="Talents:Doomed" data-i18n-title="COMPENDIUM-LINK"></button>
 							<span style="font-family: pictos; color: #858585;" data-i18n-title="INTEGRATION-NO" >*</span>
@@ -25594,26 +25728,6 @@
 								<input class="center" type="number" name="attr_Talent_KingsguardMax" value="3" disabled />
 							</div>
 							<span style="padding-left: 7px;font-family: pictos; color: #858585;" data-i18n-title="INTEGRATION-NO" >*</span>
-						</div>
-		<input type="checkbox" name="attr_ShowLarge" class="hidden hider" value="1" />
-						<div class="col-1-2 vert-top">
-							<div class="col-1-10 center vert-middle">
-								<input type="checkbox" name="attr_CarrierLarge" value="1" />
-							</div>
-							<div class="col-1-2 left vert-middle">
-								<span data-i18n="NPC-SIZE-LARGE">Large</span>
-							</div>
-							<div class="col-8-100 center talents-border2">
-								<span style="color: white">/</span>
-							</div>
-							<div class="col-8-100 center vert-middle">
-								<input class="center" type="number" name="attr_Talent_LargeLvl" value="0" min="0" max="1" />
-							</div>
-							<div class="col-8-100 center vert-middle">
-								<input class="center" type="number" name="attr_Talent_LargeMax" value="1" disabled />
-							</div>
-							<button class="right" type="compendium" value="Talents:Large" data-i18n-title="COMPENDIUM-LINK"></button>
-							<span style="font-family: pictos; color: #55b800;" data-i18n-title="INTEGRATION" >j</span>
 						</div>
 		<input type="checkbox" name="attr_ShowLightningReflexes" class="hidden hider" value="1" />
 						<div class="col-1-2 vert-top">
@@ -27177,26 +27291,6 @@
 								<input class="center" type="number" name="attr_Talent_SlayerMax" value="1" disabled />
 							</div>
 							<button class="right" type="compendium" value="Talents:Slayer" data-i18n-title="COMPENDIUM-LINK"></button>
-							<span style="font-family: pictos; color: #55b800;" data-i18n-title="INTEGRATION" >j</span>
-						</div>
-		<input type="checkbox" name="attr_ShowSmall" class="hidden hider" value="1" />
-						<div class="col-1-2 vert-top">
-							<div class="col-1-10 center vert-middle">
-								<input type="checkbox" name="attr_CarrierSmall" value="1" />
-							</div>
-							<div class="col-1-2 left vert-middle">
-								<span data-i18n="SMALL">Small</span>
-							</div>
-							<div class="col-8-100 center talents-border2">
-								<span style="color: white">/</span>
-							</div>
-							<div class="col-8-100 center vert-middle">
-								<input class="center" type="number" name="attr_Talent_SmallLvl" value="0" min="0" max="1" />
-							</div>
-							<div class="col-8-100 center vert-middle">
-								<input class="center" type="number" name="attr_Talent_SmallMax" value="1" disabled />
-							</div>
-							<button class="right" type="compendium" value="Talents:Small" data-i18n-title="COMPENDIUM-LINK"></button>
 							<span style="font-family: pictos; color: #55b800;" data-i18n-title="INTEGRATION" >j</span>
 						</div>
 		<input type="checkbox" name="attr_ShowSniper" class="hidden hider" value="1" />
@@ -29234,7 +29328,7 @@
 					<div class="col-4-100 center small-label vert-middle pad-r-sm" data-i18n="+DMG">+Dmg</div>
 					<div class="col-4-100 center small-label vert-middle pad-r-sm" data-i18n="DMG">Dmg</div>
 					<div class="col-19-100 center small-label vert-middle pad-r-sm" data-i18n="QUALITIES-AND-FLAWS">Qualities and Flaws</div>
-					<div class="col-4-100 center small-label vert-middle pad-r-sm" data-i18n="MOD" data-i18n="MOD">Mod</div>
+					<div class="col-4-100 center small-label vert-middle pad-r-sm" data-i18n="MOD">Mod</div>
 					<div class="col-4-100 center small-label vert-middle pad-r-sm" data-i18n="TARGET2">Target</div>
 					<div class="col-1-10 center small-label vert-middle" style="white-space: nowrap; padding-left: 4px" data-i18n="MAIN-WEAPON">Main hand</div>
 				</div>
@@ -29634,11 +29728,11 @@
 									<span data-i18n="WEAPON-LIST"></span>
 								</span>
 							</div>
-							<div class="col-1-10 center"style="float: right; margin-right: 15px;">
+							<div class="col-1-10 center" style="float: right; margin-right: 15px;">
 								<button type="action" class="combat-actions-rep" name="act_RangedWeaponRld" >
 								<span data-i18n="RELOAD">Reload</span></button>
 							</div>
-							<div class="col-1-10 center"style="float: right;">
+							<div class="col-1-10 center" style="float: right;">
 								<button type="action" class="combat-actions-rep" name="act_RangedAtk" >
 								<span data-i18n="SHOOT">Shoot</span></button>
 							</div>
@@ -31014,7 +31108,7 @@
 							</div>
 							<div class="row">
 								<div class="col-1 pad-t-md">
-									<input type="number" name="attr_armorAPtotalH" value="@{Talent_RobustLvl}+@{Trait_Armor_Mod}+@{ToughnessBonus}+((@{armortotalAPH1})*@{armoractiveH1})+((@{armortotalAPH2})*@{armoractiveH2})+((@{armortotalAPH3})*@{armoractiveH3})" disabled disabled data-i18n-title="TB+AP" title="{ TB + AP }" />
+									<input type="number" name="attr_armorAPtotalH" value="@{Talent_RobustLvl}+@{Trait_Armor_Mod}+@{ToughnessBonus}+((@{armortotalAPH1})*@{armoractiveH1})+((@{armortotalAPH2})*@{armoractiveH2})+((@{armortotalAPH3})*@{armoractiveH3})" disabled data-i18n-title="TB+AP" title="{ TB + AP }" />
 								</div>
 							</div>
 							<div class="row">
@@ -34818,19 +34912,7 @@
 		</div>
 	</div>
 	</div>
-</div>
-	</div>
-</div>
-	</div>
-</div>
-		</div>
-</div>
-						</div>
-						</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
 
 	<rolltemplate class="sheet-rolltemplate-whfrp2e">
 		<div class="rt-card">
@@ -36757,6 +36839,15 @@
 							{{#rollGreater() acute2 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{acute2}}SL <span  data-i18n="ACUTE-SENSE" data-i18n-title="ACUTE-SENSE-SIT"></span> {{acute2name}} </div>
 							{{/rollGreater() acute2 0}}
+							{{#rollGreater() acute3 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{acute3}}SL <span  data-i18n="ACUTE-SENSE" data-i18n-title="ACUTE-SENSE-SIT"></span> {{acute3name}} </div>
+							{{/rollGreater() acute3 0}}
+							{{#rollGreater() acute4 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{acute4}}SL <span  data-i18n="ACUTE-SENSE" data-i18n-title="ACUTE-SENSE-SIT"></span> {{acute4name}} </div>
+							{{/rollGreater() acute4 0}}
+							{{#rollGreater() acute5 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{acute5}}SL <span  data-i18n="ACUTE-SENSE" data-i18n-title="ACUTE-SENSE-SIT"></span> {{acute5name}} </div>
+							{{/rollGreater() acute5 0}}
 							{{#rollGreater() beneathnotice 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{beneathnotice}}SL <span  data-i18n="BENEATH-NOTICE" data-i18n-title="BENEATH-NOTICE-SIT"></span></div>
 							{{/rollGreater() beneathnotice 0}}
@@ -36812,19 +36903,19 @@
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette1}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT"></span> {{etiquette1name}}</div>
 							{{/rollGreater() etiquette1 0}}
 							{{#rollGreater() etiquette2 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette2}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT">></span> {{etiquette2name}}</div>
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette2}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT"></span> {{etiquette2name}}</div>
 							{{/rollGreater() etiquette2 0}}
 							{{#rollGreater() etiquette3 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette3}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT">></span> {{etiquette3name}}</div>
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette3}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT"></span> {{etiquette3name}}</div>
 							{{/rollGreater() etiquette3 0}}
 							{{#rollGreater() etiquette4 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette4}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT">></span> {{etiquette4name}}</div>
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette4}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT"></span> {{etiquette4name}}</div>
 							{{/rollGreater() etiquette4 0}}
 							{{#rollGreater() etiquette5 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette5}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT">></span> {{etiquette5name}}</div>
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette5}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT"></span> {{etiquette5name}}</div>
 							{{/rollGreater() etiquette5 0}}
 							{{#rollGreater() etiquette6 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette6}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT">></span> {{etiquette6name}}</div>
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{etiquette6}}SL <span  data-i18n="ETIQUETTE" data-i18n-title="ETIQUETTE-SIT"></span> {{etiquette6name}}</div>
 							{{/rollGreater() etiquette6 0}}
 							{{#rollGreater() impzeal 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{impzeal}}SL <span  data-i18n="IMPASSIONED-ZEAL" data-i18n-title="IMPASSIONED-ZEAL-SIT"></span></div>
@@ -36947,7 +37038,7 @@
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{tinker}}SL <span  data-i18n="TINKER" data-i18n-title="TINKER-SIT"></span></div>
 							{{/rollGreater() tinker 0}}
 							{{#rollGreater() trickriding 0}}
-								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{trickriding}}SL <span  data-i18n="TRICK-RIDING" data-i18n-title="TRICK-RIDING-SIT">></span></div>
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{trickriding}}SL <span  data-i18n="TRICK-RIDING" data-i18n-title="TRICK-RIDING-SIT"></span></div>
 							{{/rollGreater() trickriding 0}}
 							{{#rollGreater() tunnelrat 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{tunnelrat}}SL <span  data-i18n="TUNNEL-RAT" data-i18n-title="TUNNEL-RAT-SIT"></span></div>
@@ -37001,7 +37092,7 @@
 								<div class="col-1 pad-l-md pad-r-md rt-effects" style="color: #858585"><span  data-i18n="FIELD-DRESSING" data-i18n-title="FIELD-DRESSING-SIT"></span>: <span  data-i18n="USE-REVERSE-DICE"></span></div>
 							{{/rollGreater() fielddressing 0}}
 							{{#rollGreater() pilot 0}}
-								<div class="col-1 pad-l-md pad-r-md rt-effects" style="color: #858585"><span  data-i18n="PILOT" data-i18n-title="PILOT-SIT">></span>: <span  data-i18n="USE-REVERSE-DICE"></span></div>
+								<div class="col-1 pad-l-md pad-r-md rt-effects" style="color: #858585"><span  data-i18n="PILOT" data-i18n-title="PILOT-SIT"></span>: <span  data-i18n="USE-REVERSE-DICE"></span></div>
 							{{/rollGreater() pilot 0}}
 							{{#RTdualwield}}{{#rollGreater() dualwield 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585"><span  data-i18n="DUAL-WIELDER" data-i18n-title="DUAL-WIELDER-SIT"></span> <span class="chat-button-ripostedmg" style="height: 10px" data-i18n-title="USE-DW" >{{RTdualwield}}</span></div>
@@ -38799,7 +38890,7 @@
 
 
 										{{^noshow}}{{#rollGreater() damaging 0}} {{#rollTotal() tiring 0}}+ </span><span data-i18n="OPPOSED-SL-UD" style="color: #858585; font-size: 10px;"></span>{{/rollTotal() tiring 0}} {{/rollGreater() damaging 0}}
-										{{#rollTotal() damaging 0}}+ </span><span data-i18n="OPPOSED-SL" style="color: #858585; font-size: 11px;">Opposed SL</span>{{/rollTotal() damaging 0}}{{/noshow}}
+										{{#rollTotal() damaging 0}}+ <span data-i18n="OPPOSED-SL" style="color: #858585; font-size: 11px;">Opposed SL</span>{{/rollTotal() damaging 0}}{{/noshow}}
 											</div>
 
 										{{#rollGreater() slayer 0}}
@@ -39081,8 +39172,8 @@
 
 										{{#rollGreater() wod 0}}
 											<div class="row">
-												<div class="col-1 left pad-r-md rt-effects" style="font-size: 10px; padding-left: 5px; text-indent: 0px"" data-i18n="WHIRLWIND-OF-DEATH-DESC"></div>
-												<div class="col-1 left pad-r-md rt-effects" style="font-size: 10px; padding-left: 5px; text-indent: 0px"" data-i18n="WHIRLWIND-OF-DEATH-DESC2"></div>
+												<div class="col-1 left pad-r-md rt-effects" style="font-size: 10px; padding-left: 5px; text-indent: 0px" data-i18n="WHIRLWIND-OF-DEATH-DESC"></div>
+												<div class="col-1 left pad-r-md rt-effects" style="font-size: 10px; padding-left: 5px; text-indent: 0px" data-i18n="WHIRLWIND-OF-DEATH-DESC2"></div>
 											</div>
 										{{/rollGreater() wod 0}}
 
@@ -44280,29 +44371,7 @@ on("change:strengthbonus change:toughnessbonus change:ToughnessAdv change:Toughn
 		wounds = (str + tou*2 + wil + har*tou)*8;
 		lenc = 8;
 		}
-		}
-
-		if(size == 3) {		
-		setAttrs({
-		ShowLarge: 1,
-		Talent_LargeLvl: 1,
-		});
-		} else {		
-		setAttrs({
-		ShowLarge: 0,
-		Talent_LargeLvl: 0,
-		});}			
-
-		if(size == 5) {		
-		setAttrs({
-		ShowSmall: 1,
-		Talent_SmallLvl: 1,
-		});
-		} else {		
-		setAttrs({
-		ShowSmall: 0,
-		Talent_SmallLvl: 0,
-		});}		
+		}	
 		
 		setAttrs({
 		Wounds: wounds,
@@ -47788,7 +47857,7 @@ on('sheet:opened change:repeating_artspecializationr:artspecializationname chang
 
 				var xpout = xptotal;
 				var disp = v[`repeating_artspecializationr_${id}_ArtSpecializationName`];
-				var dispout = '#' + '(' + getTranslationByKey('ART') + ') '  + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ; 
+				var dispout = '#' + getTranslationByKey('ART')+ ' (' + disp + ')'  + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ; 
 
 						output[`repeating_artspecializationr_${id}_ArtSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_artspecializationr_${id}_ArtSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -47823,7 +47892,7 @@ on('sheet:opened change:repeating_entertainspecialization:entertainspecializatio
 
 				var xpout = xptotal;
 				var disp = v[`repeating_entertainspecialization_${id}_EntertainSpecializationName`];
-				var dispout = '#' + '(' + getTranslationByKey('ENTERTAIN') + ') '  + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('ENTERTAIN') + ' (' + disp + ')'  + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 
 						output[`repeating_entertainspecialization_${id}_EntertainSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_entertainspecialization_${id}_EntertainSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -47857,7 +47926,7 @@ on('sheet:opened change:repeating_ridespecialization:ridespecializationname chan
 
 				var xpout = xptotal;
 				var disp = v[`repeating_ridespecialization_${id}_RideSpecializationName`];
-				var dispout = '#' + '(' + getTranslationByKey('RIDE') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('RIDE') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 
 						output[`repeating_ridespecialization_${id}_RideSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_ridespecialization_${id}_RideSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -47891,7 +47960,7 @@ on('sheet:opened change:repeating_stealthspecialization:stealthspecializationnam
 
 				var xpout = xptotal;
 				var disp = v[`repeating_stealthspecialization_${id}_StealthSpecializationName`];
-				var dispout = '#' + '(' + getTranslationByKey('STEALTH') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('STEALTH') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 				
 						output[`repeating_stealthspecialization_${id}_StealthSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_stealthspecialization_${id}_StealthSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -47925,7 +47994,7 @@ on('sheet:opened change:repeating_animaltraining:animaltrainingspecialization ch
 
 				var xpout = xptotal;
 				var disp = v[`repeating_animaltraining_${id}_AnimalTrainingSpecialization`];
-				var dispout = '#' + '(' + getTranslationByKey('ANIMALTRAINING') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('ANIMALTRAINING') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 				
 						output[`repeating_animaltraining_${id}_AnimalTrainingSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_animaltraining_${id}_AnimalTrainingSpecializationDis`] = dispout, setAttrs(output, {silent: true})	
@@ -47958,7 +48027,7 @@ on('sheet:opened change:repeating_language:languagespecialization change:repeati
 
 				var xpout = xptotal;
 				var disp = v[`repeating_language_${id}_LanguageSpecialization`];
-				var dispout = '#' + '(' + getTranslationByKey('LANGUAGE') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('LANGUAGE') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 				
 						output[`repeating_language_${id}_LanguageSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_language_${id}_LanguageSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -47993,7 +48062,7 @@ on('sheet:opened change:repeating_lore:lorespecialization change:repeating_lore:
 
 				var xpout = xptotal;
 				var disp = v[`repeating_lore_${id}_LoreSpecialization`];
-				var dispout = '#' + '(' + getTranslationByKey('LORE') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('LORE') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 				
 						output[`repeating_lore_${id}_LoreSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_lore_${id}_LoreSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -48026,7 +48095,7 @@ on('sheet:opened change:repeating_perform:performspecialization change:repeating
 
 				var xpout = xptotal;
 				var disp = v[`repeating_perform_${id}_PerformSpecialization`];
-				var dispout = '#' + '(' + getTranslationByKey('PERFORM') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('PERFORM') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 				
 						output[`repeating_perform_${id}_PerformSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_perform_${id}_PerformSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -48059,7 +48128,7 @@ on('sheet:opened change:repeating_play:playspecialization change:repeating_play:
 
 				var xpout = xptotal;
 				var disp = v[`repeating_play_${id}_PlaySpecialization`];
-				var dispout = '#' + '(' + getTranslationByKey('PLAY') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('PLAY') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 				
 						output[`repeating_play_${id}_PlaySpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_play_${id}_PlaySpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -48092,7 +48161,7 @@ on('sheet:opened change:repeating_sail:sailspecialization change:repeating_sail:
 
 				var xpout = xptotal;
 				var disp = v[`repeating_sail_${id}_SailSpecialization`];
-				var dispout = '#' + '(' + getTranslationByKey('SAIL') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('SAIL') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 				
 						output[`repeating_sail_${id}_SailSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_sail_${id}_SailSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -48125,7 +48194,7 @@ on('sheet:opened change:repeating_secretsigns:secretsignsspecialization change:r
 
 				var xpout = xptotal;
 				var disp = v[`repeating_secretsigns_${id}_SecretSignsSpecialization`];
-				var dispout = '#' + '(' + getTranslationByKey('SECRETSIGNS') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('SECRETSIGNS') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 				
 						output[`repeating_secretsigns_${id}_SecretSignsSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_secretsigns_${id}_SecretSignsSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -48158,7 +48227,7 @@ on('sheet:opened change:repeating_trade:tradespecialization change:repeating_tra
 
 				var xpout = xptotal;
 				var disp = v[`repeating_trade_${id}_TradeSpecialization`];
-				var dispout = '#' + '(' + getTranslationByKey('TRADE') + ') ' + disp + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
+				var dispout = '#' + getTranslationByKey('TRADE') + ' (' + disp + ')' + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + artxp + ' -'  + ' ' + getTranslationByKey('XP') + ': ' + xptotal  + '  ✥  ' + '#' ;
 				
 						output[`repeating_trade_${id}_TradeSpecializationXP`] = xpout, setAttrs(output, {silent: true})
 						output[`repeating_trade_${id}_TradeSpecializationDis`] = dispout, setAttrs(output, {silent: true})
@@ -48209,7 +48278,7 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			});				
 		});		
 
-	const skills = ['Athletics', 'Bribery', 'Charm', 'CharmAnimal', 'Climb', 'ConsumeAlcohol', 'Cool', 'Dodge', 'Drive', 'Endurance', 'Gamble', 'Gossip', 'Haggle', 'Intimidate', 'Intuition', 'Leadership', 'MeleeBasic', 'MeleeBrawling', 'MeleeCavalry', 'MeleeFencing', 'MeleeFlail', 'MeleeParry', 'MeleePolearm', 'MeleeTwoHanded', 'Navigation', 'OutdoorSurvival', 'Perception', 'Row', 'AnimalCare', 'Augury', 'ChannellingFire', 'ChannellingHeavens', 'ChannellingMetal', 'ChannellingBeasts', 'ChannellingLife', 'ChannellingLight', 'ChannellingDeath', 'ChannellingShadows', 'ChannellingWitch', 'ChannellingDark', 'ChannellingChaos', 'ChannellingGreatMaw', 'ChannellingMisc', 'Evaluate', 'Heal', 'Hypnotism', 'LangMagick', 'Psychometry', 'PickLock', 'Pray', 'RangedBlackpowder', 'RangedBow', 'RangedCrossbow', 'RangedEngineering', 'RangedEntangling', 'RangedExplosives', 'RangedSling', 'RangedThrowing', 'Research', 'Runesmithing', 'SetTrap', 'SleightofHand', 'Swim', 'Track'];
+	const skills = ['Athletics', 'Bribery', 'Charm', 'CharmAnimal', 'Climb', 'ConsumeAlcohol', 'Cool', 'Dodge', 'Drive', 'Endurance', 'Gamble', 'Gossip', 'Haggle', 'Intimidate', 'Intuition', 'Leadership', 'MeleeBasic', 'MeleeBrawling', 'MeleeCavalry', 'MeleeFencing', 'MeleeFlail', 'MeleeParry', 'MeleePolearm', 'MeleeTwoHanded', 'Navigation', 'OutdoorSurvival', 'Perception', 'Row', 'AnimalCare', 'Augury', 'ChannellingFire', 'ChannellingHeavens', 'ChannellingMetal', 'ChannellingBeasts', 'ChannellingLife', 'ChannellingLight', 'ChannellingDeath', 'ChannellingShadows', 'ChannellingHighMagic', 'ChannellingWitch', 'ChannellingDark', 'ChannellingChaos', 'ChannellingGreatMaw', 'ChannellingMisc', 'Evaluate', 'Heal', 'Hypnotism', 'LangMagick', 'Psychometry', 'PickLock', 'Pray', 'RangedBlackpowder', 'RangedBow', 'RangedCrossbow', 'RangedEngineering', 'RangedEntangling', 'RangedExplosives', 'RangedSling', 'RangedThrowing', 'Research', 'Runesmithing', 'SetTrap', 'SleightofHand', 'Swim', 'Track'];
 	
 	skills.forEach(skill => {
 
@@ -48243,13 +48312,13 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 		});
 		});
 			
-	const talents = ['AccurateShot', 'AcuteSense1', 'AcuteSense2', 'AethyricAttunement', 'AlleyCat', 'Ambidextrous', 'AnimalAffinity', 'ArcaneMagic1', 'ArcaneMagic2', 'ArcaneMagic3', 'ArcaneMagic4', 'ArcaneMagic5', 'ArcaneMagic6', 'ArcaneMagic7', 'ArcaneMagic8', 'Argumentative', 'Artistic', 'Attractive', 'BattleRage', 'BeatBlade', 'BeneathNotice', 'BerserkCharge', 'BreakandEnter', 'Blather', 'Bless', 'Bookish', 'Briber', 'Cantor', 'Cardsharp', 'CarefulStrike', 'Carouser', 'Catfall', 'Cattongued', 'Chanty', 'ChaosMagic1', 'ChaosMagic2', 'ChaosMagic3', 'ChaosMagic4', 'CombatAware', 'CombatMaster', 'CombatReflexes', 'CommandingPresence', 'Concoct', 'Contortionist', 'Coolheaded', 'CracktheWhip', 'Craftsman1', 'Craftsman2', 'Craftsman3', 'CrewCommander', 'Criminal', 'DeadeyeShot', 'Dealmaker', 'DetectArtefact', 'Diceman', 'DirtyFighting', 'Disarm', 'Distract', 'Drilled', 'DualWielder', 'Embezzle', 'EnclosedFighter', 'Etiquette1', 'Etiquette2', 'Etiquette3', 'Etiquette4', 'Etiquette5', 'Etiquette6', 'FastHands', 'FastShot', 'Fearless1', 'Fearless2', 'Fearless3', 'Fearless4', 'Feint', 'FieldDressing', 'Fisherman', 'Flagellant', 'Flee', 'FleetFooted', 'Frenzy', 'Frightening', 'FuriousAssault', 'Gregarious', 'Gunner', 'Hardy', 'Hatred1', 'Hatred2', 'Hatred3', 'Hatred4', 'HolyHatred', 'HolyVisions', 'HuntersEye', 'ImpassionedZeal', 'Implacable' , 'Infighter', 'Inspiring', 'InstinctiveDiction', 'Invoke', 'IronJaw', 'IronWill', 'JumpUp', 'Kingpin', 'LightningReflexes', 'Linguistics', 'LipReading', 'Luck', 'MagicalSense', 'MagicalAssistant', 'MagicResistance', 'MagnumOpus', 'Marksman', 'MasterAndCommander', 'MasterOfDisguise', 'MasterOrator', 'MasterTradsman1', 'MasterTradsman2', 'MasterTradsman3', 'Menacing', 'Mimic', 'NightVision', 'NimbleFingers', 'NobleBlood', 'NoseForTrouble', 'Numismatics', 'OldSalt', 'Orientation', 'Panhandle', 'PerfectPitch', 'PettyMagic', 'Pharmacist', 'Pilot', 'PublicSpeaker', 'PureSoul', 'RapidReload', 'ReactionStrike', 'ReadWrite', 'Relentless', 'Resistance1', 'Resistance2', 'Resistance3', 'Resolute', 'Reversal', 'Riposte', 'RiverGuide', 'Robust', 'Roughrider', 'Rover', 'Savant1', 'Savant2', 'Savant3', 'Savvy', 'ScaleSheerSurface', 'Schemer', 'SeaLegs', 'SeasonedTraveller', 'SecondSight', 'SecretIdentity', 'Shadow', 'Sharp', 'Sharpshooter', 'Shieldsman', 'SixthSense', 'Slayer', 'Sniper', 'Speedreader', 'Sprinter', 'StepAside', 'StoneSoup', 'StoutHearted', 'Strider1', 'Strider2', 'Strider3', 'Sprinter', 'StrikeMightyBlow', 'StriketoInjure', 'StriketoStun', 'StrongBack', 'StrongLegs', 'Strongminded', 'StrongSwimmer', 'Sturdy', 'Suave', 'SuffusedWithAqshy', 'SuffusedWithAzyr', 'SuffusedWithChamon', 'SuffusedWithChamon', 'SuffusedWithGhur', 'SuffusedWithGhyran', 'SuffusedWithHysh', 'SuffusedWithShyish', 'SuffusedWithUglu', 'SuperNumerate', 'Supportive', 'SureShot', 'Surgery', 'Tenacious', 'Tinker', 'TowerOfMemories', 'Trapper', 'TrickRiding', 'TunnelRat', 'Unshakable', 'VeryResilient', 'VeryStrong', 'Vice', 'WarLeader', 'WarWizard', 'WarriorBorn', 'Waterman', 'Wealthy', 'Wellprepared', 'Witch', 'AncestralGrudge', 'Bludgeoner', 'Demolisher', 'DragonBelcher', 'Entrenchment', 'Forgefire', 'GloriousDemise', 'Harpooner', 'Kingsguard', 'LiquidFortification', 'LongMemory', 'MagicDefiance', 'MasterRuneMagic', 'Maverick', 'RuneMagic', 'ShortFuse', 'Tireless', 'Underminer', 'WhirlwindofDeath', 'BlessedByIsha', 'BloodOfAenarion', 'CadaiMeditation', 'EyeOfTheStorm', 'HighMagic', 'LileathsBlessing', 'MartialArts', 'MindOverBody', 'SanctuaryOfTheMind ', 'Sworddancing', 'UncouthUranai'];
+	const talents = ['AccurateShot', 'AcuteSense1', 'AcuteSense2', 'AcuteSense3', 'AcuteSense4', 'AcuteSense5', 'AethyricAttunement', 'AlleyCat', 'Ambidextrous', 'AnimalAffinity', 'ArcaneMagic1', 'ArcaneMagic2', 'ArcaneMagic3', 'ArcaneMagic4', 'ArcaneMagic5', 'ArcaneMagic6', 'ArcaneMagic7', 'ArcaneMagic8', 'ArcaneMagic9', 'Argumentative', 'Artistic', 'Attractive', 'BattleRage', 'BeatBlade', 'BeneathNotice', 'BerserkCharge', 'BreakandEnter', 'Blather', 'Bless', 'Bookish', 'Briber', 'Cantor', 'Cardsharp', 'CarefulStrike', 'Carouser', 'Catfall', 'Cattongued', 'Chanty', 'ChaosMagic1', 'ChaosMagic2', 'ChaosMagic3', 'ChaosMagic4', 'CombatAware', 'CombatMaster', 'CombatReflexes', 'CommandingPresence', 'Concoct', 'Contortionist', 'Coolheaded', 'CracktheWhip', 'Craftsman1', 'Craftsman2', 'Craftsman3', 'CrewCommander', 'Criminal', 'DeadeyeShot', 'Dealmaker', 'DetectArtefact', 'Diceman', 'DirtyFighting', 'Disarm', 'Distract', 'Doomed', 'Drilled', 'DualWielder', 'Embezzle', 'EnclosedFighter', 'Etiquette1', 'Etiquette2', 'Etiquette3', 'Etiquette4', 'Etiquette5', 'Etiquette6', 'FastHands', 'FastShot', 'Fearless1', 'Fearless2', 'Fearless3', 'Fearless4', 'Feint', 'FieldDressing', 'Fisherman', 'Flagellant', 'Flee', 'FleetFooted', 'Frenzy', 'Frightening', 'FuriousAssault', 'Gregarious', 'Gunner', 'Hardy', 'Hatred1', 'Hatred2', 'Hatred3', 'Hatred4', 'HolyHatred', 'HolyVisions', 'HuntersEye', 'ImpassionedZeal', 'Implacable' , 'Infighter', 'Inspiring', 'InstinctiveDiction', 'Invoke', 'IronJaw', 'IronWill', 'JumpUp', 'Kingpin', 'LightningReflexes', 'Linguistics', 'LipReading', 'Luck', 'MagicalSense', 'MagicalAssistant', 'MagicResistance', 'MagnumOpus', 'Marksman', 'MasterAndCommander', 'MasterOfDisguise', 'MasterOrator', 'MasterTradsman1', 'MasterTradsman2', 'MasterTradsman3', 'Menacing', 'Mimic', 'NightVision', 'NobleBlood', 'NimbleFingers', 'NobleBlood', 'NoseForTrouble', 'Numismatics', 'OldSalt', 'Orientation', 'Panhandle', 'PerfectPitch', 'PettyMagic', 'Pharmacist', 'Pilot', 'PublicSpeaker', 'PureSoul', 'RapidReload', 'ReactionStrike', 'ReadWrite', 'Relentless', 'Resistance1', 'Resistance2', 'Resistance3', 'Resolute', 'Reversal', 'Riposte', 'RiverGuide', 'Robust', 'Roughrider', 'Rover', 'Savant1', 'Savant2', 'Savant3', 'Savvy', 'ScaleSheerSurface', 'Schemer', 'SeaLegs', 'SeasonedTraveller', 'SecondSight', 'SecretIdentity', 'Shadow', 'Sharp', 'Sharpshooter', 'Shieldsman', 'SixthSense', 'Slayer', 'Sniper', 'Speedreader', 'Sprinter', 'StepAside', 'StoneSoup', 'StoutHearted', 'Strider1', 'Strider2', 'Strider3', 'Sprinter', 'StrikeMightyBlow', 'StriketoInjure', 'StriketoStun', 'StrongBack', 'StrongLegs', 'Strongminded', 'StrongSwimmer', 'Sturdy', 'Suave', 'SuffusedWithAqshy', 'SuffusedWithAzyr', 'SuffusedWithChamon', 'SuffusedWithChamon', 'SuffusedWithGhur', 'SuffusedWithGhyran', 'SuffusedWithHysh', 'SuffusedWithShyish', 'SuffusedWithUglu', 'SuperNumerate', 'Supportive', 'SureShot', 'Surgery', 'Tenacious', 'Tinker', 'TowerOfMemories', 'Trapper', 'TrickRiding', 'TunnelRat', 'Unshakable', 'VeryResilient', 'VeryStrong', 'Vice', 'WarLeader', 'WarWizard', 'WarriorBorn', 'Waterman', 'Wealthy', 'Wellprepared', 'Witch', 'AncestralGrudge', 'Bludgeoner', 'Demolisher', 'DragonBelcher', 'Entrenchment', 'Forgefire', 'GloriousDemise', 'Harpooner', 'Kingsguard', 'LiquidFortification', 'LongMemory', 'MagicDefiance', 'MasterRuneMagic', 'Maverick', 'RuneMagic', 'ShortFuse', 'Tireless', 'Underminer', 'WhirlwindofDeath', 'BlessedByIsha', 'BloodOfAenarion', 'CadaiMeditation', 'EyeOfTheStorm', 'HighMagic', 'LileathsBlessing', 'MartialArts', 'MindOverBody', 'SanctuaryOfTheMind', 'Sworddancing', 'UncouthUranai'];
 	
-	total = 0;	
+	total = 0;
 	
 	talents.forEach(talent => {
 
-		on(`change:Talent_${talent}Lvl`, function (eventInfo) {
+		on(`sheet:opened change:Talent_${talent}Lvl`, function (eventInfo) {
 
 		getAttrs(["sheetcheck",`Talent_${talent}Lvl`], function (v) {
 			var trigger = eventInfo.triggerName;
@@ -48268,6 +48337,7 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 				if ((talxp >= 10) && (talxp <= 10)) { var xptotal = 5500; }		
 				if ((talxp >= 11) && (talxp <= 999)) { var xptotal = 5500; }
 		
+	console.log(talent);
 	console.log(xptotal);
 		setAttrs({
 		[`Talent_${talent}XP`]: xptotal,
@@ -48279,12 +48349,16 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 	talents.forEach(talent => {
 	
 	on(`change:Talent_${talent}XP`, function (eventInfo) {		
+	console.log(talent);
 
-	getAttrs(["sheetcheck", 'Talent_AccurateShotXP', 'Talent_AccurateShotLvl', 'Talent_AcuteSense1XP', 'Talent_AcuteSense1Lvl', 'Talent_AcuteSense1', 'Talent_AcuteSense2XP', 'Talent_AcuteSense2Lvl', 'Talent_AcuteSense2', 'Talent_AethyricAttunementXP', 'Talent_AethyricAttunementLvl', 'Talent_AlleyCatXP', 'Talent_AlleyCatLvl', 'Talent_AmbidextrousXP', 'Talent_AmbidextrousLvl', 'Talent_AnimalAffinityXP', 'Talent_AnimalAffinityLvl', 'Talent_ArcaneMagic1XP', 'Talent_ArcaneMagic1Lvl', 'Talent_ArcaneMagic1', 'Talent_ArcaneMagic2XP', 'Talent_ArcaneMagic2Lvl', 'Talent_ArcaneMagic2', 'Talent_ArcaneMagic3XP', 'Talent_ArcaneMagic3Lvl', 'Talent_ArcaneMagic3', 'Talent_ArcaneMagic4XP', 'Talent_ArcaneMagic4Lvl', 'Talent_ArcaneMagic4', 'Talent_ArcaneMagic5XP', 'Talent_ArcaneMagic5Lvl', 'Talent_ArcaneMagic5', 'Talent_ArcaneMagic6XP', 'Talent_ArcaneMagic6Lvl', 'Talent_ArcaneMagic6', 'Talent_ArcaneMagic7XP', 'Talent_ArcaneMagic7Lvl', 'Talent_ArcaneMagic7', 'Talent_ArcaneMagic8XP', 'Talent_ArcaneMagic8Lvl', 'Talent_ArcaneMagic8', 'Talent_ArgumentativeXP', 'Talent_ArgumentativeLvl', 'Talent_ArtisticXP', 'Talent_ArtisticLvl', 'Talent_AttractiveXP', 'Talent_AttractiveLvl', 'Talent_BattleRageXP', 'Talent_BattleRageLvl', 'Talent_BeneathNoticeXP', 'Talent_BeneathNoticeLvl', 'Talent_BeatBladeXP', 'Talent_BeatBladeLvl', 'Talent_BerserkChargeXP', 'Talent_BerserkChargeLvl', 'Talent_BreakandEnterXP', 'Talent_BreakandEnterLvl', 'Talent_BlatherXP', 'Talent_BlatherLvl', 'Talent_BlessXP', 'Talent_BlessLvl', 'Talent_Bless', 'Talent_BookishXP', 'Talent_BookishLvl', 'Talent_BriberXP', 'Talent_BriberLvl', 'Talent_CardsharpXP', 'Talent_CardsharpLvl', 'Talent_CantorXP', 'Talent_CantorLvl', 'Talent_CarefulStrikeXP', 'Talent_CarefulStrikeLvl', 'Talent_CarouserXP', 'Talent_CarouserLvl', 'Talent_CatfallXP', 'Talent_CatfallLvl', 'Talent_CattonguedXP', 'Talent_CattonguedLvl', 'Talent_ChantyXP', 'Talent_ChantyLvl', 'Talent_ChaosMagic1XP', 'Talent_ChaosMagic1Lvl', 'Talent_ChaosMagic1', 'Talent_ChaosMagic2XP', 'Talent_ChaosMagic2Lvl', 'Talent_ChaosMagic2', 'Talent_ChaosMagic3XP', 'Talent_ChaosMagic3Lvl', 'Talent_ChaosMagic3', 'Talent_ChaosMagic4XP', 'Talent_ChaosMagic4Lvl', 'Talent_ChaosMagic4', 'Talent_CombatAwareXP', 'Talent_CombatAwareLvl', 'Talent_CombatMasterXP', 'Talent_CombatMasterLvl', 'Talent_CombatReflexesXP', 'Talent_CombatReflexesLvl', 'Talent_CommandingPresenceXP', 'Talent_CommandingPresenceLvl', 'Talent_ConcoctXP', 'Talent_ConcoctLvl', 'Talent_ContortionistXP', 'Talent_ContortionistLvl', 'Talent_CoolheadedXP', 'Talent_CoolheadedLvl', 'Talent_CracktheWhipXP', 'Talent_CracktheWhipLvl', 'Talent_Craftsman1XP', 'Talent_Craftsman1Lvl', 'Talent_Craftsman1', 'Talent_Craftsman2XP', 'Talent_Craftsman2Lvl', 'Talent_Craftsman2', 'Talent_Craftsman3XP', 'Talent_Craftsman3Lvl', 'Talent_Craftsman3', 'Talent_CrewCommanderXP', 'Talent_CrewCommanderLvl', 'Talent_CriminalXP', 'Talent_CriminalLvl', 'Talent_DeadeyeShotXP', 'Talent_DeadeyeShotLvl', 'Talent_DealmakerXP', 'Talent_DealmakerLvl', 'Talent_DetectArtefactXP', 'Talent_DetectArtefactLvl', 'Talent_DicemanXP', 'Talent_DicemanLvl', 'Talent_DirtyFightingXP', 'Talent_DirtyFightingLvl', 'Talent_DisarmXP', 'Talent_DisarmLvl', 'Talent_DistractXP', 'Talent_DistractLvl', 'Talent_DrilledXP', 'Talent_DrilledLvl', 'Talent_DualWielderXP', 'Talent_DualWielderLvl', 'Talent_EmbezzleXP', 'Talent_EmbezzleLvl', 'Talent_EnclosedFighterXP', 'Talent_EnclosedFighterLvl', 'Talent_Etiquette1XP', 'Talent_Etiquette1Lvl', 'Talent_Etiquette2XP', 'Talent_Etiquette2Lvl', 'Talent_Etiquette3XP', 'Talent_Etiquette3Lvl', 'Talent_Etiquette4XP', 'Talent_Etiquette4Lvl', 'Talent_Etiquette5XP', 'Talent_Etiquette5Lvl', 'Talent_Etiquette6XP', 'Talent_Etiquette6Lvl', 'Talent_FastHandsXP', 'Talent_FastHandsLvl', 'Talent_FastShotXP', 'Talent_FastShotLvl', 'Talent_Fearless1XP', 'Talent_Fearless1Lvl', 'Talent_Fearless2XP', 'Talent_Fearless2Lvl', 'Talent_Fearless3XP', 'Talent_Fearless3Lvl', 'Talent_Fearless4XP', 'Talent_Fearless4Lvl', 'Talent_FeintXP', 'Talent_FeintLvl', 'Talent_FieldDressingXP', 'Talent_FieldDressingLvl', 'Talent_FishermanXP', 'Talent_FishermanLvl', 'Talent_FlagellantXP', 'Talent_FlagellantLvl', 'Talent_FleeXP', 'Talent_FleeLvl', 'Talent_FleetFootedXP', 'Talent_FleetFootedLvl', 'Talent_FrenzyXP', 'Talent_FrenzyLvl', 'Talent_FrighteningXP', 'Talent_FrighteningLvl', 'Talent_FuriousAssaultXP', 'Talent_FuriousAssaultLvl', 'Talent_GregariousXP', 'Talent_GregariousLvl', 'Talent_GunnerXP', 'Talent_GunnerLvl', 'Talent_HardyXP', 'Talent_HardyLvl', 'Talent_Hatred1XP', 'Talent_Hatred1Lvl', 'Talent_Hatred2XP', 'Talent_Hatred2Lvl', 'Talent_Hatred3XP', 'Talent_Hatred3Lvl', 'Talent_Hatred4XP', 'Talent_Hatred4Lvl', 'Talent_HolyHatredXP', 'Talent_HolyHatredLvl', 'Talent_HolyVisionsXP', 'Talent_HolyVisionsLvl', 'Talent_HuntersEyeXP', 'Talent_HuntersEyeLvl', 'Talent_ImpassionedZealXP', 'Talent_ImpassionedZealLvl', 'Talent_ImplacableXP', 'Talent_ImplacableLvl', 'Talent_InfighterXP', 'Talent_InfighterLvl', 'Talent_InspiringXP', 'Talent_InspiringLvl', 'Talent_InstinctiveDictionXP', 'Talent_InstinctiveDictionLvl', 'Talent_InvokeXP', 'Talent_InvokeLvl', 'Talent_Invoke', 'Talent_IronJawLvl', 'Talent_IronJawXP', 'Talent_IronWillLvl', 'Talent_IronWillXP', 'Talent_JumpUpXP', 'Talent_JumpUpLvl', 'Talent_KingpinXP', 'Talent_KingpinLvl', 'Talent_LightningReflexesXP', 'Talent_LightningReflexesLvl', 'Talent_LinguisticsXP', 'Talent_LinguisticsLvl', 'Talent_LipReadingXP', 'Talent_LipReadingLvl', 'Talent_LuckXP', 'Talent_LuckLvl', 'Talent_MagicalSenseXP', 'Talent_MagicalSenseLvl', 'Talent_MagicalAssistantXP', 'Talent_MagicalAssistantLvl', 'Talent_MagicResistanceXP', 'Talent_MagicResistanceLvl', 'Talent_MagnumOpusXP', 'Talent_MagnumOpusLvl', 'Talent_MarksmanXP', 'Talent_MarksmanLvl', 'Talent_MasterAndCommanderXP', 'Talent_MasterOfDisguiseXP', 'Talent_MasterOfDisguiseLvl', 'Talent_MasterOratorXP', 'Talent_MasterOratorLvl', 'Talent_MasterTradesman1XP', 'Talent_MasterTradesman1Lvl', 'Talent_MasterTradesman2XP', 'Talent_MasterTradesman2Lvl', 'Talent_MasterTradesman3XP', 'Talent_MasterTradesman3Lvl', 'Talent_MenacingXP', 'Talent_MenacingLvl', 'Talent_MimicXP', 'Talent_MimicLvl', 'Talent_NightVisionXP', 'Talent_NightVisionLvl', 'Talent_NimbleFingersXP', 'Talent_NimbleFingersLvl', 'Talent_NobleBloodXP', 'Talent_NobleBloodLvl', 'Talent_NoseForTroubleXP', 'Talent_NoseForTroubleLvl', 'Talent_NumismaticsXP', 'Talent_NumismaticsLvl', 'Talent_OldSaltXP', 'Talent_OldSaltLvl', 'Talent_OrientationXP', 'Talent_OrientationLvl', 'Talent_PanhandleXP', 'Talent_PanhandleLvl', 'Talent_PerfectPitchXP', 'Talent_PerfectPitchLvl', 'Talent_PettyMagicXP', 'Talent_PettyMagicLvl', 'Talent_PharmacistXP', 'Talent_PharmacistLvl', 'Talent_PilotXP', 'Talent_PilotLvl', 'Talent_PublicSpeakerXP', 'Talent_PublicSpeakerLvl', 'Talent_PureSoulXP', 'Talent_PureSoulLvl', 'Talent_RapidReloadXP', 'Talent_RapidReloadLvl', 'Talent_ReactionStrikeXP', 'Talent_ReactionStrikeLvl', 'Talent_ReadWriteXP', 'Talent_ReadWriteLvl', 'Talent_RelentlessXP', 'Talent_RelentlessLvl', 'Talent_Resistance1XP', 'Talent_Resistance1Lvl', 'Talent_Resistance1', 'Talent_Resistance2XP', 'Talent_Resistance2Lvl', 'Talent_Resistance2', 'Talent_Resistance3XP', 'Talent_Resistance3Lvl', 'Talent_Resistance3', 'Talent_ResoluteXP', 'Talent_ResoluteLvl', 'Talent_ReversalXP', 'Talent_ReversalLvl', 'Talent_RiposteXP', 'Talent_RiposteLvl', 'Talent_RiverGuideXP', 'Talent_RiverGuideLvl', 'Talent_RobustXP', 'Talent_RobustLvl', 'Talent_RoughriderXP', 'Talent_RoughriderLvl', 'Talent_RoverXP', 'Talent_RoverLvl', 'Talent_Savant1XP', 'Talent_Savant1Lvl', 'Talent_Savant2XP', 'Talent_Savant2Lvl', 'Talent_Savant3XP', 'Talent_Savant3Lvl', 'Talent_SavvyXP', 'Talent_SavvyLvl', 'Talent_ScaleSheerSurfaceXP', 'Talent_ScaleSheerSurfaceLvl', 'Talent_SchemerXP', 'Talent_SchemerLvl', 'Talent_SeaLegsXP', 'Talent_SeaLegsLvl', 'Talent_SeasonedTravellerXP', 'Talent_SeasonedTravellerLvl', 'Talent_SecondSightXP', 'Talent_SecondSightLvl', 'Talent_SecretIdentityXP', 'Talent_SecretIdentityLvl', 'Talent_ShadowXP', 'Talent_ShadowLvl', 'Talent_SharpXP', 'Talent_SharpLvl', 'Talent_SharpshooterXP', 'Talent_SharpshooterLvl', 'Talent_ShieldsmanXP', 'Talent_ShieldsmanLvl', 'Talent_SixthSenseXP', 'Talent_SixthSenseLvl', 'Talent_SlayerXP', 'Talent_SlayerLvl', 'Talent_SniperXP', 'Talent_SniperLvl', 'Talent_SpeedreaderXP', 'Talent_SpeedreaderLvl', 'Talent_SprinterXP', 'Talent_SprinterLvl', 'Talent_StepAsideXP', 'Talent_StepAsideLvl', 'Talent_StoneSoupXP', 'Talent_StoneSoupLvl', 'Talent_StoutHeartedXP', 'Talent_StoutHeartedLvl', 'Talent_Strider1XP', 'Talent_Strider1Lvl', 'Talent_Strider2XP', 'Talent_Strider2Lvl', 'Talent_Strider3XP', 'Talent_Strider3Lvl', 'Talent_StrikeMightyBlowXP', 'Talent_StrikeMightyBlowLvl', 'Talent_StriketoInjureXP', 'Talent_StriketoInjureLvl', 'Talent_StriketoStunXP', 'Talent_StriketoStunLvl', 'Talent_StrongBackXP', 'Talent_StrongBackLvl', 'Talent_StrongLegsXP', 'Talent_StrongLegsLvl', 'Talent_StrongmindedXP', 'Talent_StrongmindedLvl', 'Talent_StrongSwimmerXP', 'Talent_StrongSwimmerLvl', 'Talent_SturdyXP', 'Talent_SturdyLvl', 'Talent_SuaveXP', 'Talent_SuaveLvl', 'Talent_SuffusedWithAqshyXP', 'Talent_SuffusedWithAqshyLvl', 'Talent_SuffusedWithAzyrXP', 'Talent_SuffusedWithAzyrLvl', 'Talent_SuffusedWithChamonXP', 'Talent_SuffusedWithChamonLvl', 'Talent_SuffusedWithGhurXP', 'Talent_SuffusedWithGhurLvl', 'Talent_SuffusedWithGhyranXP', 'Talent_SuffusedWithGhyranLvl', 'Talent_SuffusedWithHyshXP', 'Talent_SuffusedWithHyshLvl', 'Talent_SuffusedWithShyishXP', 'Talent_SuffusedWithShyishLvl', 'Talent_SuffusedWithUgluXP', 'Talent_SuffusedWithUgluLvl', 'Talent_SuperNumerateXP', 'Talent_SuperNumerateLvl', 'Talent_SupportiveXP', 'Talent_SupportiveLvl', 'Talent_SureShotXP', 'Talent_SureShotLvl', 'Talent_SurgeryXP', 'Talent_SurgeryLvl', 'Talent_TenaciousXP', 'Talent_TenaciousLvl', 'Talent_TinkerXP', 'Talent_TinkerLvl', 'Talent_TowerOfMemoriesXP', 'Talent_TowerOfMemoriesLvl', 'Talent_TrapperXP', 'Talent_TrapperLvl', 'Talent_TrickRidingXP', 'Talent_TrickRidingLvl', 'Talent_TunnelRatXP', 'Talent_TunnelRatLvl', 'Talent_UnshakableXP', 'Talent_UnshakableLvl', 'Talent_VeryResilientXP', 'Talent_VeryResilientLvl', 'Talent_VeryStrongXP', 'Talent_VeryStrongLvl', 'Talent_ViceXP', 'Talent_ViceLvl', 'Talent_WarLeaderXP', 'Talent_WarLeaderLvl', 'Talent_WarWizardXP', 'Talent_WarWizardLvl', 'Talent_WarriorBornXP', 'Talent_WarriorBornLvl', 'Talent_WatermanXP', 'Talent_WatermanLvl', 'Talent_WealthyXP', 'Talent_WealthyLvl', 'Talent_WellpreparedXP', 'Talent_WellpreparedLvl', 'Talent_WitchXP', 'Talent_WitchLvl', 'Talent_AncestralGrudgeXP', 'Talent_BludgeonerXP', 'Talent_DemolisherXP', 'Talent_DragonBelcherXP', 'Talent_EntrenchmentXP', 'Talent_ForgefireXP', 'Talent_GloriousDemiseXP', 'Talent_HarpoonerXP', 'Talent_KingsguardXP', 'Talent_LiquidFortificationXP', 'Talent_LongMemoryXP', 'Talent_MagicDefianceXP', 'Talent_MasterRuneMagicXP', 'Talent_MaverickXP', 'Talent_RuneMagicXP', 'Talent_ShortFuseXP', 'Talent_TirelessXP', 'Talent_UnderminerXP', 'Talent_WhirlwindofDeathXP', 'Talent_BlessedByIshaXP', 'Talent_BloodOfAenarionXP', 'Talent_CadaiMeditationXP', 'Talent_EyeOfTheStormXP', 'Talent_HighMagicXP', 'Talent_LileathsBlessingXP', 'Talent_MartialArtsXP', 'Talent_MindOverBodyXP', 'Talent_SanctuaryOfTheMindXP', 'Talent_SworddancingXP', 'Talent_UncouthUranaiXP', 'Talent_AncestralGrudgeLvl', 'Talent_BludgeonerLvl', 'Talent_DemolisherLvl', 'Talent_DragonBelcherLvl', 'Talent_EntrenchmentLvl', 'Talent_ForgefireLvl', 'Talent_GloriousDemiseLvl', 'Talent_HarpoonerLvl', 'Talent_KingsguardLvl', 'Talent_LiquidFortificationLvl', 'Talent_LongMemoryLvl', 'Talent_MagicDefianceLvl', 'Talent_MasterRuneMagicLvl', 'Talent_MaverickLvl', 'Talent_RuneMagicLvl', 'Talent_ShortFuseLvl', 'Talent_TirelessLvl', 'Talent_UnderminerLvl', 'Talent_WhirlwindofDeathLvl', 'Talent_BlessedByIshaLvl', 'Talent_BloodOfAenarionLvl', 'Talent_CadaiMeditationLvl', 'Talent_EyeOfTheStormLvl', 'Talent_HighMagicLvl', 'Talent_LileathsBlessingLvl', 'Talent_MartialArtsLvl', 'Talent_MindOverBodyLvl', 'Talent_SanctuaryOfTheMindLvl', 'Talent_SworddancingLvl', 'Talent_UncouthUranaiLvl'], function (v) {
+	getAttrs(["sheetcheck", 'Talent_AccurateShotXP', 'Talent_AccurateShotLvl', 'Talent_AcuteSense1XP', 'Talent_AcuteSense1Lvl', 'Talent_AcuteSense1', 'Talent_AcuteSense2XP', 'Talent_AcuteSense2Lvl', 'Talent_AcuteSense2', 'Talent_AcuteSense3XP', 'Talent_AcuteSense3Lvl', 'Talent_AcuteSense3', 'Talent_AcuteSense4XP', 'Talent_AcuteSense4Lvl', 'Talent_AcuteSense4', 'Talent_AcuteSense5XP', 'Talent_AcuteSense5Lvl', 'Talent_AcuteSense5', 'Talent_AethyricAttunementXP', 'Talent_AethyricAttunementLvl', 'Talent_AlleyCatXP', 'Talent_AlleyCatLvl', 'Talent_AmbidextrousXP', 'Talent_AmbidextrousLvl', 'Talent_AnimalAffinityXP', 'Talent_AnimalAffinityLvl', 'Talent_ArcaneMagic1XP', 'Talent_ArcaneMagic1Lvl', 'Talent_ArcaneMagic1', 'Talent_ArcaneMagic2XP', 'Talent_ArcaneMagic2Lvl', 'Talent_ArcaneMagic2', 'Talent_ArcaneMagic3XP', 'Talent_ArcaneMagic3Lvl', 'Talent_ArcaneMagic3', 'Talent_ArcaneMagic4XP', 'Talent_ArcaneMagic4Lvl', 'Talent_ArcaneMagic4', 'Talent_ArcaneMagic5XP', 'Talent_ArcaneMagic5Lvl', 'Talent_ArcaneMagic5', 'Talent_ArcaneMagic6XP', 'Talent_ArcaneMagic6Lvl', 'Talent_ArcaneMagic6', 'Talent_ArcaneMagic7XP', 'Talent_ArcaneMagic7Lvl', 'Talent_ArcaneMagic7', 'Talent_ArcaneMagic8XP', 'Talent_ArcaneMagic8Lvl', 'Talent_ArcaneMagic8', 'Talent_ArcaneMagic9XP', 'Talent_ArcaneMagic9Lvl', 'Talent_ArcaneMagic9', 'Talent_ArgumentativeXP', 'Talent_ArgumentativeLvl', 'Talent_ArtisticXP', 'Talent_ArtisticLvl', 'Talent_AttractiveXP', 'Talent_AttractiveLvl', 'Talent_BattleRageXP', 'Talent_BattleRageLvl', 'Talent_BeneathNoticeXP', 'Talent_BeneathNoticeLvl', 'Talent_BeatBladeXP', 'Talent_BeatBladeLvl', 'Talent_BerserkChargeXP', 'Talent_BerserkChargeLvl', 'Talent_BreakandEnterXP', 'Talent_BreakandEnterLvl', 'Talent_BlatherXP', 'Talent_BlatherLvl', 'Talent_BlessXP', 'Talent_BlessLvl', 'Talent_Bless', 'Talent_BookishXP', 'Talent_BookishLvl', 'Talent_BriberXP', 'Talent_BriberLvl', 'Talent_CardsharpXP', 'Talent_CardsharpLvl', 'Talent_CantorXP', 'Talent_CantorLvl', 'Talent_CarefulStrikeXP', 'Talent_CarefulStrikeLvl', 'Talent_CarouserXP', 'Talent_CarouserLvl', 'Talent_CatfallXP', 'Talent_CatfallLvl', 'Talent_CattonguedXP', 'Talent_CattonguedLvl', 'Talent_ChantyXP', 'Talent_ChantyLvl', 'Talent_ChaosMagic1XP', 'Talent_ChaosMagic1Lvl', 'Talent_ChaosMagic1', 'Talent_ChaosMagic2XP', 'Talent_ChaosMagic2Lvl', 'Talent_ChaosMagic2', 'Talent_ChaosMagic3XP', 'Talent_ChaosMagic3Lvl', 'Talent_ChaosMagic3', 'Talent_ChaosMagic4XP', 'Talent_ChaosMagic4Lvl', 'Talent_ChaosMagic4', 'Talent_CombatAwareXP', 'Talent_CombatAwareLvl', 'Talent_CombatMasterXP', 'Talent_CombatMasterLvl', 'Talent_CombatReflexesXP', 'Talent_CombatReflexesLvl', 'Talent_CommandingPresenceXP', 'Talent_CommandingPresenceLvl', 'Talent_ConcoctXP', 'Talent_ConcoctLvl', 'Talent_ContortionistXP', 'Talent_ContortionistLvl', 'Talent_CoolheadedXP', 'Talent_CoolheadedLvl', 'Talent_CracktheWhipXP', 'Talent_CracktheWhipLvl', 'Talent_Craftsman1XP', 'Talent_Craftsman1Lvl', 'Talent_Craftsman1', 'Talent_Craftsman2XP', 'Talent_Craftsman2Lvl', 'Talent_Craftsman2', 'Talent_Craftsman3XP', 'Talent_Craftsman3Lvl', 'Talent_Craftsman3', 'Talent_CrewCommanderXP', 'Talent_CrewCommanderLvl', 'Talent_CriminalXP', 'Talent_CriminalLvl', 'Talent_DeadeyeShotXP', 'Talent_DeadeyeShotLvl', 'Talent_DealmakerXP', 'Talent_DealmakerLvl', 'Talent_DetectArtefactXP', 'Talent_DetectArtefactLvl', 'Talent_DicemanXP', 'Talent_DicemanLvl', 'Talent_DirtyFightingXP', 'Talent_DirtyFightingLvl', 'Talent_DisarmXP', 'Talent_DisarmLvl', 'Talent_DistractXP', 'Talent_DistractLvl', 'Talent_DoomedXP', 'Talent_DoomedLvl', 'Talent_DrilledXP', 'Talent_DrilledLvl', 'Talent_DualWielderXP', 'Talent_DualWielderLvl', 'Talent_EmbezzleXP', 'Talent_EmbezzleLvl', 'Talent_EnclosedFighterXP', 'Talent_EnclosedFighterLvl', 'Talent_Etiquette1XP', 'Talent_Etiquette1Lvl', 'Talent_Etiquette1', 'Talent_Etiquette2XP', 'Talent_Etiquette2Lvl', 'Talent_Etiquette2', 'Talent_Etiquette3XP', 'Talent_Etiquette3Lvl', 'Talent_Etiquette3', 'Talent_Etiquette4XP', 'Talent_Etiquette4Lvl', 'Talent_Etiquette4', 'Talent_Etiquette5XP', 'Talent_Etiquette5Lvl', 'Talent_Etiquette5', 'Talent_Etiquette6XP', 'Talent_Etiquette6Lvl', 'Talent_Etiquette6', 'Talent_FastHandsXP', 'Talent_FastHandsLvl', 'Talent_FastShotXP', 'Talent_FastShotLvl', 'Talent_Fearless1XP', 'Talent_Fearless1Lvl', 'Talent_Fearless1', 'Talent_Fearless2XP', 'Talent_Fearless2Lvl', 'Talent_Fearless2', 'Talent_Fearless3XP', 'Talent_Fearless3Lvl', 'Talent_Fearless3', 'Talent_Fearless4XP', 'Talent_Fearless4Lvl', 'Talent_Fearless4', 'Talent_FeintXP', 'Talent_FeintLvl', 'Talent_FieldDressingXP', 'Talent_FieldDressingLvl', 'Talent_FishermanXP', 'Talent_FishermanLvl', 'Talent_FlagellantXP', 'Talent_FlagellantLvl', 'Talent_FleeXP', 'Talent_FleeLvl', 'Talent_FleetFootedXP', 'Talent_FleetFootedLvl', 'Talent_FrenzyXP', 'Talent_FrenzyLvl', 'Talent_FrighteningXP', 'Talent_FrighteningLvl', 'Talent_FuriousAssaultXP', 'Talent_FuriousAssaultLvl', 'Talent_GregariousXP', 'Talent_GregariousLvl', 'Talent_GunnerXP', 'Talent_GunnerLvl', 'Talent_HardyXP', 'Talent_HardyLvl', 'Talent_Hatred1XP', 'Talent_Hatred1Lvl', 'Talent_Hatred1', 'Talent_Hatred2XP', 'Talent_Hatred2Lvl', 'Talent_Hatred2', 'Talent_Hatred3XP', 'Talent_Hatred3Lvl', 'Talent_Hatred3', 'Talent_Hatred4XP', 'Talent_Hatred4Lvl', 'Talent_Hatred4', 'Talent_HolyHatredXP', 'Talent_HolyHatredLvl', 'Talent_HolyVisionsXP', 'Talent_HolyVisionsLvl', 'Talent_HuntersEyeXP', 'Talent_HuntersEyeLvl', 'Talent_ImpassionedZealXP', 'Talent_ImpassionedZealLvl', 'Talent_ImplacableXP', 'Talent_ImplacableLvl', 'Talent_InfighterXP', 'Talent_InfighterLvl', 'Talent_InspiringXP', 'Talent_InspiringLvl', 'Talent_InstinctiveDictionXP', 'Talent_InstinctiveDictionLvl', 'Talent_InvokeXP', 'Talent_InvokeLvl', 'Talent_Invoke', 'Talent_IronJawLvl', 'Talent_IronJawXP', 'Talent_IronWillLvl', 'Talent_IronWillXP', 'Talent_JumpUpXP', 'Talent_JumpUpLvl', 'Talent_KingpinXP', 'Talent_KingpinLvl', 'Talent_LightningReflexesXP', 'Talent_LightningReflexesLvl', 'Talent_LinguisticsXP', 'Talent_LinguisticsLvl', 'Talent_LipReadingXP', 'Talent_LipReadingLvl', 'Talent_LuckXP', 'Talent_LuckLvl', 'Talent_MagicalSenseXP', 'Talent_MagicalSenseLvl', 'Talent_MagicalAssistantXP', 'Talent_MagicalAssistantLvl', 'Talent_MagicResistanceXP', 'Talent_MagicResistanceLvl', 'Talent_MagnumOpusXP', 'Talent_MagnumOpusLvl', 'Talent_MarksmanXP', 'Talent_MarksmanLvl', 'Talent_MasterAndCommanderXP', 'Talent_MasterAndCommanderLvl', 'Talent_MasterOfDisguiseXP', 'Talent_MasterOfDisguiseLvl', 'Talent_MasterOratorXP', 'Talent_MasterOratorLvl', 'Talent_MasterTradesman1XP', 'Talent_MasterTradesman1Lvl', 'Talent_MasterTradesman1', 'Talent_MasterTradesman2XP', 'Talent_MasterTradesman2Lvl', 'Talent_MasterTradesman2', 'Talent_MasterTradesman3XP', 'Talent_MasterTradesman3Lvl', 'Talent_MasterTradesman3', 'Talent_MenacingXP', 'Talent_MenacingLvl', 'Talent_MimicXP', 'Talent_MimicLvl', 'Talent_NightVisionXP', 'Talent_NightVisionLvl', 'Talent_NobleBloodXP', 'Talent_NobleBloodLvl', 'Talent_NimbleFingersXP', 'Talent_NimbleFingersLvl', 'Talent_NobleBloodXP', 'Talent_NobleBloodLvl', 'Talent_NoseForTroubleXP', 'Talent_NoseForTroubleLvl', 'Talent_NumismaticsXP', 'Talent_NumismaticsLvl', 'Talent_OldSaltXP', 'Talent_OldSaltLvl', 'Talent_OrientationXP', 'Talent_OrientationLvl', 'Talent_PanhandleXP', 'Talent_PanhandleLvl', 'Talent_PerfectPitchXP', 'Talent_PerfectPitchLvl', 'Talent_PettyMagicXP', 'Talent_PettyMagicLvl', 'Talent_PharmacistXP', 'Talent_PharmacistLvl', 'Talent_PilotXP', 'Talent_PilotLvl', 'Talent_PublicSpeakerXP', 'Talent_PublicSpeakerLvl', 'Talent_PureSoulXP', 'Talent_PureSoulLvl', 'Talent_RapidReloadXP', 'Talent_RapidReloadLvl', 'Talent_ReactionStrikeXP', 'Talent_ReactionStrikeLvl', 'Talent_ReadWriteXP', 'Talent_ReadWriteLvl', 'Talent_RelentlessXP', 'Talent_RelentlessLvl', 'Talent_Resistance1XP', 'Talent_Resistance1Lvl', 'Talent_Resistance1', 'Talent_Resistance2XP', 'Talent_Resistance2Lvl', 'Talent_Resistance2', 'Talent_Resistance3XP', 'Talent_Resistance3Lvl', 'Talent_Resistance3', 'Talent_ResoluteXP', 'Talent_ResoluteLvl', 'Talent_ReversalXP', 'Talent_ReversalLvl', 'Talent_RiposteXP', 'Talent_RiposteLvl', 'Talent_RiverGuideXP', 'Talent_RiverGuideLvl', 'Talent_RobustXP', 'Talent_RobustLvl', 'Talent_RoughriderXP', 'Talent_RoughriderLvl', 'Talent_RoverXP', 'Talent_RoverLvl', 'Talent_Savant1XP', 'Talent_Savant1Lvl', 'Talent_Savant1', 'Talent_Savant2XP', 'Talent_Savant2Lvl', 'Talent_Savant2', 'Talent_Savant3XP', 'Talent_Savant3Lvl', 'Talent_Savant3', 'Talent_SavvyXP', 'Talent_SavvyLvl', 'Talent_ScaleSheerSurfaceXP', 'Talent_ScaleSheerSurfaceLvl', 'Talent_SchemerXP', 'Talent_SchemerLvl', 'Talent_SeaLegsXP', 'Talent_SeaLegsLvl', 'Talent_SeasonedTravellerXP', 'Talent_SeasonedTravellerLvl', 'Talent_SecondSightXP', 'Talent_SecondSightLvl', 'Talent_SecretIdentityXP', 'Talent_SecretIdentityLvl', 'Talent_ShadowXP', 'Talent_ShadowLvl', 'Talent_SharpXP', 'Talent_SharpLvl', 'Talent_SharpshooterXP', 'Talent_SharpshooterLvl', 'Talent_ShieldsmanXP', 'Talent_ShieldsmanLvl', 'Talent_SixthSenseXP', 'Talent_SixthSenseLvl', 'Talent_SlayerXP', 'Talent_SlayerLvl', 'Talent_SniperXP', 'Talent_SniperLvl', 'Talent_SpeedreaderXP', 'Talent_SpeedreaderLvl', 'Talent_SprinterXP', 'Talent_SprinterLvl', 'Talent_StepAsideXP', 'Talent_StepAsideLvl', 'Talent_StoneSoupXP', 'Talent_StoneSoupLvl', 'Talent_StoutHeartedXP', 'Talent_StoutHeartedLvl', 'Talent_Strider1XP', 'Talent_Strider1Lvl', 'Talent_Strider1', 'Talent_Strider2XP', 'Talent_Strider2Lvl', 'Talent_Strider2', 'Talent_Strider3XP', 'Talent_Strider3Lvl', 'Talent_Strider3', 'Talent_StrikeMightyBlowXP', 'Talent_StrikeMightyBlowLvl', 'Talent_StriketoInjureXP', 'Talent_StriketoInjureLvl', 'Talent_StriketoStunXP', 'Talent_StriketoStunLvl', 'Talent_StrongBackXP', 'Talent_StrongBackLvl', 'Talent_StrongLegsXP', 'Talent_StrongLegsLvl', 'Talent_StrongmindedXP', 'Talent_StrongmindedLvl', 'Talent_StrongSwimmerXP', 'Talent_StrongSwimmerLvl', 'Talent_SturdyXP', 'Talent_SturdyLvl', 'Talent_SuaveXP', 'Talent_SuaveLvl', 'Talent_SuffusedWithAqshyXP', 'Talent_SuffusedWithAqshyLvl', 'Talent_SuffusedWithAzyrXP', 'Talent_SuffusedWithAzyrLvl', 'Talent_SuffusedWithChamonXP', 'Talent_SuffusedWithChamonLvl', 'Talent_SuffusedWithGhurXP', 'Talent_SuffusedWithGhurLvl', 'Talent_SuffusedWithGhyranXP', 'Talent_SuffusedWithGhyranLvl', 'Talent_SuffusedWithHyshXP', 'Talent_SuffusedWithHyshLvl', 'Talent_SuffusedWithShyishXP', 'Talent_SuffusedWithShyishLvl', 'Talent_SuffusedWithUgluXP', 'Talent_SuffusedWithUgluLvl', 'Talent_SuperNumerateXP', 'Talent_SuperNumerateLvl', 'Talent_SupportiveXP', 'Talent_SupportiveLvl', 'Talent_SureShotXP', 'Talent_SureShotLvl', 'Talent_SurgeryXP', 'Talent_SurgeryLvl', 'Talent_TenaciousXP', 'Talent_TenaciousLvl', 'Talent_TinkerXP', 'Talent_TinkerLvl', 'Talent_TowerOfMemoriesXP', 'Talent_TowerOfMemoriesLvl', 'Talent_TrapperXP', 'Talent_TrapperLvl', 'Talent_TrickRidingXP', 'Talent_TrickRidingLvl', 'Talent_TunnelRatXP', 'Talent_TunnelRatLvl', 'Talent_UnshakableXP', 'Talent_UnshakableLvl', 'Talent_VeryResilientXP', 'Talent_VeryResilientLvl', 'Talent_VeryStrongXP', 'Talent_VeryStrongLvl', 'Talent_ViceXP', 'Talent_ViceLvl', 'Talent_WarLeaderXP', 'Talent_WarLeaderLvl', 'Talent_WarWizardXP', 'Talent_WarWizardLvl', 'Talent_WarriorBornXP', 'Talent_WarriorBornLvl', 'Talent_WatermanXP', 'Talent_WatermanLvl', 'Talent_WealthyXP', 'Talent_WealthyLvl', 'Talent_WellpreparedXP', 'Talent_WellpreparedLvl', 'Talent_WitchXP', 'Talent_WitchLvl', 'Talent_AncestralGrudgeXP', 'Talent_BludgeonerXP', 'Talent_DemolisherXP', 'Talent_DragonBelcherXP', 'Talent_EntrenchmentXP', 'Talent_ForgefireXP', 'Talent_GloriousDemiseXP', 'Talent_HarpoonerXP', 'Talent_KingsguardXP', 'Talent_LiquidFortificationXP', 'Talent_LongMemoryXP', 'Talent_MagicDefianceXP', 'Talent_MasterRuneMagicXP', 'Talent_MaverickXP', 'Talent_RuneMagicXP', 'Talent_ShortFuseXP', 'Talent_TirelessXP', 'Talent_UnderminerXP', 'Talent_WhirlwindofDeathXP', 'Talent_BlessedByIshaXP', 'Talent_BloodOfAenarionXP', 'Talent_CadaiMeditationXP', 'Talent_EyeOfTheStormXP', 'Talent_HighMagicXP', 'Talent_LileathsBlessingXP', 'Talent_MartialArtsXP', 'Talent_MindOverBodyXP', 'Talent_SanctuaryOfTheMindXP', 'Talent_SworddancingXP', 'Talent_UncouthUranaiXP', 'Talent_AncestralGrudgeLvl', 'Talent_BludgeonerLvl', 'Talent_DemolisherLvl', 'Talent_DragonBelcherLvl', 'Talent_EntrenchmentLvl', 'Talent_ForgefireLvl', 'Talent_GloriousDemiseLvl', 'Talent_HarpoonerLvl', 'Talent_KingsguardLvl', 'Talent_LiquidFortificationLvl', 'Talent_LongMemoryLvl', 'Talent_MagicDefianceLvl', 'Talent_MasterRuneMagicLvl', 'Talent_MaverickLvl', 'Talent_RuneMagicLvl', 'Talent_ShortFuseLvl', 'Talent_TirelessLvl', 'Talent_UnderminerLvl', 'Talent_WhirlwindofDeathLvl', 'Talent_BlessedByIshaLvl', 'Talent_BloodOfAenarionLvl', 'Talent_CadaiMeditationLvl', 'Talent_EyeOfTheStormLvl', 'Talent_HighMagicLvl', 'Talent_LileathsBlessingLvl', 'Talent_MartialArtsLvl', 'Talent_MindOverBodyLvl', 'Talent_SanctuaryOfTheMindLvl', 'Talent_SworddancingLvl', 'Talent_UncouthUranaiLvl'], function (v) {
 
 			if (v.Talent_AccurateShotLvl > 0) {out = getTranslationByKey('ACCURATE-SHOT') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AccurateShotLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AccurateShotXP + '  ✥  '; } else {out = '';}
 			if (v.Talent_AcuteSense1Lvl > 0) {out += getTranslationByKey('ACUTE-SENSE') + ' (' + v.Talent_AcuteSense1 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AcuteSense1Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AcuteSense1XP + '  ✥  '; } else {out += '';}
 			if (v.Talent_AcuteSense2Lvl > 0) {out += getTranslationByKey('ACUTE-SENSE') + ' (' + v.Talent_AcuteSense2 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AcuteSense2Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AcuteSense2XP + '  ✥  '; } else {out += '';}
+			if (v.Talent_AcuteSense3Lvl > 0) {out += getTranslationByKey('ACUTE-SENSE') + ' (' + v.Talent_AcuteSense3 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AcuteSense3Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AcuteSense3XP + '  ✥  '; } else {out += '';}
+			if (v.Talent_AcuteSense4Lvl > 0) {out += getTranslationByKey('ACUTE-SENSE') + ' (' + v.Talent_AcuteSense4 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AcuteSense4Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AcuteSense4XP + '  ✥  '; } else {out += '';}
+			if (v.Talent_AcuteSense5Lvl > 0) {out += getTranslationByKey('ACUTE-SENSE') + ' (' + v.Talent_AcuteSense5 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AcuteSense5Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AcuteSense5XP + '  ✥  '; } else {out += '';}
 			if (v.Talent_AethyricAttunementLvl > 0) {out += getTranslationByKey('AETHYRIC-ATTUNEMENT') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AethyricAttunementLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AethyricAttunementXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_AlleyCatLvl > 0) {out += getTranslationByKey('ALLEY-CAT') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AlleyCatLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AlleyCatXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_AmbidextrousLvl > 0) {out += getTranslationByKey('AMBIDEXTROUS') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AmbidextrousLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AmbidextrousXP + '  ✥  '; } else {out += '';}
@@ -48297,6 +48371,7 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (v.Talent_ArcaneMagic6Lvl > 0) {out += getTranslationByKey('ARCANE-MAGIC') + ' (' + v.Talent_ArcaneMagic6 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_ArcaneMagic6Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_ArcaneMagic6XP + '  ✥  '; } else {out += '';}
 			if (v.Talent_ArcaneMagic7Lvl > 0) {out += getTranslationByKey('ARCANE-MAGIC') + ' (' + v.Talent_ArcaneMagic7 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_ArcaneMagic7Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_ArcaneMagic7XP + '  ✥  '; } else {out += '';}
 			if (v.Talent_ArcaneMagic8Lvl > 0) {out += getTranslationByKey('ARCANE-MAGIC') + ' (' + v.Talent_ArcaneMagic8 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_ArcaneMagic8Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_ArcaneMagic8XP + '  ✥  '; } else {out += '';}
+			if (v.Talent_ArcaneMagic9Lvl > 0) {out += getTranslationByKey('ARCANE-MAGIC') + ' (' + v.Talent_ArcaneMagic9 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_ArcaneMagic9Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_ArcaneMagic9XP + '  ✥  '; } else {out += '';}
 			if (v.Talent_ArgumentativeLvl > 0) {out += getTranslationByKey('ARGUMENTATIVE') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_ArgumentativeLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_ArgumentativeXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_ArtisticLvl > 0) {out += getTranslationByKey('ARTISTIC') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_ArtisticLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_ArtisticXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_AttractiveLvl > 0) {out += getTranslationByKey('ATTRACTIVE') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_AttractiveLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_AttractiveXP + '  ✥  '; } else {out += '';}
@@ -48333,6 +48408,7 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (v.Talent_CracktheWhipLvl > 0) {out += getTranslationByKey('CRACK-THE-WHIP') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_CracktheWhipLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_CracktheWhipXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_Craftsman1Lvl > 0) {out += getTranslationByKey('CRAFTSMAN') + ' (' + v.Talent_Craftsman1 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_Craftsman1Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_Craftsman1XP + '  ✥  '; } else {out += '';}
 			if (v.Talent_Craftsman2Lvl > 0) {out += getTranslationByKey('CRAFTSMAN') + ' (' + v.Talent_Craftsman2 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_Craftsman2Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_Craftsman2XP + '  ✥  '; } else {out += '';}
+			if (v.Talent_Craftsman3Lvl > 0) {out += getTranslationByKey('CRAFTSMAN') + ' (' + v.Talent_Craftsman3 + ') ' + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_Craftsman3Lvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_Craftsman3XP + '  ✥  '; } else {out += '';}
 			if (v.Talent_CrewCommanderLvl > 0) {out += getTranslationByKey('CREW-COMMANDER') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_CrewCommanderLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_CrewCommanderXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_CriminalLvl > 0) {out += getTranslationByKey('CRIMINAL') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_CriminalLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_CriminalXP + '  ✥  '; } else {out += '';}
 			
@@ -48343,6 +48419,7 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (v.Talent_DirtyFightingLvl > 0) {out += getTranslationByKey('DIRTY-FIGHTING') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_DirtyFightingLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_DirtyFightingXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_DisarmLvl > 0) {out += getTranslationByKey('DISARM') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_DisarmLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_DisarmXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_DistractLvl > 0) {out += getTranslationByKey('DISTRACT') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_DistractLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_DistractXP + '  ✥  '; } else {out += '';}
+			if (v.Talent_DoomedLvl > 0) { out += getTranslationByKey('DOOMED') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_DoomedLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_DoomedXP + '  ✥  '; } else { out += '';}
 			if (v.Talent_DrilledLvl > 0) {out += getTranslationByKey('DRILLED') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_DrilledLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_DrilledXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_DualWielderLvl > 0) {out += getTranslationByKey('DUAL-WIELDER') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_DualWielderLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_DualWielderXP + '  ✥  '; } else {out += '';}
 			
@@ -48400,7 +48477,6 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (v.Talent_LipReadingLvl > 0) {out += getTranslationByKey('LIP-READING') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_LipReadingLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_LipReadingXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_LuckLvl > 0) {out += getTranslationByKey('LUCK') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_LuckLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_LuckXP + '  ✥  '; } else {out += '';}
 			
-			
 			if (v.Talent_MagicalSenseLvl > 0) {out += getTranslationByKey('MAGICAL-SENSE') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_MagicalSenseLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_MagicalSenseXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_MagicalAssistantLvl > 0) {out += getTranslationByKey('MAGICAL-ASSISTANT') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_MagicalAssistantLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_MagicalAssistantXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_MagicResistanceLvl > 0) {out += getTranslationByKey('MAGIC-RESISTANCE') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_MagicResistanceLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_MagicResistanceXP + '  ✥  '; } else {out += '';}
@@ -48415,6 +48491,7 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (v.Talent_MenacingLvl > 0) {out += getTranslationByKey('MENACING') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_MenacingLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_MenacingXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_MimicLvl > 0) {out += getTranslationByKey('MIMIC') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_MimicLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_MimicXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_NightVisionLvl > 0) {out += getTranslationByKey('NIGHT-VISION') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_NightVisionLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_NightVisionXP + '  ✥  '; } else {out += '';}
+			if (v.Talent_NobleBloodLvl > 0) {out += getTranslationByKey('NOBLE-BLOOD') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_NobleBloodLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_NobleBloodXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_NimbleFingersLvl > 0) {out += getTranslationByKey('NIMBLE-FINGERS') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_NimbleFingersLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_NimbleFingersXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_NoseForTroubleLvl > 0) {out += getTranslationByKey('NOSE-FOR-TROUBLE') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_NoseForTroubleLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_NoseForTroubleXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_NumismaticsLvl > 0) {out += getTranslationByKey('NUMISMATICS') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_NumismaticsLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_NumismaticsXP + '  ✥  '; } else {out += '';}
@@ -48438,7 +48515,7 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (v.Talent_ResoluteLvl > 0) {out += getTranslationByKey('RESOLUTE') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_ResoluteLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_ResoluteXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_ReversalLvl > 0) {out += getTranslationByKey('REVERSAL') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_ReversalLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_ReversalXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_RiposteLvl > 0) {out += getTranslationByKey('RIPOSTE') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_RiposteLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_RiposteXP + '  ✥  '; } else {out += '';}
-			if (v.Talent_RiverGuideLvl > 0) {out += getTranslationByKey('RIVERGUIDE') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_RiverGuideLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_RiverGuideXP + '  ✥  '; } else {out += '';}
+			if (v.Talent_RiverGuideLvl > 0) {out += getTranslationByKey('RIVER-GUIDE') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_RiverGuideLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_RiverGuideXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_RobustLvl > 0) {out += getTranslationByKey('ROBUST') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_RobustLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_RobustXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_RoughriderLvl > 0) {out += getTranslationByKey('ROUGHRIDER') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_RoughriderLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_RoughriderXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_RoverLvl > 0) {out += getTranslationByKey('ROVER') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_RoverLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_RoverXP + '  ✥  '; } else {out += '';}
@@ -48531,23 +48608,22 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (v.Talent_UnderminerLvl > 0) {out += getTranslationByKey('UNDERMINER') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_UnderminerLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_UnderminerXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_WhirlwindofDeathLvl > 0) {out += getTranslationByKey('WHIRLWIND-OF-DEATH') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_WhirlwindofDeathLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_WhirlwindofDeathXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_BlessedByIshaLvl > 0) {out += getTranslationByKey('BLESSED-BY-ISHA') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_BlessedByIshaLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_BlessedByIshaXP + '  ✥  '; } else {out += '';}
-			if (v.Talent_BloodOfAenarionLvl > 0) {out += getTranslationByKey('BLODD-OF-AENARION') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_BloodOfAenarionLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_BloodOfAenarionXP + '  ✥  '; } else {out += '';}
+			if (v.Talent_BloodOfAenarionLvl > 0) {out += getTranslationByKey('BLOOD-OF-AENARION') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_BloodOfAenarionLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_BloodOfAenarionXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_CadaiMeditationLvl > 0) {out += getTranslationByKey('CADAI-MEDITATION') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_CadaiMeditationLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_CadaiMeditationXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_EyeOfTheStormLvl > 0) {out += getTranslationByKey('EYE-OF-THE-STORM') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_EyeOfTheStormLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_EyeOfTheStormXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_HighMagicLvl > 0) {out += getTranslationByKey('HIGH-MAGIC') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_HighMagicLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_HighMagicXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_LileathsBlessingLvl > 0) {out += getTranslationByKey('LILEATHS-BLESSING') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_LileathsBlessingLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_LileathsBlessingXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_MartialArtsLvl > 0) {out += getTranslationByKey('MARTIAL-ARTS') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_MartialArtsLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_MartialArtsXP + '  ✥  '; } else {out += '';}
-			if (v.Talent_MindOverBodyLvl > 0) {out += getTranslationByKey('MIND-OVER-MATTER') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_MindOverBodyLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_MindOverBodyXP + '  ✥  '; } else {out += '';}
+			if (v.Talent_MindOverBodyLvl > 0) {out += getTranslationByKey('MIND-OVER-BODY') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_MindOverBodyLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_MindOverBodyXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_SanctuaryOfTheMindLvl > 0) {out += getTranslationByKey('SANCTUARY-OF-THE-MIND') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_SanctuaryOfTheMindLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_SanctuaryOfTheMindXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_SworddancingLvl > 0) {out += getTranslationByKey('SWORD-DANCING') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_SworddancingLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_SworddancingXP + '  ✥  '; } else {out += '';}
 			if (v.Talent_UncouthUranaiLvl > 0) {out += getTranslationByKey('UNCOUTH-URANAI') + ' -' + ' ' + getTranslationByKey('LVL') + ': ' + v.Talent_UncouthUranaiLvl + ' -' + ' ' + getTranslationByKey('XP') + ': ' + v.Talent_UncouthUranaiXP + '  ✥  '; } else {out += '';}
 
-		total = 0 + parseInt(v.Talent_AccurateShotXP) + parseInt(v.Talent_AcuteSense1XP) + parseInt(v.Talent_AcuteSense2XP) + parseInt(v.Talent_AethyricAttunementXP) + parseInt(v.Talent_AlleyCatXP) + parseInt(v.Talent_AmbidextrousXP) + parseInt(v.Talent_AnimalAffinityXP) + parseInt(v.Talent_ArcaneMagic1XP) + parseInt(v.Talent_ArcaneMagic2XP) + parseInt(v.Talent_ArcaneMagic3XP) + parseInt(v.Talent_ArcaneMagic4XP) + parseInt(v.Talent_ArcaneMagic5XP) + parseInt(v.Talent_ArcaneMagic6XP) + parseInt(v.Talent_ArcaneMagic7XP) + parseInt(v.Talent_ArcaneMagic8XP) + parseInt(v.Talent_ArgumentativeXP) + parseInt(v.Talent_ArtisticXP) + parseInt(v.Talent_AttractiveXP) + parseInt(v.Talent_BattleRageXP) + parseInt(v.Talent_BeatBladeXP) + parseInt(v.Talent_BeneathNoticeXP) + parseInt(v.Talent_BerserkChargeXP) + parseInt(v.Talent_BreakandEnterXP) + parseInt(v.Talent_BlatherXP) + parseInt(v.Talent_BlessXP) + parseInt(v.Talent_BookishXP) + parseInt(v.Talent_BriberXP) + parseInt(v.Talent_CantorXP) + parseInt(v.Talent_CardsharpXP) + parseInt(v.Talent_CarefulStrikeXP) + parseInt(v.Talent_CarouserXP) + parseInt(v.Talent_CatfallXP) + parseInt(v.Talent_CattonguedXP) + parseInt(v.Talent_ChantyXP) + parseInt(v.Talent_ChaosMagic1XP) + parseInt(v.Talent_ChaosMagic2XP) + parseInt(v.Talent_ChaosMagic3XP) + parseInt(v.Talent_ChaosMagic4XP) + parseInt(v.Talent_CombatAwareXP) + parseInt(v.Talent_CombatMasterXP) + parseInt(v.Talent_CombatReflexesXP) + parseInt(v.Talent_CommandingPresenceXP) + parseInt(v.Talent_ConcoctXP) + parseInt(v.Talent_ContortionistXP) + parseInt(v.Talent_CoolheadedXP) + parseInt(v.Talent_CracktheWhipXP) + parseInt(v.Talent_Craftsman1XP) + parseInt(v.Talent_Craftsman2XP) + parseInt(v.Talent_CrewCommanderXP) + parseInt(v.Talent_CriminalXP) + parseInt(v.Talent_DeadeyeShotXP) + parseInt(v.Talent_DealmakerXP) + parseInt(v.Talent_DetectArtefactXP) + parseInt(v.Talent_DicemanXP) + parseInt(v.Talent_DirtyFightingXP) + parseInt(v.Talent_DisarmXP) + parseInt(v.Talent_DistractXP) + parseInt(v.Talent_DrilledXP) + parseInt(v.Talent_DualWielderXP) + parseInt(v.Talent_EmbezzleXP) + parseInt(v.Talent_EnclosedFighterXP) + parseInt(v.Talent_Etiquette1XP) + parseInt(v.Talent_Etiquette2XP) + parseInt(v.Talent_Etiquette3XP) + parseInt(v.Talent_Etiquette4XP) + parseInt(v.Talent_Etiquette5XP) + parseInt(v.Talent_Etiquette6XP) + parseInt(v.Talent_FastHandsXP) + parseInt(v.Talent_FastShotXP) + parseInt(v.Talent_Fearless1XP) + parseInt(v.Talent_Fearless2XP) + parseInt(v.Talent_Fearless3XP) + parseInt(v.Talent_Fearless4XP) + parseInt(v.Talent_FeintXP) + parseInt(v.Talent_FieldDressingXP) + parseInt(v.Talent_FishermanXP) + parseInt(v.Talent_FlagellantXP) + parseInt(v.Talent_FleeXP) + parseInt(v.Talent_FleetFootedXP) + parseInt(v.Talent_FrenzyXP) + parseInt(v.Talent_FrighteningXP) + parseInt(v.Talent_FuriousAssaultXP) + parseInt(v.Talent_GregariousXP) + parseInt(v.Talent_GunnerXP) + parseInt(v.Talent_HardyXP) + parseInt(v.Talent_Hatred1XP) + parseInt(v.Talent_Hatred2XP) + parseInt(v.Talent_Hatred3XP) + parseInt(v.Talent_Hatred4XP) + parseInt(v.Talent_HolyHatredXP) + parseInt(v.Talent_HolyVisionsXP) + parseInt(v.Talent_HuntersEyeXP) + parseInt(v.Talent_ImpassionedZealXP) + parseInt(v.Talent_ImplacableXP) + parseInt(v.Talent_InfighterXP) + parseInt(v.Talent_InspiringXP) + parseInt(v.Talent_InstinctiveDictionXP) + parseInt(v.Talent_InvokeXP) + parseInt(v.Talent_IronJawXP) + parseInt(v.Talent_IronWillXP) + parseInt(v.Talent_JumpUpXP) + parseInt(v.Talent_KingpinXP) + parseInt(v.Talent_LightningReflexesXP) + parseInt(v.Talent_LinguisticsXP) + parseInt(v.Talent_LipReadingXP) + parseInt(v.Talent_LuckXP) + parseInt(v.Talent_MagicalSenseXP) + parseInt(v.Talent_MagicalAssistantXP) + parseInt(v.Talent_MagicResistanceXP) + parseInt(v.Talent_MagnumOpusXP) + parseInt(v.Talent_MarksmanXP) + parseInt(v.Talent_MasterAndCommanderXP) + parseInt(v.Talent_MasterOfDisguiseXP) + parseInt(v.Talent_MasterOratorXP) + parseInt(v.Talent_MasterTradesman1XP) + parseInt(v.Talent_MasterTradesman2XP) + parseInt(v.Talent_MasterTradesman3XP) + parseInt(v.Talent_MenacingXP) + parseInt(v.Talent_MimicXP) + parseInt(v.Talent_NightVisionXP) + parseInt(v.Talent_NimbleFingersXP) + parseInt(v.Talent_NoseForTroubleXP) + parseInt(v.Talent_NumismaticsXP) + parseInt(v.Talent_OldSaltXP) + parseInt(v.Talent_OrientationXP) + parseInt(v.Talent_PanhandleXP) + parseInt(v.Talent_PerfectPitchXP) + parseInt(v.Talent_PettyMagicXP) + parseInt(v.Talent_PharmacistXP) + parseInt(v.Talent_PilotXP) + parseInt(v.Talent_PublicSpeakerXP) + parseInt(v.Talent_PureSoulXP) + parseInt(v.Talent_RapidReloadXP) + parseInt(v.Talent_ReactionStrikeXP) + parseInt(v.Talent_ReadWriteXP) + parseInt(v.Talent_RelentlessXP) + parseInt(v.Talent_Resistance1XP) + parseInt(v.Talent_Resistance2XP) + parseInt(v.Talent_Resistance3XP) + parseInt(v.Talent_ResoluteXP) + parseInt(v.Talent_ReversalXP) + parseInt(v.Talent_RiposteXP) + parseInt(v.Talent_RiverGuideXP) + parseInt(v.Talent_RoughriderXP) + parseInt(v.Talent_RoverXP) + parseInt(v.Talent_SavvyXP) + parseInt(v.Talent_ScaleSheerSurfaceXP) + parseInt(v.Talent_SchemerXP) + parseInt(v.Talent_SeaLegsXP) + parseInt(v.Talent_SeasonedTravellerXP) + parseInt(v.Talent_SecondSightXP) + parseInt(v.Talent_SecretIdentityXP) + parseInt(v.Talent_ShadowXP) + parseInt(v.Talent_SharpXP) + parseInt(v.Talent_SharpshooterXP) + parseInt(v.Talent_ShieldsmanXP) + parseInt(v.Talent_SixthSenseXP) + parseInt(v.Talent_SlayerXP) + parseInt(v.Talent_SniperXP) + parseInt(v.Talent_SpeedreaderXP) + parseInt(v.Talent_SprinterXP) + parseInt(v.Talent_StepAsideXP) + parseInt(v.Talent_StoneSoupXP) + parseInt(v.Talent_StoutHeartedXP) + parseInt(v.Talent_Strider1XP) + parseInt(v.Talent_Strider2XP) + parseInt(v.Talent_Strider3XP) + parseInt(v.Talent_StrikeMightyBlowXP) + parseInt(v.Talent_StriketoInjureXP) + parseInt(v.Talent_StriketoStunXP) + parseInt(v.Talent_StrongBackXP) + parseInt(v.Talent_StrongLegsXP) + parseInt(v.Talent_StrongmindedXP) + parseInt(v.Talent_StrongSwimmerXP) +  parseInt(v.Talent_SturdyXP) +  parseInt(v.Talent_SuaveXP) + parseInt(v.Talent_SuffusedWithAqshyXP) + parseInt(v.Talent_SuffusedWithAzyrXP) + parseInt(v.Talent_SuffusedWithChamonXP) + parseInt(v.Talent_SuffusedWithGhurXP)  + parseInt(v.Talent_SuffusedWithGhyranXP) + parseInt(v.Talent_SuffusedWithHyshXP) + parseInt(v.Talent_SuffusedWithShyishXP) + parseInt(v.Talent_SuffusedWithUgluXP) + parseInt(v.Talent_SuperNumerateXP) + parseInt(v.Talent_SupportiveXP) + parseInt(v.Talent_SureShotXP) + parseInt(v.Talent_TenaciousXP) + parseInt(v.Talent_TinkerXP) + parseInt(v.Talent_TowerOfMemoriesXP) + parseInt(v.Talent_TrapperXP) + parseInt(v.Talent_TrickRidingXP) + parseInt(v.Talent_TunnelRatXP) + parseInt(v.Talent_UnshakableXP) + parseInt(v.Talent_VeryResilientXP) + parseInt(v.Talent_VeryStrongXP) + parseInt(v.Talent_ViceXP) + parseInt(v.Talent_WarLeaderXP) + parseInt(v.Talent_WarWizardXP) + parseInt(v.Talent_WarriorBornXP) + parseInt(v.Talent_WatermanXP) + parseInt(v.Talent_WealthyXP) + parseInt(v.Talent_WellpreparedXP) + parseInt(v.Talent_WitchXP) + parseInt(v.Talent_AncestralGrudgeXP) + parseInt(v.Talent_BludgeonerXP) + parseInt(v.Talent_DemolisherXP) + parseInt(v.Talent_DragonBelcherXP) + parseInt(v.Talent_EntrenchmentXP) + parseInt(v.Talent_ForgefireXP) + parseInt(v.Talent_GloriousDemiseXP) + parseInt(v.Talent_HarpoonerXP) + parseInt(v.Talent_KingsguardXP) + parseInt(v.Talent_LiquidFortificationXP) + parseInt(v.Talent_LongMemoryXP) + parseInt(v.Talent_MagicDefianceXP) + parseInt(v.Talent_MasterRuneMagicXP) + parseInt(v.Talent_MaverickXP) + parseInt(v.Talent_RuneMagicXP) + parseInt(v.Talent_ShortFuseXP) + parseInt(v.Talent_TirelessXP) + parseInt(v.Talent_UnderminerXP) + parseInt(v.Talent_WhirlwindofDeathXP) + parseInt(v.Talent_BlessedByIshaXP) + parseInt(v.Talent_BloodOfAenarionXP) + parseInt(v.Talent_CadaiMeditationXP) + parseInt(v.Talent_EyeOfTheStormXP) + parseInt(v.Talent_HighMagicXP) + parseInt(v.Talent_LileathsBlessingXP) + parseInt(v.Talent_MartialArtsXP) + parseInt(v.Talent_MindOverBodyXP) + parseInt(v.Talent_SanctuaryOfTheMindXP) + parseInt(v.Talent_SworddancingXP) + parseInt(v.Talent_UncouthUranaiXP);
+		total = 0 + parseInt(v.Talent_AccurateShotXP) + parseInt(v.Talent_AcuteSense1XP) + parseInt(v.Talent_AcuteSense2XP) + parseInt(v.Talent_AcuteSense3XP) + parseInt(v.Talent_AcuteSense4XP) + parseInt(v.Talent_AcuteSense5XP) + parseInt(v.Talent_AethyricAttunementXP) + parseInt(v.Talent_AlleyCatXP) + parseInt(v.Talent_AmbidextrousXP) + parseInt(v.Talent_AnimalAffinityXP) + parseInt(v.Talent_ArcaneMagic1XP) + parseInt(v.Talent_ArcaneMagic2XP) + parseInt(v.Talent_ArcaneMagic3XP) + parseInt(v.Talent_ArcaneMagic4XP) + parseInt(v.Talent_ArcaneMagic5XP) + parseInt(v.Talent_ArcaneMagic6XP) + parseInt(v.Talent_ArcaneMagic7XP) + parseInt(v.Talent_ArcaneMagic8XP) + parseInt(v.Talent_ArcaneMagic9XP) + parseInt(v.Talent_ArgumentativeXP) + parseInt(v.Talent_ArtisticXP) + parseInt(v.Talent_AttractiveXP) + parseInt(v.Talent_BattleRageXP) + parseInt(v.Talent_BeatBladeXP) + parseInt(v.Talent_BeneathNoticeXP) + parseInt(v.Talent_BerserkChargeXP) + parseInt(v.Talent_BreakandEnterXP) + parseInt(v.Talent_BlatherXP) + parseInt(v.Talent_BlessXP) + parseInt(v.Talent_BookishXP) + parseInt(v.Talent_BriberXP) + parseInt(v.Talent_CantorXP) + parseInt(v.Talent_CardsharpXP) + parseInt(v.Talent_CarefulStrikeXP) + parseInt(v.Talent_CarouserXP) + parseInt(v.Talent_CatfallXP) + parseInt(v.Talent_CattonguedXP) + parseInt(v.Talent_ChantyXP) + parseInt(v.Talent_ChaosMagic1XP) + parseInt(v.Talent_ChaosMagic2XP) + parseInt(v.Talent_ChaosMagic3XP) + parseInt(v.Talent_ChaosMagic4XP) + parseInt(v.Talent_CombatAwareXP) + parseInt(v.Talent_CombatMasterXP) + parseInt(v.Talent_CombatReflexesXP) + parseInt(v.Talent_CommandingPresenceXP) + parseInt(v.Talent_ConcoctXP) + parseInt(v.Talent_ContortionistXP) + parseInt(v.Talent_CoolheadedXP) + parseInt(v.Talent_CracktheWhipXP) + parseInt(v.Talent_Craftsman1XP) + parseInt(v.Talent_Craftsman2XP) + parseInt(v.Talent_Craftsman3XP) + parseInt(v.Talent_CrewCommanderXP) + parseInt(v.Talent_CriminalXP) + parseInt(v.Talent_DeadeyeShotXP) + parseInt(v.Talent_DealmakerXP) + parseInt(v.Talent_DetectArtefactXP) + parseInt(v.Talent_DicemanXP) + parseInt(v.Talent_DirtyFightingXP) + parseInt(v.Talent_DisarmXP) + parseInt(v.Talent_DistractXP) + parseInt(v.Talent_DoomedXP) + parseInt(v.Talent_DrilledXP) + parseInt(v.Talent_DualWielderXP) + parseInt(v.Talent_EmbezzleXP) + parseInt(v.Talent_EnclosedFighterXP) + parseInt(v.Talent_Etiquette1XP) + parseInt(v.Talent_Etiquette2XP) + parseInt(v.Talent_Etiquette3XP) + parseInt(v.Talent_Etiquette4XP) + parseInt(v.Talent_Etiquette5XP) + parseInt(v.Talent_Etiquette6XP) + parseInt(v.Talent_FastHandsXP) + parseInt(v.Talent_FastShotXP) + parseInt(v.Talent_Fearless1XP) + parseInt(v.Talent_Fearless2XP) + parseInt(v.Talent_Fearless3XP) + parseInt(v.Talent_Fearless4XP) + parseInt(v.Talent_FeintXP) + parseInt(v.Talent_FieldDressingXP) + parseInt(v.Talent_FishermanXP) + parseInt(v.Talent_FlagellantXP) + parseInt(v.Talent_FleeXP) + parseInt(v.Talent_FleetFootedXP) + parseInt(v.Talent_FrenzyXP) + parseInt(v.Talent_FrighteningXP) + parseInt(v.Talent_FuriousAssaultXP) + parseInt(v.Talent_GregariousXP) + parseInt(v.Talent_GunnerXP) + parseInt(v.Talent_HardyXP) + parseInt(v.Talent_Hatred1XP) + parseInt(v.Talent_Hatred2XP) + parseInt(v.Talent_Hatred3XP) + parseInt(v.Talent_Hatred4XP) + parseInt(v.Talent_HolyHatredXP) + parseInt(v.Talent_HolyVisionsXP) + parseInt(v.Talent_HuntersEyeXP) + parseInt(v.Talent_ImpassionedZealXP) + parseInt(v.Talent_ImplacableXP) + parseInt(v.Talent_InfighterXP) + parseInt(v.Talent_InspiringXP) + parseInt(v.Talent_InstinctiveDictionXP) + parseInt(v.Talent_InvokeXP) + parseInt(v.Talent_IronJawXP) + parseInt(v.Talent_IronWillXP) + parseInt(v.Talent_JumpUpXP) + parseInt(v.Talent_KingpinXP) + parseInt(v.Talent_LightningReflexesXP) + parseInt(v.Talent_LinguisticsXP) + parseInt(v.Talent_LipReadingXP) + parseInt(v.Talent_LuckXP) + parseInt(v.Talent_MagicalSenseXP) + parseInt(v.Talent_MagicalAssistantXP) + parseInt(v.Talent_MagicResistanceXP) + parseInt(v.Talent_MagnumOpusXP) + parseInt(v.Talent_MarksmanXP) + parseInt(v.Talent_MasterAndCommanderXP) + parseInt(v.Talent_MasterOfDisguiseXP) + parseInt(v.Talent_MasterOratorXP) + parseInt(v.Talent_MasterTradesman1XP) + parseInt(v.Talent_MasterTradesman2XP) + parseInt(v.Talent_MasterTradesman3XP) + parseInt(v.Talent_MenacingXP) + parseInt(v.Talent_MimicXP) + parseInt(v.Talent_NightVisionXP) + parseInt(v.Talent_NobleBloodXP) + parseInt(v.Talent_NimbleFingersXP) + parseInt(v.Talent_NoseForTroubleXP) + parseInt(v.Talent_NumismaticsXP) + parseInt(v.Talent_OldSaltXP) + parseInt(v.Talent_OrientationXP) + parseInt(v.Talent_PanhandleXP) + parseInt(v.Talent_PerfectPitchXP) + parseInt(v.Talent_PettyMagicXP) + parseInt(v.Talent_PharmacistXP) + parseInt(v.Talent_PilotXP) + parseInt(v.Talent_PublicSpeakerXP) + parseInt(v.Talent_PureSoulXP) + parseInt(v.Talent_RapidReloadXP) + parseInt(v.Talent_ReactionStrikeXP) + parseInt(v.Talent_ReadWriteXP) + parseInt(v.Talent_RelentlessXP) + parseInt(v.Talent_Resistance1XP) + parseInt(v.Talent_Resistance2XP) + parseInt(v.Talent_Resistance3XP) + parseInt(v.Talent_ResoluteXP) + parseInt(v.Talent_ReversalXP) + parseInt(v.Talent_RiposteXP) + parseInt(v.Talent_RiverGuideXP) + parseInt(v.Talent_RoughriderXP) + parseInt(v.Talent_RoverXP) + parseInt(v.Talent_SavvyXP) + parseInt(v.Talent_ScaleSheerSurfaceXP) + parseInt(v.Talent_SchemerXP) + parseInt(v.Talent_SeaLegsXP) + parseInt(v.Talent_SeasonedTravellerXP) + parseInt(v.Talent_SecondSightXP) + parseInt(v.Talent_SecretIdentityXP) + parseInt(v.Talent_ShadowXP) + parseInt(v.Talent_SharpXP) + parseInt(v.Talent_SharpshooterXP) + parseInt(v.Talent_ShieldsmanXP) + parseInt(v.Talent_SixthSenseXP) + parseInt(v.Talent_SlayerXP) + parseInt(v.Talent_SniperXP) + parseInt(v.Talent_SpeedreaderXP) + parseInt(v.Talent_SprinterXP) + parseInt(v.Talent_StepAsideXP) + parseInt(v.Talent_StoneSoupXP) + parseInt(v.Talent_StoutHeartedXP) + parseInt(v.Talent_Strider1XP) + parseInt(v.Talent_Strider2XP) + parseInt(v.Talent_Strider3XP) + parseInt(v.Talent_StrikeMightyBlowXP) + parseInt(v.Talent_StriketoInjureXP) + parseInt(v.Talent_StriketoStunXP) + parseInt(v.Talent_StrongBackXP) + parseInt(v.Talent_StrongLegsXP) + parseInt(v.Talent_StrongmindedXP) + parseInt(v.Talent_StrongSwimmerXP) +  parseInt(v.Talent_SturdyXP) +  parseInt(v.Talent_SuaveXP) + parseInt(v.Talent_SuffusedWithAqshyXP) + parseInt(v.Talent_SuffusedWithAzyrXP) + parseInt(v.Talent_SuffusedWithChamonXP) + parseInt(v.Talent_SuffusedWithGhurXP)  + parseInt(v.Talent_SuffusedWithGhyranXP) + parseInt(v.Talent_SuffusedWithHyshXP) + parseInt(v.Talent_SuffusedWithShyishXP) + parseInt(v.Talent_SuffusedWithUgluXP) + parseInt(v.Talent_SuperNumerateXP) + parseInt(v.Talent_SupportiveXP) + parseInt(v.Talent_SureShotXP) + parseInt(v.Talent_TenaciousXP) + parseInt(v.Talent_TinkerXP) + parseInt(v.Talent_TowerOfMemoriesXP) + parseInt(v.Talent_TrapperXP) + parseInt(v.Talent_TrickRidingXP) + parseInt(v.Talent_TunnelRatXP) + parseInt(v.Talent_UnshakableXP) + parseInt(v.Talent_VeryResilientXP) + parseInt(v.Talent_VeryStrongXP) + parseInt(v.Talent_ViceXP) + parseInt(v.Talent_WarLeaderXP) + parseInt(v.Talent_WarWizardXP) + parseInt(v.Talent_WarriorBornXP) + parseInt(v.Talent_WatermanXP) + parseInt(v.Talent_WealthyXP) + parseInt(v.Talent_WellpreparedXP) + parseInt(v.Talent_WitchXP) + parseInt(v.Talent_AncestralGrudgeXP) + parseInt(v.Talent_BludgeonerXP) + parseInt(v.Talent_DemolisherXP) + parseInt(v.Talent_DragonBelcherXP) + parseInt(v.Talent_EntrenchmentXP) + parseInt(v.Talent_ForgefireXP) + parseInt(v.Talent_GloriousDemiseXP) + parseInt(v.Talent_HarpoonerXP) + parseInt(v.Talent_KingsguardXP) + parseInt(v.Talent_LiquidFortificationXP) + parseInt(v.Talent_LongMemoryXP) + parseInt(v.Talent_MagicDefianceXP) + parseInt(v.Talent_MasterRuneMagicXP) + parseInt(v.Talent_MaverickXP) + parseInt(v.Talent_RuneMagicXP) + parseInt(v.Talent_ShortFuseXP) + parseInt(v.Talent_TirelessXP) + parseInt(v.Talent_UnderminerXP) + parseInt(v.Talent_WhirlwindofDeathXP) + parseInt(v.Talent_BlessedByIshaXP) + parseInt(v.Talent_BloodOfAenarionXP) + parseInt(v.Talent_CadaiMeditationXP) + parseInt(v.Talent_EyeOfTheStormXP) + parseInt(v.Talent_HighMagicXP) + parseInt(v.Talent_LileathsBlessingXP) + parseInt(v.Talent_MartialArtsXP) + parseInt(v.Talent_MindOverBodyXP) + parseInt(v.Talent_SanctuaryOfTheMindXP) + parseInt(v.Talent_SworddancingXP) + parseInt(v.Talent_UncouthUranaiXP);
 		
 	console.log(total);
 	if (out === "") {out = " ";}
 	console.log(out);
-	console.log("Talent names");
 		setAttrs({
 		[`Talents_XP`]: total,
 		[`Talents_XP_Dis`]: out,		
@@ -48690,13 +48766,13 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 		});		
 
 
-	on(`sheet:opened change:xp change:xp_artdis change:xp_entertaindis change:xp_ridedis change:xp_stealthdis change:xp_animaltrainingdis change:xp_languagedis change:xp_loredis change:xp_performdis change:xp_playdis change:xp_saildis change:xp_secretsignsdis change:xp_tradedis change:athleticsxp change:briberyxp change:charmxp change:charmanimalxp change:climbxp change:consumealcoholxp change:coolxp change:dodgexp change:drivexp change:endurancexp change:gamblexp change:gossipxp change:hagglexp change:intimidatexp change:intuitionxp change:leadershipxp change:meleebasicxp change:meleebrawlingxp change:meleecavalryxp change:meleefencingxp change:meleeflailxp change:meleeparryxp change:meleepolearmxp change:meleetwohandedxp change:navigationxp change:outdoorsurvivalxp change:perceptionxp change:rowxp change:animalcarexp change:auguryxp change:channellingfirexp change:channellingheavensxp change:channellingmetalxp change:channellingbeastsxp change:channellinglifexp change:channellinglightxp change:channellingdeathxp change:channellingshadowsxp change:channellingwitchxp change:channellingdarkxp change:channellingchaosxp change:channellinggreatmawxp change:channellingmiscxp change:evaluatexp change:healxp change:hypnotismxp change:langmagickxp change:psychometryxp change:picklockxp change:prayxp change:rangedblackpowderxp change:rangedbowxp change:rangedbowxp change:rangedcrossbowxp change:rangedengineeringxp change:rangedentanglingxp change:rangedexplosivesxp change:rangedslingxp change:rangedthrowingxp change:researchxp  change:runesmithingxp change:settrapxp change:sleightofhandxp change:swimxp change:trackxp`, function (event) {
-		getAttrs(['XP_ArtDis', 'XP_EntertainDis', 'XP_RideDis', 'XP_StealthDis', 'XP_AnimalTrainingDis', 'XP_LanguageDis', 'XP_LoreDis', 'XP_PerformDis', 'XP_PlayDis', 'XP_SailDis', 'XP_SecretSignsDis', 'XP_TradeDis', 'AthleticsAdv', 'AthleticsXP', 'BriberyAdv', 'BriberyXP', 'CharmAdv', 'CharmXP', 'CharmAnimalAdv', 'CharmAnimalXP', 'ClimbAdv', 'ClimbXP', 'ConsumeAlcoholAdv', 'ConsumeAlcoholXP', 'CoolAdv', 'CoolXP', 'DodgeAdv', 'DodgeXP', 'DriveAdv', 'DriveXP', 'EnduranceAdv', 'EnduranceXP', 'GambleAdv', 'GambleXP', 'GossipXP', 'GossipAdv', 'HaggleXP', 'HaggleAdv', 'IntimidateXP', 'IntimidateAdv', 'IntuitionXP', 'IntuitionAdv', 'LeadershipXP', 'LeadershipAdv', 'MeleeBasicXP', 'MeleeBasicAdv', 'MeleeBrawlingXP', 'MeleeBrawlingAdv', 'MeleeCavalryXP', 'MeleeCavalryAdv', 'MeleeFencingXP', 'MeleeFencingAdv', 'MeleeFlailXP', 'MeleeFlailAdv', 'MeleeParryXP', 'MeleeParryAdv', 'MeleePolearmXP', 'MeleePolearmAdv', 'MeleeTwoHandedXP', 'MeleeTwoHandedAdv', 'NavigationXP', 'NavigationAdv', 'OutdoorSurvivalXP', 'OutdoorSurvivalAdv', 'PerceptionXP', 'PerceptionAdv', 'RowXP', 'RowAdv', 'AnimalCareXP', 'AnimalCareAdv', 'AuguryXP', 'AuguryAdv', 'ChannellingFireXP', 'ChannellingFireAdv', 'ChannellingHeavensXP', 'ChannellingHeavensAdv', 'ChannellingMetalXP', 'ChannellingMetalAdv', 'ChannellingBeastsXP', 'ChannellingBeastsAdv', 'ChannellingLifeXP', 'ChannellingLifeAdv', 'ChannellingLightXP', 'ChannellingLightAdv', 'ChannellingDeathXP', 'ChannellingDeathAdv', 'ChannellingShadowsXP', 'ChannellingShadowsAdv', 'ChannellingWitchXP', 'ChannellingWitchAdv', 'ChannellingDarkXP', 'ChannellingDarkAdv', 'ChannellingChaosXP', 'ChannellingChaosAdv', 'ChannellingGreatMawXP', 'ChannellingGreatMawAdv', 'ChannellingMiscXP', 'ChannellingMiscAdv', 'EvaluateXP', 'EvaluateAdv', 'HealXP', 'HealAdv', 'HypnotismAdv', 'HypnotismXP', 'LangMagickXP', 'LangMagickAdv', 'PsychometryXP', 'PsychometryAdv', 'PickLockXP', 'PickLockAdv', 'PrayXP', 'PrayAdv', 'RangedBlackpowderXP', 'RangedBlackpowderAdv', 'RangedBowXP', 'RangedBowAdv', 'RangedCrossbowXP', 'RangedCrossbowAdv', 'RangedEngineeringXP', 'RangedEngineeringAdv', 'RangedEntanglingXP', 'RangedEntanglingAdv', 'RangedExplosivesXP', 'RangedExplosivesAdv', 'RangedSlingXP', 'RangedSlingAdv', 'RangedThrowingXP', 'RangedThrowingAdv', 'ResearchXP', 'RunesmithingXP', 'ResearchAdv', 'SetTrapXP', 'SetTrapAdv', 'SleightofHandXP', 'SleightofHandAdv', 'SwimXP', 'SwimAdv', 'TrackXP', 'TrackAdv'], function (x) {
+	on(`sheet:opened change:xp change:xp_artdis change:xp_entertaindis change:xp_ridedis change:xp_stealthdis change:xp_animaltrainingdis change:xp_languagedis change:xp_loredis change:xp_performdis change:xp_playdis change:xp_saildis change:xp_secretsignsdis change:xp_tradedis change:athleticsxp change:briberyxp change:charmxp change:charmanimalxp change:climbxp change:consumealcoholxp change:coolxp change:dodgexp change:drivexp change:endurancexp change:gamblexp change:gossipxp change:hagglexp change:intimidatexp change:intuitionxp change:leadershipxp change:meleebasicxp change:meleebrawlingxp change:meleecavalryxp change:meleefencingxp change:meleeflailxp change:meleeparryxp change:meleepolearmxp change:meleetwohandedxp change:navigationxp change:outdoorsurvivalxp change:perceptionxp change:rowxp change:animalcarexp change:auguryxp change:channellingfirexp change:channellingheavensxp change:channellingmetalxp change:channellingbeastsxp change:channellinglifexp change:channellinglightxp change:channellingdeathxp change:channellingshadowsxp change:channellinghighmagicxp change:channellingwitchxp change:channellingdarkxp change:channellingchaosxp change:channellinggreatmawxp change:channellingmiscxp change:evaluatexp change:healxp change:hypnotismxp change:langmagickxp change:psychometryxp change:picklockxp change:prayxp change:rangedblackpowderxp change:rangedbowxp change:rangedbowxp change:rangedcrossbowxp change:rangedengineeringxp change:rangedentanglingxp change:rangedexplosivesxp change:rangedslingxp change:rangedthrowingxp change:researchxp  change:runesmithingxp change:settrapxp change:sleightofhandxp change:swimxp change:trackxp`, function (event) {
+		getAttrs(['XP_ArtDis', 'XP_EntertainDis', 'XP_RideDis', 'XP_StealthDis', 'XP_AnimalTrainingDis', 'XP_LanguageDis', 'XP_LoreDis', 'XP_PerformDis', 'XP_PlayDis', 'XP_SailDis', 'XP_SecretSignsDis', 'XP_TradeDis', 'AthleticsAdv', 'AthleticsXP', 'BriberyAdv', 'BriberyXP', 'CharmAdv', 'CharmXP', 'CharmAnimalAdv', 'CharmAnimalXP', 'ClimbAdv', 'ClimbXP', 'ConsumeAlcoholAdv', 'ConsumeAlcoholXP', 'CoolAdv', 'CoolXP', 'DodgeAdv', 'DodgeXP', 'DriveAdv', 'DriveXP', 'EnduranceAdv', 'EnduranceXP', 'GambleAdv', 'GambleXP', 'GossipXP', 'GossipAdv', 'HaggleXP', 'HaggleAdv', 'IntimidateXP', 'IntimidateAdv', 'IntuitionXP', 'IntuitionAdv', 'LeadershipXP', 'LeadershipAdv', 'MeleeBasicXP', 'MeleeBasicAdv', 'MeleeBrawlingXP', 'MeleeBrawlingAdv', 'MeleeCavalryXP', 'MeleeCavalryAdv', 'MeleeFencingXP', 'MeleeFencingAdv', 'MeleeFlailXP', 'MeleeFlailAdv', 'MeleeParryXP', 'MeleeParryAdv', 'MeleePolearmXP', 'MeleePolearmAdv', 'MeleeTwoHandedXP', 'MeleeTwoHandedAdv', 'NavigationXP', 'NavigationAdv', 'OutdoorSurvivalXP', 'OutdoorSurvivalAdv', 'PerceptionXP', 'PerceptionAdv', 'RowXP', 'RowAdv', 'AnimalCareXP', 'AnimalCareAdv', 'AuguryXP', 'AuguryAdv', 'ChannellingFireXP', 'ChannellingFireAdv', 'ChannellingHeavensXP', 'ChannellingHeavensAdv', 'ChannellingMetalXP', 'ChannellingMetalAdv', 'ChannellingBeastsXP', 'ChannellingBeastsAdv', 'ChannellingLifeXP', 'ChannellingLifeAdv', 'ChannellingLightXP', 'ChannellingLightAdv', 'ChannellingDeathXP', 'ChannellingDeathAdv', 'ChannellingShadowsXP', 'ChannellingShadowsAdv', 'ChannellingHighMagicXP', 'ChannellingHighMagicAdv', 'ChannellingWitchXP', 'ChannellingWitchAdv', 'ChannellingDarkXP', 'ChannellingDarkAdv', 'ChannellingChaosXP', 'ChannellingChaosAdv', 'ChannellingGreatMawXP', 'ChannellingGreatMawAdv', 'ChannellingMiscXP', 'ChannellingMiscAdv', 'EvaluateXP', 'EvaluateAdv', 'HealXP', 'HealAdv', 'HypnotismAdv', 'HypnotismXP', 'LangMagickXP', 'LangMagickAdv', 'PsychometryXP', 'PsychometryAdv', 'PickLockXP', 'PickLockAdv', 'PrayXP', 'PrayAdv', 'RangedBlackpowderXP', 'RangedBlackpowderAdv', 'RangedBowXP', 'RangedBowAdv', 'RangedCrossbowXP', 'RangedCrossbowAdv', 'RangedEngineeringXP', 'RangedEngineeringAdv', 'RangedEntanglingXP', 'RangedEntanglingAdv', 'RangedExplosivesXP', 'RangedExplosivesAdv', 'RangedSlingXP', 'RangedSlingAdv', 'RangedThrowingXP', 'RangedThrowingAdv', 'ResearchXP', 'RunesmithingXP', 'RunesmithingAdv', 'ResearchAdv', 'SetTrapXP', 'SetTrapAdv', 'SleightofHandXP', 'SleightofHandAdv', 'SwimXP', 'SwimAdv', 'TrackXP', 'TrackAdv'], function (x) {
 	console.log('Skill XP change');	
 			if (x.AthleticsAdv > 0) { var out1 = getTranslationByKey('ATHLETICS') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.AthleticsAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.AthleticsXP + '  ✥  '; } else { var out1 = '';}
 			if (x.BriberyAdv > 0) { var out2 = getTranslationByKey('BRIBERY') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.BriberyAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.BriberyXP + '  ✥  '; } else { var out2 = '';}
 			if (x.CharmAdv > 0) { var out3 = getTranslationByKey('CHARM') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.CharmAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.CharmXP + '  ✥  '; } else { var out3 = '';}
-			if (x.CharmAnimalAdv > 0) { var out4 = getTranslationByKey('CHARM-ANIMAL') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.CharmAnimalAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.CharmAnimalXP + '  ✥  '; } else { var out4 = '';}
+			if (x.CharmAnimalAdv > 0) { var out4 = getTranslationByKey('CHARMANIMAL') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.CharmAnimalAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.CharmAnimalXP + '  ✥  '; } else { var out4 = '';}
 			if (x.ClimbAdv > 0) { var out5 = getTranslationByKey('CLIMB') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.ClimbAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.ClimbXP + '  ✥  '; } else { var out5 = '';}
 			if (x.ConsumeAlcoholAdv > 0) { var out6 = getTranslationByKey('CONSUMEALCOHOL') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.ConsumeAlcoholAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.ConsumeAlcoholXP + '  ✥  '; } else { var out6 = '';}
 			if (x.CoolAdv > 0) { var out7 = getTranslationByKey('COOL') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.CoolAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.CoolXP + '  ✥  '; } else { var out7 = '';}
@@ -48718,7 +48794,7 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (x.MeleePolearmAdv > 0) { var out23 = getTranslationByKey('MELEEPOLEARM') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.MeleePolearmAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.MeleePolearmXP + '  ✥  '; } else { var out23 = '';}
 			if (x.MeleeTwoHandedAdv > 0) { var out24 = getTranslationByKey('MELEETWOHANDED') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.MeleeTwoHandedAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.MeleeTwoHandedXP + '  ✥  '; } else { var out24 = '';}
 			if (x.NavigationAdv > 0) { var out25 = getTranslationByKey('NAVIGATION') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.NavigationAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.NavigationXP + '  ✥  '; } else { var out25 = '';}
-			if (x.OutdoorSurvivalAdv > 0) { var out26 = getTranslationByKey('OUTDOOR-SURVIVAL') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.OutdoorSurvivalAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.OutdoorSurvivalXP + '  ✥  '; } else { var out26 = '';}
+			if (x.OutdoorSurvivalAdv > 0) { var out26 = getTranslationByKey('OUTDOORSURVIVAL') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.OutdoorSurvivalAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.OutdoorSurvivalXP + '  ✥  '; } else { var out26 = '';}
 			if (x.PerceptionAdv > 0) { var out27 = getTranslationByKey('PERCEPTION') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.PerceptionAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.PerceptionXP + '  ✥  '; } else { var out27 = '';}
 			if (x.RowAdv > 0) { var out28 = getTranslationByKey('ROW') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.RowAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.RowXP + '  ✥  '; } else { var out28 = '';}
 			
@@ -48739,7 +48815,7 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (x.HealAdv > 0) { var out43 = getTranslationByKey('HEAL') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.HealAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.HealXP + '  ✥  '; } else { var out43 = '';}
 			if (x.HypnotismAdv > 0) { var out44 = getTranslationByKey('HYPNOTISM') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.HypnotismAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.HypnotismXP + '  ✥  '; } else { var out44 = '';}
 			if (x.LangMagickAdv > 0) { var out45 = getTranslationByKey('LANGMAGICK') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.LangMagickAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.LangMagickXP + '  ✥  '; } else { var out45 = '';}
-			if (x.PickLockAdv > 0) { var out46 = getTranslationByKey('PICK-LOCK') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.PickLockAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.PickLockXP + '  ✥  '; } else { var out46 = '';}
+			if (x.PickLockAdv > 0) { var out46 = getTranslationByKey('PICKLOCK') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.PickLockAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.PickLockXP + '  ✥  '; } else { var out46 = '';}
 			if (x.PrayAdv > 0) { var out47 = getTranslationByKey('PRAY') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.PrayAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.PrayXP + '  ✥  '; } else { var out47 = '';}
 			if (x.RangedBlackpowderAdv > 0) { var out48 = getTranslationByKey('RANGEDBLACKPOWDER') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.RangedBlackpowderAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.RangedBlackpowderXP + '  ✥  '; } else { var out48 = '';}
 			if (x.RangedBowAdv > 0) { var out49 = getTranslationByKey('RANGEDBOW') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.RangedBowAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.RangedBowXP + '  ✥  '; } else { var out49 = '';}
@@ -48751,19 +48827,20 @@ on('sheet:opened change:repeating_otherxp:otherxp change:repeating_otherxp:other
 			if (x.RangedThrowingAdv > 0) { var out55 = getTranslationByKey('RANGEDTHROWING') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.RangedThrowingAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.RangedThrowingXP + '  ✥  '; } else { var out55 = '';}
 			
 			if (x.ResearchAdv > 0) { var out56 = getTranslationByKey('RESEARCH') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.ResearchAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.ResearchXP + '  ✥  '; } else { var out56 = '';}
-			if (x.SetTrapAdv > 0) { var out57 = getTranslationByKey('SET-TRAP') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.SetTrapAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.SetTrapXP + '  ✥  '; } else { var out57 = '';}
+			if (x.SetTrapAdv > 0) { var out57 = getTranslationByKey('SETTRAP') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.SetTrapAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.SetTrapXP + '  ✥  '; } else { var out57 = '';}
 			if (x.SleightofHandAdv > 0) { var out58 = getTranslationByKey('SLEIGHTOFHAND') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.SleightofHandAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.SleightofHandXP + '  ✥  '; } else { var out58 = '';}
 			if (x.SwimAdv > 0) { var out59 = getTranslationByKey('SWIM') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.SwimAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.SwimXP + '  ✥  '; } else { var out59 = '';}
 			if (x.TrackAdv > 0) { var out60 = getTranslationByKey('TRACK') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.TrackAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.TrackXP + '  ✥  '; } else { var out60 = '';}
 
 			if (x.AuguryAdv > 0) { var out61 = getTranslationByKey('AUGURY') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.AuguryAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.AuguryXP + '  ✥  '; } else { var out61 = '';}
-			if (x.PsychometryAdv > 0) { var out62 = getTranslationByKey('PSYCHOLOGY') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.PsychometryAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.PsychometryXP + '  ✥  '; } else { var out62 = '';}
+			if (x.PsychometryAdv > 0) { var out62 = getTranslationByKey('PSYCHOMETRY') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.PsychometryAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.PsychometryXP + '  ✥  '; } else { var out62 = '';}
 			if (x.ChannellingGreatMawAdv > 0) { var out63 = getTranslationByKey('CHANNELLINGGREATMAW') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.ChannellingGreatMawAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.ChannellingGreatMawXP + '  ✥  '; } else { var out63 = '';}
 			if (x.RunesmithingAdv > 0) { var out64 = getTranslationByKey('RUNESMITHING') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.RunesmithingAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.RunesmithingXP + '  ✥  '; } else { var out64 = '';}
+			if (x.ChannellingHighMagicAdv > 0) { var out65 = getTranslationByKey('CHANNELLINGHIGHMAGIC') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.ChannellingHighMagicAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.ChannellingHighMagicXP + '  ✥  '; } else { var out65 = '';}
 
-				let out = x.XP_ArtDis + out1 + out2 + out3 + out4 + out5 + out6 + out7 + out8 + out9 + out10 + x.XP_EntertainDis + out11 + out12 + out13 + out14 + out15 + out16 + out17 + out18 + out19 + out20 + out21 + out22 + out23 + out24 + out25 + out26 + out27 + x.XP_RideDis + out28 + x.XP_StealthDis + out29 + x.XP_AnimalTrainingDis + out30 + out31 + out32 + out33 + out34 + out35 + out36 + out37 + out38 + out39 + out40 + out41 + out42 + out43 + out44 + x.XP_LanguageDis + x.XP_LoreDis + x.XP_PerformDis + out45 + x.XP_PlayDis + out46 + out47 + out48 + out49 + out50 + out51 + out52 + out53 + out54 + out55 + x.XP_SailDis + x.XP_SecretSignsDis + out56 + out57 + out58 + out59 + out60 + out61 + out62 + out62 + out63 + out64 + x.XP_TradeDis ;
+				let out = x.XP_ArtDis + out1 + out2 + out3 + out4 + out5 + out6 + out7 + out8 + out9 + out10 + x.XP_EntertainDis + out11 + out12 + out13 + out14 + out15 + out16 + out17 + out18 + out19 + out20 + out21 + out22 + out23 + out24 + out25 + out26 + out27 + x.XP_RideDis + out28 + x.XP_StealthDis + out29 + x.XP_AnimalTrainingDis + out61 + out30 + out31 + out32 + out33 + out34 + out35 + out36 + out37 + out65 + out38 + out39 + out40 + out63 + out41 + out42 + out43 + out44 + x.XP_LanguageDis + x.XP_LoreDis + x.XP_PerformDis + out45 + x.XP_PlayDis + out62 + out46 + out47 + out48 + out49 + out50 + out51 + out52 + out53 + out54 + out55 + out64 + x.XP_SailDis + x.XP_SecretSignsDis + out56 + out57 + out58 + out59 + out60 + x.XP_TradeDis ;
 				
-				let xpout = parseInt(x.AthleticsXP) + parseInt(x.BriberyXP) + parseInt(x.CharmXP) + parseInt(x.CharmAnimalXP) + parseInt(x.ConsumeAlcoholXP) + parseInt(x.ClimbXP) + parseInt(x.CoolXP) + parseInt(x.DodgeXP) + parseInt(x.DriveXP) + parseInt(x.EnduranceXP) + parseInt(x.GambleXP) + parseInt(x.GossipXP) + parseInt(x.HaggleXP) + parseInt(x.IntimidateXP) + parseInt(x.IntuitionXP) + parseInt(x.LeadershipXP) + parseInt(x.MeleeBasicXP) + parseInt(x.MeleeBrawlingXP) + parseInt(x.MeleeFencingXP) + parseInt(x.MeleeCavalryXP) + parseInt(x.MeleeFlailXP) + parseInt(x.MeleeParryXP) + parseInt(x.MeleePolearmXP) + parseInt(x.MeleeTwoHandedXP) + parseInt(x.NavigationXP) + parseInt(x.OutdoorSurvivalXP) + parseInt(x.PerceptionXP) + parseInt(x.RowXP) + parseInt(x.AnimalCareXP) + parseInt(x.AuguryXP) + parseInt(x.ChannellingFireXP) + parseInt(x.ChannellingHeavensXP) + parseInt(x.ChannellingMetalXP) + parseInt(x.ChannellingBeastsXP) + parseInt(x.ChannellingLifeXP) + parseInt(x.ChannellingLightXP) + parseInt(x.ChannellingDeathXP) + parseInt(x.ChannellingShadowsXP) + parseInt(x.ChannellingWitchXP) + parseInt(x.ChannellingDarkXP) + parseInt(x.ChannellingChaosXP) + parseInt(x.ChannellingGreatMawXP) + parseInt(x.ChannellingMiscXP) + parseInt(x.EvaluateXP) + parseInt(x.HealXP) + parseInt(x.HypnotismXP) + parseInt(x.LangMagickXP) + parseInt(x.PsychometryXP) + parseInt(x.PickLockXP) + parseInt(x.PrayXP) + parseInt(x.RangedBlackpowderXP) +  parseInt(x.RangedBowXP) + parseInt(x.RangedCrossbowXP) + parseInt(x.RangedEngineeringXP) + parseInt(x.RangedEntanglingXP) + parseInt(x.RangedExplosivesXP) + parseInt(x.RangedSlingXP) + parseInt(x.RangedThrowingXP) + parseInt(x.ResearchXP) + parseInt(x.RunesmithingXP) + parseInt(x.SetTrapXP) + parseInt(x.SleightofHandXP) + parseInt(x.SwimXP) + parseInt(x.TrackXP)  ;	
+				let xpout = parseInt(x.AthleticsXP) + parseInt(x.BriberyXP) + parseInt(x.CharmXP) + parseInt(x.CharmAnimalXP) + parseInt(x.ConsumeAlcoholXP) + parseInt(x.ClimbXP) + parseInt(x.CoolXP) + parseInt(x.DodgeXP) + parseInt(x.DriveXP) + parseInt(x.EnduranceXP) + parseInt(x.GambleXP) + parseInt(x.GossipXP) + parseInt(x.HaggleXP) + parseInt(x.IntimidateXP) + parseInt(x.IntuitionXP) + parseInt(x.LeadershipXP) + parseInt(x.MeleeBasicXP) + parseInt(x.MeleeBrawlingXP) + parseInt(x.MeleeFencingXP) + parseInt(x.MeleeCavalryXP) + parseInt(x.MeleeFlailXP) + parseInt(x.MeleeParryXP) + parseInt(x.MeleePolearmXP) + parseInt(x.MeleeTwoHandedXP) + parseInt(x.NavigationXP) + parseInt(x.OutdoorSurvivalXP) + parseInt(x.PerceptionXP) + parseInt(x.RowXP) + parseInt(x.AnimalCareXP) + parseInt(x.AuguryXP) + parseInt(x.ChannellingFireXP) + parseInt(x.ChannellingHeavensXP) + parseInt(x.ChannellingMetalXP) + parseInt(x.ChannellingBeastsXP) + parseInt(x.ChannellingLifeXP) + parseInt(x.ChannellingLightXP) + parseInt(x.ChannellingDeathXP) + parseInt(x.ChannellingShadowsXP) + parseInt(x.ChannellingHighMagicXP) + parseInt(x.ChannellingWitchXP) + parseInt(x.ChannellingDarkXP) + parseInt(x.ChannellingChaosXP) + parseInt(x.ChannellingGreatMawXP) + parseInt(x.ChannellingMiscXP) + parseInt(x.EvaluateXP) + parseInt(x.HealXP) + parseInt(x.HypnotismXP) + parseInt(x.LangMagickXP) + parseInt(x.PsychometryXP) + parseInt(x.PickLockXP) + parseInt(x.PrayXP) + parseInt(x.RangedBlackpowderXP) +  parseInt(x.RangedBowXP) + parseInt(x.RangedCrossbowXP) + parseInt(x.RangedEngineeringXP) + parseInt(x.RangedEntanglingXP) + parseInt(x.RangedExplosivesXP) + parseInt(x.RangedSlingXP) + parseInt(x.RangedThrowingXP) + parseInt(x.ResearchXP) + parseInt(x.RunesmithingXP) + parseInt(x.SetTrapXP) + parseInt(x.SleightofHandXP) + parseInt(x.SwimXP) + parseInt(x.TrackXP)  ;	
 	console.log(xpout);
 	if (out === "") {out = " ";}
 						setAttrs(
@@ -49432,7 +49509,7 @@ on('sheet:opened change:repeating_spellbookarcane:ExtChannellingLore change:repe
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingLight})") {lore = 6; lorename = "Light";}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingDeath})") {lore = 7; lorename = "Death";}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingShadows})") {lore = 8; lorename = "Shadows";}
-					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingHighMagic})") {lore = 9; lorename = "High Magic";}
+					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{d})") {lore = 9; lorename = "High Magic";}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingWitch})") {lore = 10; lorename = "Witch";}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingDark})") {lore = 11; lorename = "Dark";}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingChaos})") {lore = 12; lorename = "Chaos";}
@@ -49512,7 +49589,7 @@ on('change:repeating_spellbookrituals:ExtChannellingLore', function(event) {
 				if (v.repeating_spellbookrituals_ExtChannellingLore == "(@{ChannellingLight})]") {lore = 6; lorename = "Light";}
 				if (v.repeating_spellbookrituals_ExtChannellingLore == "(@{ChannellingDeath})") {lore = 7; lorename = "Death";}
 				if (v.repeating_spellbookrituals_ExtChannellingLore == "(@{ChannellingShadows})") {lore = 8; lorename = "Shadows";}
-				if (v.repeating_spellbookrituals_ExtChannellingLore == "(@{ChannellingHighMagic})") {lore = 9; lorename = "High Magic";}
+				if (v.repeating_spellbookrituals_ExtChannellingLore == "(@{d})") {lore = 9; lorename = "High Magic";}
 				if (v.repeating_spellbookrituals_ExtChannellingLore == "(@{ChannellingWitch})") {lore = 10; lorename = "Witch";}
 				if (v.repeating_spellbookrituals_ExtChannellingLore == "(@{ChannellingDark})") {lore = 11; lorename = "Dark";}
 				if (v.repeating_spellbookrituals_ExtChannellingLore == "(@{ChannellingChaos})") {lore = 12; lorename = "Chaos";}
@@ -49756,8 +49833,8 @@ on('sheet:opened change:Talents_XP_Dis change:XP_Display3 change:XP_Mode', funct
 		dis2 = v.XP_Display3 || " ";
 	console.log("Talent XP change");
 			out = dis1 + ' ' + dis2;
-	if (v.Advantage_casting > 0) {spa = v.Advantage_casting} else {spa = 0}
-    console.log("Casting Adv Set");	
+	if (v.Advantage_casting > 0) {spa = v.Advantage_casting; console.log("Casting Adv Set");} else {spa = 0}
+    	
 		setAttrs({
 		[`Talents_XP_Display`]: out,
 		[`Talents_XP`]: out2,
@@ -52615,7 +52692,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	else if (trigger === 'channellingshadows') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_8}';
 	addtak= '*@{ChannellingShadowsTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  
-	else if (trigger === 'channellinghighmagic') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{lileathsblessing=[[@{Talent_LileathsblessingLvl}*2]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_9}';
+	else if (trigger === 'd') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{lileathsblessing=[[@{Talent_LileathsblessingLvl}*2]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_9}';
 	addtak= '*@{ChannellingHighMagicTaken}';
 	addsl = '+@{Talent_LileathsblessingLvl}*2';
 	sladd = '+@{Talent_LileathsblessingLvl}';
@@ -52708,7 +52785,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	else if (trigger === 'intuition') {cond = '{{cond=[[@{condgen_see_hear}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[@{DeafenedMod}]]}} {{sixthsense=[[@{Talent_SixthSenseLvl}]]}} {{detectartefact=[[@{Talent_DetectArtefactLvl}]]}} {{holyvisions=[[@{Talent_HolyVisionsLvl}]]}}';
 	sitmods = '+@{Talent_SixthSenseLvl}+@{Talent_DetectArtefactLvl}+@{Talent_HolyVisionsLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_hear}-@{DrunkMod})`).replaceAll('>sitmod<', sitmods);}
-	else if (trigger === 'perception') {cond = '{{cond=[[@{condgen_see_hear_perception}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod} - @{FatiguedPercMod}]]}} {{broken=[[@{BrokenMod} - @{BrokenPercMod}]]}} {{stuned=[[@{StunedMod} - @{StunedPercMod}]]}} {{poisoned=[[@{PoisonedMod} - @{PoisonedPercMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod} - @{BlindedPercMod}]]}} {{deafened=[[@{DeafenedMod} - @{DeafenedPercMod}]]}} {{acute1=[[@{Talent_AcuteSense1Lvl}]]}} {{acute1name=@{Talent_AcuteSense1}}} {{acute2=[[@{Talent_AcuteSense2Lvl}]]}} {{acute2name=@{Talent_AcuteSense2}}} {{combataware=[[@{Talent_CombatAwareLvl}]]}} {{lipreading=[[@{Talent_LipreadingLvl}]]}} {{nightvision=[[@{Talent_NightVisionLvl}]]}} {{nosefortrouble=[[@{Talent_NoseForTroubleLvl}]]}} {{secondsight=[[@{Talent_SecondSightLvl}]]}} {{trapper=[[@{Talent_TrapperLvl}]]}}';
+	else if (trigger === 'perception') {cond = '{{cond=[[@{condgen_see_hear_perception}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod} - @{FatiguedPercMod}]]}} {{broken=[[@{BrokenMod} - @{BrokenPercMod}]]}} {{stuned=[[@{StunedMod} - @{StunedPercMod}]]}} {{poisoned=[[@{PoisonedMod} - @{PoisonedPercMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod} - @{BlindedPercMod}]]}} {{deafened=[[@{DeafenedMod} - @{DeafenedPercMod}]]}} {{acute1=[[@{Talent_AcuteSense1Lvl}]]}} {{acute1name=@{Talent_AcuteSense1}}} {{acute2=[[@{Talent_AcuteSense2Lvl}]]}} {{acute2name=@{Talent_AcuteSense2}}} {{acute3=[[@{Talent_AcuteSense3Lvl}]]}} {{acute3name=@{Talent_AcuteSense3}}} {{acute4=[[@{Talent_AcuteSense4Lvl}]]}} {{acute4name=@{Talent_AcuteSense4}}} {{acute5=[[@{Talent_AcuteSense5Lvl}]]}} {{acute5name=@{Talent_AcuteSense5}}} {{combataware=[[@{Talent_CombatAwareLvl}]]}} {{lipreading=[[@{Talent_LipreadingLvl}]]}} {{nightvision=[[@{Talent_NightVisionLvl}]]}} {{nosefortrouble=[[@{Talent_NoseForTroubleLvl}]]}} {{secondsight=[[@{Talent_SecondSightLvl}]]}} {{trapper=[[@{Talent_TrapperLvl}]]}}';
 	sitmods = '+@{Talent_AcuteSense1Lvl}+@{Talent_AcuteSense2Lvl}+@{Talent_CombatAwareLvl}+@{Talent_LipreadingLvl}+@{Talent_NightVisionLvl}+@{Talent_NoseForTroubleLvl}+@{Talent_SecondSightLvl}+@{Talent_TrapperLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_hear_perception})`).replaceAll('>sitmod<', sitmods);} else {cond = ''}
 
@@ -52746,7 +52823,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
             if (trigger === 'channellinglight') {robes = results.results.robes.result; sptal1 = results.results.sptal1.result}
             if (trigger === 'channellingdeath') {robes = results.results.robes.result; sptal1 = results.results.sptal1.result}
             if (trigger === 'channellingshadows') {robes = results.results.robes.result; sptal1 = results.results.sptal1.result}
-            if (trigger === 'channellinghighmagic') {robes = results.results.robes.result; sptal1 = results.results.sptal1.result}
+            if (trigger === 'd') {robes = results.results.robes.result; sptal1 = results.results.sptal1.result}
             if (trigger === 'channellingwitch') {robes = results.results.robes.result; sptal1 = results.results.sptal1.result}
             if (trigger === 'channellingdark') {robes = results.results.robes.result; sptal1 = results.results.sptal1.result}
             if (trigger === 'channellingchaos') {robes = results.results.robes.result; sptal1 = results.results.sptal1.result}
@@ -52797,7 +52874,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 		if (trigger === "channellinglight") {lore = 6}
 		if (trigger === "channellingdeath") {lore = 7}
 		if (trigger === "channellingshadows") {lore = 8}
-		if (trigger === "channellinghighmagic") {lore = 14}
+		if (trigger === "d") {lore = 14}
 		if (trigger === "channellingwitch") {lore = 9}
 		if (trigger === "channellingdark") {lore = 10}
 		if (trigger === "channellingchaos") {lore = 11}
@@ -55263,7 +55340,7 @@ on('change:Used_Enchanted_Staff change:repeating_spellbookarcane:ExtChannellingL
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingLight})") {checklore = 6;}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingDeath})") {checklore = 7;}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingShadows})") {checklore = 8;}
-					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingHighMagic})") {checklore = 9;}
+					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{d})") {checklore = 9;}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingWitch})") {checklore = 10;}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingDark})") {checklore = 11;}
 					if(t[`repeating_spellbookarcane_${id}_ExtChannellingLore`] === "(@{ChannellingChaos})") {checklore = 12;}
@@ -55295,7 +55372,7 @@ on('change:Used_Enchanted_Staff change:repeating_spellbookarcane:ExtChannellingL
 					if(t[`repeating_spellbookrituals_${id}_ExtChannellingLore`] === "(@{ChannellingLight})") {checklore = 6;}
 					if(t[`repeating_spellbookrituals_${id}_ExtChannellingLore`] === "(@{ChannellingDeath})") {checklore = 7;}
 					if(t[`repeating_spellbookrituals_${id}_ExtChannellingLore`] === "(@{ChannellingShadows})") {checklore = 8;}
-					if(t[`repeating_spellbookrituals_${id}_ExtChannellingLore`] === "(@{ChannellingHighMagic})") {checklore = 9;}
+					if(t[`repeating_spellbookrituals_${id}_ExtChannellingLore`] === "(@{d})") {checklore = 9;}
 					if(t[`repeating_spellbookrituals_${id}_ExtChannellingLore`] === "(@{ChannellingWitch})") {checklore = 10;}
 					if(t[`repeating_spellbookrituals_${id}_ExtChannellingLore`] === "(@{ChannellingDark})") {checklore = 11;}
 					if(t[`repeating_spellbookrituals_${id}_ExtChannellingLore`] === "(@{ChannellingChaos})") {checklore = 12;}
@@ -55400,7 +55477,7 @@ on("change:repeating_spellbookarcane:UsedSpell1 change:repeating_spellbookarcane
 					if(v.repeating_spellbookarcane_ExtChannellingLore === "(@{ChannellingLight}) [Light]") {checklore = 6;}
 					if(v.repeating_spellbookarcane_ExtChannellingLore === "(@{ChannellingDeath}) [Death]") {checklore = 7;}
 					if(v.repeating_spellbookarcane_ExtChannellingLore === "(@{ChannellingShadows}) [Shadows]") {checklore = 8;}
-					if(v.repeating_spellbookarcane_ExtChannellingLore === "(@{ChannellingHighMagic}) [HighMagic]") {checklore = 9;}
+					if(v.repeating_spellbookarcane_ExtChannellingLore === "(@{d}) [HighMagic]") {checklore = 9;}
 					if(v.repeating_spellbookarcane_ExtChannellingLore === "(@{ChannellingWitch}) [Witch]") {checklore = 10;}
 					if(v.repeating_spellbookarcane_ExtChannellingLore === "(@{ChannellingDark}) [Dark]") {checklore = 11;}
 					if(v.repeating_spellbookarcane_ExtChannellingLore === "(@{ChannellingChaos}) [Chaos]") {checklore = 12;}
@@ -55745,7 +55822,7 @@ on('sheet:opened change:Quick_Spell_Lore change:Quick_Spell_LoreMod', function(e
 			if(v.Quick_Spell_Lore === "(@{ChannellingLight})") {lore = 6;}
 			if(v.Quick_Spell_Lore === "(@{ChannellingDeath})") {lore = 7;}
 			if(v.Quick_Spell_Lore === "(@{ChannellingShadows})") {lore = 8;}
-			if(v.Quick_Spell_Lore === "(@{ChannellingHighMagic})") {lore = 9}
+			if(v.Quick_Spell_Lore === "(@{d})") {lore = 9}
 			if(v.Quick_Spell_Lore === "(@{ChannellingWitch})") {lore = 10;}
 			if(v.Quick_Spell_Lore === "(@{ChannellingDark})") {lore = 11;}
 			if(v.Quick_Spell_Lore === "(@{ChannellingChaos})") {lore = 12;}
@@ -56746,5 +56823,46 @@ on('sheet:opened change:talent_distractLvl', function(event) {
 			});
 		});
 		
+		  on('', function(eventInfo) {
+			console.log("TESST");
+			console.log("Test Make Character");
+		
+			getAttrs(["WeaponListBlackpowder", "WeaponListBow", "WeaponListCrossbow", "WeaponListEngineering", "WeaponListEntangling", "WeaponListExlposives", "WeaponListSling", "WeaponListThrowing", "StrengthBonus"], function(v) {	
+		
+				var trigger = eventInfo.triggerName;
+				console.log(trigger);
+				typepre = trigger.slice(18)
+				type = capitalizeFirstLetter(typepre)
+				console.log(type);
+		
+				selected = v[`WeaponList${type}`];
+				console.log(selected);
+		
+				makeCharacter("APOTHECARY");
+		
+			});
+		});
+
+		function makeCharacter(addkey) {
+			const careername = addkey;
+		
+				key = getTranslationByKey('CAREER-' + careername);	  
+				console.log(key);
+
+
+		
+				keys = key.split(':');
+				console.log(keys);
+
+				                    keys.forEach(id => {
+										cp = id.split(';')
+											cp.forEach(id2 => {
+												console.log(id2);
+											});
+									});
+
+
+
+		}
 		
 </script>
