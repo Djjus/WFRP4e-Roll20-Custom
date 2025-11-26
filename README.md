@@ -95,10 +95,10 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 
 Aug 18th 2025 v1.76e
 
-- Added 3 more Acute Sense (upto 5) , to cover all the normal senses. (Issue #https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/3)
-- Added a 9th Arcane Lore, to allow upto 9 lores per PC. Allows all 8 colors + 1 Dark Lore. (Issue #https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/3)
-- Removed Small/Large Talents. These are not real talents and have no functionality in the game, they only changed the size option on the Sheet. All 7 Sizes Tiny to Monstrous is a Create trait now, and also accessable in the background tab. (Issue #https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/3)
-- AutoXP fixes, fixed a number of Auto XP issues with either XP not adding to total or not showing in text correctly in the XP tab   (Issue #https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/2)
+- Added 3 more Acute Sense (upto 5) , to cover all the normal senses. (Issue https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/3)
+- Added a 9th Arcane Lore, to allow upto 9 lores per PC. Allows all 8 colors + 1 Dark Lore. (Issue https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/3)
+- Removed Small/Large Talents. These are not real talents and have no functionality in the game, they only changed the size option on the Sheet. All 7 Sizes Tiny to Monstrous is a Create trait now, and also accessable in the background tab. (Issue https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/3)
+- AutoXP fixes, fixed a number of Auto XP issues with either XP not adding to total or not showing in text correctly in the XP tab   (Issue https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/2)
 
 
 July 24rd 2025 v1.76d
