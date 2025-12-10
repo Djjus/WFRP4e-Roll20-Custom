@@ -9,10 +9,10 @@ Unfortunatley roll20 have decided to delist this sheet due to disagreeing with m
 
 To install, create a new game and set the character sheet to custom (Pro accounts only). Make sure you are looking at the RAW code on Github
 
-Use CNTL-A to copy all of the HTML code and place it into Roll20 HTML Layout
-Use CNTL-A to copy all of the CSS code and place it into Roll20 CSS Styling
-Use CNTL-A to copy all of the JSON translation and place it into Roll20 Translations
-Save in Roll20 and you are good to go.
+- Use CNTL-A to copy all of the HTML code and place it into Roll20 HTML Layout
+- Use CNTL-A to copy all of the CSS code and place it into Roll20 CSS Styling
+- Use CNTL-A to copy all of the JSON translation and place it into Roll20 Translations
+- Save in Roll20 and you are good to go.
 
 -----------------------------
 
