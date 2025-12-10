@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div class="overall-wrapper">
 	<div class="compendium-drop-target">
 	<div class="useBackground">
@@ -658,10 +659,10 @@
 			<div class="row mar-b-md">
 				<div class="col-1-7"><input type="number" name="attr_bp" value="0" /></div>
 				<div class="col-25-2 pad-r-sm" data-i18n-title="SILVER-TO-BRASS" title="Silver to Brass"><button type="action" name="act_sstobp" ><span>&lt;</span></button></div>
-				<div class="col-25-2 pad-r-sm" data-i18n-title="BRASS-TO-SILVER" title="Brass to Silver"><button type="action" name="act_bptoss" ><span>></span></button></div>
+				<div class="col-25-2 pad-r-sm" data-i18n-title="BRASS-TO-SILVER" title="Brass to Silver"><button type="action" name="act_bptoss" ><span>&gt;</span></button></div>
 				<div class="col-1-7"><input type="number" name="attr_ss" value="0" /></div>
 				<div class="col-25-2 pad-r-sm" data-i18n-title="GOLD-TO-SILVER" title="Gold to Silver"><button type="action" name="act_gctoss" ><span>&lt;</span></button></div>
-				<div class="col-25-2 pad-r-sm" data-i18n-title="SILVER-TO-GOLD" title="Silver to Gold"><button type="action" name="act_sstogc" ><span>></span></button></div>
+				<div class="col-25-2 pad-r-sm" data-i18n-title="SILVER-TO-GOLD" title="Silver to Gold"><button type="action" name="act_sstogc" ><span>&gt;</span></button></div>
 				<div class="col-1-7 pad-r-sm"><input type="number" name="attr_gc" value="0" /></div>
 				<div class="col-1-7 pad-r-sm"><input type="number" name="attr_money_total_gc" value="round(((@{BP} / 240) + (@{SS} / 20) + @{GC})*1000)/1000" disabled /></div>
 				<div class="col-1-3 pad-t-sm pad-r-sm center">
@@ -2473,7 +2474,7 @@
 							<option value="1" >&#60;=10%</option>
 							<option value="2" >&#60;=50%</option>
 							<option value="0" selected="selected" >&#60;=100%</option>
-							<option value="3" >>100%</option>
+							<option value="3" >&gt;100%</option>
 							<option value="4" >&#60;=300%</option>
 						</select>
 				</div>
@@ -2620,52 +2621,52 @@
 					</div>
 
 				<div class="col-1">
-				<input type="checkbox" name="attr_npc-box-hide" value="1" />
-					<div class="row sub-header-black">
-						<div class="col-23-100 center small-label-white vert-middle"><span data-i18n="NPC-NAME">NPC name</span></div>
-						<div class="col-1-10 center small-label-white pad-r-sm" data-i18n="SIZE">Size</div>
-						<div class="col-1-13 center small-label-white vert-middle pad-r-sm mar-l-md" data-i18n="DAMAGE">Damage</div>
-						<div class="col-1-13 center small-label-white vert-middle pad-r-sm mar-l-md" data-i18n="WOUNDS">Wounds</div>
+					<input type="checkbox" name="attr_npc-box-hide" value="1" />
+						<div class="row sub-header-black">
+							<div class="col-23-100 center small-label-white vert-middle"><span data-i18n="NPC-NAME">NPC name</span></div>
+							<div class="col-1-10 center small-label-white pad-r-sm" data-i18n="SIZE">Size</div>
+							<div class="col-1-13 center small-label-white vert-middle pad-r-sm mar-l-md" data-i18n="DAMAGE">Damage</div>
+							<div class="col-1-13 center small-label-white vert-middle pad-r-sm mar-l-md" data-i18n="WOUNDS">Wounds</div>
 
-						<div class="col-4-100 center small-label-white vert-middle mar-l-sm"><span style="font-size: 8px" data-i18n="ABBREVIATE-TOUGHNESS-BONUS">TB</span></div>
-						<div class="col-4-100 center small-label-white vert-middle mar-l-sm"><span style="font-size: 8px" data-i18n="ARMOR">Armor</span></div>
-						<div class="col-4-100 center small-label-white vert-middle mar-l-sm"><span style="font-size: 8px" data-i18n="ABBREVIATE-STRENGTH-BONUS">SB</span></div>
-						<div class="col-4-100 center small-label-white vert-middle mar-l-md"><span style="font-size: 8px" data-i18n="FORTUNE">Fortune</span></div>
-						<div class="col-1-10 center small-label-white vert-middle"><span data-i18n="INITIATIVE">Initiative</span></div>
-					<div class="col-1-9c mar-l-md">
-					<button type="roll" class="adv-buttonnpc roll3" name="Advantage" value="!token-mod --set statusmarkers|!2-Advantage[[@{selected|AdvantageNPC}]]">
-						<span data-i18n="ADVANTAGE">Advantage</span>
-					</button>
-					</div>
+							<div class="col-4-100 center small-label-white vert-middle mar-l-sm"><span style="font-size: 8px" data-i18n="ABBREVIATE-TOUGHNESS-BONUS">TB</span></div>
+							<div class="col-4-100 center small-label-white vert-middle mar-l-sm"><span style="font-size: 8px" data-i18n="ARMOR">Armor</span></div>
+							<div class="col-4-100 center small-label-white vert-middle mar-l-sm"><span style="font-size: 8px" data-i18n="ABBREVIATE-STRENGTH-BONUS">SB</span></div>
+							<div class="col-4-100 center small-label-white vert-middle mar-l-md"><span style="font-size: 8px" data-i18n="FORTUNE">Fortune</span></div>
+							<div class="col-1-10 center small-label-white vert-middle"><span data-i18n="INITIATIVE">Initiative</span></div>
+						<div class="col-1-9c mar-l-md">
+						<button type="roll" class="adv-buttonnpc roll3" name="Advantage" value="!token-mod --set statusmarkers|!2-Advantage[[@{selected|AdvantageNPC}]]">
+							<span data-i18n="ADVANTAGE">Advantage</span>
+						</button>
+						</div>
 
-				<input type="checkbox" name="attr_NPCUsedWeapon" class="hidden hider" value="0" selected />
-				<div class="col-1-30 center pad-r-sm block-a">
-					<button type="roll" class="npc-combat" name="roll_NPCUsedWeapon" style="margin-left: 51px" value="" data-il8n-title="SELECT-A-WEAPON" title="Select a Weapon"><span>X</span></button>
-				</div>
-				<input type="checkbox" name="attr_NPCUsedWeapon" class="hidden hider" value="1" />
-				<div class="col-1-30 left pad-r-sm block-a">
-					<button type="action" class="npc-combat" name="act_npcattackroll" style="margin-left: 51px" ><span data-i18n="ABB-ATK">Atk</span></button>
-				</div>
-				<input type="checkbox" name="attr_NPCUsedWeapon" class="hidden hider" value="2" />
-				<div class="col-1-30 left pad-r-sm block-a">
-					<button type="action" class="npc-combat" name="act_npcattack2roll" style="margin-left: 51px" ><span data-i18n="ABB-ATK">Atk</span></button>
-				</div>
-				<input type="checkbox" name="attr_NPCUsedWeapon" class="hidden hider" value="3" />
-				<div class="col-1-30 left pad-r-sm block-a">
-					<button type="action" class="npc-combat" name="act_npcattack3roll" style="margin-left: 51px" ><span data-i18n="ABB-ATK">Atk</span></button>
-				</div>
-				<input type="checkbox" name="attr_NPCUsedDefensive" class="hidden hider" value="1" />
-				<div class="col-1-30 center pad-r-sm block-a">
-					<button type="action" class="npc-combat" name="act_npcopposedroll" style="margin-left: 52px" ><span data-i18n="ABB-OPP">Opp</span></button>
-				</div>
-				<input type="checkbox" name="attr_NPCUsedDefensive" class="hidden hider" value="2" />
-				<div class="col-1-30 center pad-r-sm block-a">
-					<button type="action" class="npc-combat" name="act_npcopposed2roll" style="margin-left: 52px" ><span data-i18n="ABB-OPP">Opp</span></button>
-				</div>
-				<input type="checkbox" name="attr_NPCUsedDefensive" class="hidden hider" value="3" />
-				<div class="col-1-30 center pad-r-sm block-a">
-					<button type="action" class="npc-combat" name="act_npcopposed3roll" style="margin-left: 52px" ><span data-i18n="ABB-OPP">Opp</span></button>
-				</div>
+						<input type="checkbox" name="attr_NPCUsedWeapon" class="hidden hider" value="0" selected />
+						<div class="col-1-30 center pad-r-sm block-a">
+							<button type="roll" class="npc-combat" name="roll_NPCUsedWeapon" style="margin-left: 51px" value="" data-il8n-title="SELECT-A-WEAPON" title="Select a Weapon"><span>X</span></button>
+						</div>
+						<input type="checkbox" name="attr_NPCUsedWeapon" class="hidden hider" value="1" />
+						<div class="col-1-30 left pad-r-sm block-a">
+							<button type="action" class="npc-combat" name="act_npcattackroll" style="margin-left: 51px" ><span data-i18n="ABB-ATK">Atk</span></button>
+						</div>
+						<input type="checkbox" name="attr_NPCUsedWeapon" class="hidden hider" value="2" />
+						<div class="col-1-30 left pad-r-sm block-a">
+							<button type="action" class="npc-combat" name="act_npcattack2roll" style="margin-left: 51px" ><span data-i18n="ABB-ATK">Atk</span></button>
+						</div>
+						<input type="checkbox" name="attr_NPCUsedWeapon" class="hidden hider" value="3" />
+						<div class="col-1-30 left pad-r-sm block-a">
+							<button type="action" class="npc-combat" name="act_npcattack3roll" style="margin-left: 51px" ><span data-i18n="ABB-ATK">Atk</span></button>
+						</div>
+						<input type="checkbox" name="attr_NPCUsedDefensive" class="hidden hider" value="1" />
+						<div class="col-1-30 center pad-r-sm block-a">
+							<button type="action" class="npc-combat" name="act_npcopposedroll" style="margin-left: 52px" ><span data-i18n="ABB-OPP">Opp</span></button>
+						</div>
+						<input type="checkbox" name="attr_NPCUsedDefensive" class="hidden hider" value="2" />
+						<div class="col-1-30 center pad-r-sm block-a">
+							<button type="action" class="npc-combat" name="act_npcopposed2roll" style="margin-left: 52px" ><span data-i18n="ABB-OPP">Opp</span></button>
+						</div>
+						<input type="checkbox" name="attr_NPCUsedDefensive" class="hidden hider" value="3" />
+						<div class="col-1-30 center pad-r-sm block-a">
+							<button type="action" class="npc-combat" name="act_npcopposed3roll" style="margin-left: 52px" ><span data-i18n="ABB-OPP">Opp</span></button>
+						</div>
 
 					</div>
 
@@ -2706,45 +2707,43 @@
 
 					<input type="hidden" name="attr_init_rule" value="" />
 
-				<input type="checkbox" name="attr_init_rule" class="hidden hider" value="0" />
-				<div class="col-1-10 center pad-r-sm block-a">
-					<button type="roll" class="combat-actions-np" name="roll_Initiative" style="height: 20px" value="@{Whisper} &amp&{template:whfrp2e} {{unconscious=[[@{UnconsciousMod}]]}} {{title=^{INITIATIVE}}} {{character_name=@{npc_name}}} {{target=[[(@{InitiativeStat})]]}} {{chartest=true}} {{test=[[@{roll_rule}&{tracker}]]}}">
-						<span data-i18n="INITIATIVE">Initiative</span>
-					</button>
-				</div>
-				<input type="checkbox" name="attr_init_rule" class="hidden hider" value="1" />
-				<div class="col-1-10 center pad-r-sm block-a">
-					<button type="roll" class="combat-actions-np" name="roll_Initiative" style="height: 20px" value="@{Whisper} &{template:whfrp2e} {{unconscious=[[@{UnconsciousMod}]]}} {{title=^{INITIATIVE}}} {{character_name=@{npc_name}}} {{inittest=[[1d10+@{InitiativeStat}&{tracker}]]}}">
-						<span data-i18n="INITIATIVE">Initiative</span>
-					</button>
-				</div>
-				<input type="checkbox" name="attr_init_rule" class="hidden hider" value="2" checked="checked" />
-				<div class="col-1-10 center pad-r-sm block-a">
-					<button type="roll" class="combat-actions-np" name="roll_Initiative" style="height: 20px" value="@{Whisper} &{template:whfrp2e} {{unconscious=[[@{UnconsciousMod}]]}} {{title=^{INITIATIVE}}} {{character_name=@{npc_name}}} {{inittest=[[1d10+floor((@{AgilityStat})/10)+floor((@{InitiativeStat})/10)&{tracker}]]}}">
-						<span data-i18n="INITIATIVE">Initiative</span>
-					</button>
-				</div>
-
-			<div class="col-1-9c center border-left2">
-						<input class="center" type="number" name="attr_AdvStat" value="0" min="0" />
-						<input type="hidden" name="attr_AdvantageNPC" value="0" />
+					<input type="checkbox" name="attr_init_rule" class="hidden hider" value="0" />
+					<div class="col-1-10 center pad-r-sm block-a">
+						<button type="roll" class="combat-actions-np" name="roll_Initiative" style="height: 20px" value="@{Whisper} &amp&{template:whfrp2e} {{unconscious=[[@{UnconsciousMod}]]}} {{title=^{INITIATIVE}}} {{character_name=@{npc_name}}} {{target=[[(@{InitiativeStat})]]}} {{chartest=true}} {{test=[[@{roll_rule}&{tracker}]]}}">
+							<span data-i18n="INITIATIVE">Initiative</span>
+						</button>
+					</div>
+					<input type="checkbox" name="attr_init_rule" class="hidden hider" value="1" />
+					<div class="col-1-10 center pad-r-sm block-a">
+						<button type="roll" class="combat-actions-np" name="roll_Initiative" style="height: 20px" value="@{Whisper} &{template:whfrp2e} {{unconscious=[[@{UnconsciousMod}]]}} {{title=^{INITIATIVE}}} {{character_name=@{npc_name}}} {{inittest=[[1d10+@{InitiativeStat}&{tracker}]]}}">
+							<span data-i18n="INITIATIVE">Initiative</span>
+						</button>
+					</div>
+					<input type="checkbox" name="attr_init_rule" class="hidden hider" value="2" checked="checked" />
+					<div class="col-1-10 center pad-r-sm block-a">
+						<button type="roll" class="combat-actions-np" name="roll_Initiative" style="height: 20px" value="@{Whisper} &{template:whfrp2e} {{unconscious=[[@{UnconsciousMod}]]}} {{title=^{INITIATIVE}}} {{character_name=@{npc_name}}} {{inittest=[[1d10+floor((@{AgilityStat})/10)+floor((@{InitiativeStat})/10)&{tracker}]]}}">
+							<span data-i18n="INITIATIVE">Initiative</span>
+						</button>
 					</div>
 
-				<input type="checkbox" name="attr_NPCUsedRanged" class="hidden hider" value="1" />
-				<div class="col-1-20 center pad-r-sm block-a">
-					<button type="action" class="npc-combat" name="act_npcattackrangedroll" style="margin-left: 74px" ><span data-i18n="ABB-RGD">Rdg</span></button>
-				</div>
-				<input type="checkbox" name="attr_NPCUsedRanged" class="hidden hider" value="2" />
-				<div class="col-1-20 center pad-r-sm block-a">
-					<button type="action" class="npc-combat" name="act_npcattackranged2roll" style="margin-left: 74px" ><span data-i18n="ABB-RGD">Rdg</span></button>
-				</div>
+						<div class="col-1-9c center border-left2">
+								<input class="center" type="number" name="attr_AdvStat" value="0" min="0" />
+								<input type="hidden" name="attr_AdvantageNPC" value="0" />
+							</div>
 
-					<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="0" />
-					<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="1" checked="checked" />
-					
-		<div><hr>
-		<span class="spacer"></span>
-			<div class="col-1-1">
+						<input type="checkbox" name="attr_NPCUsedRanged" class="hidden hider" value="1" />
+						<div class="col-1-20 center pad-r-sm block-a">
+							<button type="action" class="npc-combat" name="act_npcattackrangedroll" style="margin-left: 74px" ><span data-i18n="ABB-RGD">Rdg</span></button>
+						</div>
+						<input type="checkbox" name="attr_NPCUsedRanged" class="hidden hider" value="2" />
+						<div class="col-1-20 center pad-r-sm block-a">
+							<button type="action" class="npc-combat" name="act_npcattackranged2roll" style="margin-left: 74px" ><span data-i18n="ABB-RGD">Rdg</span></button>
+						</div>
+
+					</div>
+				<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="1" />
+			<div class="col-1"><hr>
+				<span class="spacer"></span>
 				<div class="row sub-header">
 					<div class="col-1-13 center vert-middle" >
 					<button type="roll" class="conditions-button roll3" name="set_Marker_AblazeNPC" value="!token-mod --set statusmarkers|!3-Ablaze[[@{AblazeNPC}]]">
@@ -2865,7 +2864,6 @@
 					</div>
 				<input type="hidden" name="attr_UnconsciousStat" value="  (@{UnconsciousNPC})*@{ConditionModEnable} " />
 				</div>
-			</div>
 
 				<input type="hidden" name="attr_AdvantageNPCDisplay" value="  @{AdvantageNPC}*10  " />
 				<input type="hidden" name="attr_ConditionModNPC" value="  [[(({[[@{FatiguedStat}]],[[@{BrokenStat}]],[[@{StunedStat}]],[[@{PoisonedStat}]]}kh1)*@{ConditionModEnable})]] " />
@@ -3650,10 +3648,10 @@
 							<input type="checkbox" name="attr_MeleeHack2" value="1" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpale2"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpact2"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpact2"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpale2"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_MeleePenetrating2" value="1" />
@@ -3840,10 +3838,10 @@
 							<input type="checkbox" name="attr_MeleeHack3" value="1" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpale3"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpact3"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpact3"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpale3"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_MeleePenetrating3" value="1" />
@@ -4716,6 +4714,7 @@
 					</div>
 				</div>
 			</div>
+	</div>
 		</fieldset>
 		<span class="spacer-l"></span>
 	</div>
@@ -4848,12 +4847,10 @@
 					<button type="action" class="npc-combat" name="act_npcattackranged2roll" style="margin-left: 74px" ><span data-i18n="ABB-RGD">Rdg</span></button>
 				</div>
 
-					<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="0" />
-					<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="1" checked="checked" />
-					
-		<div><hr>
-		<span class="spacer"></span>
-			<div class="col-1-1">
+					</div>
+				<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="1" />
+			<div class="col-1"><hr>
+				<span class="spacer"></span>
 				<div class="row sub-header">
 					<div class="col-1-13 center vert-middle" >
 					<button type="roll" class="conditions-button roll3" name="set_Marker_AblazeNPC" value="!token-mod --set statusmarkers|!3-Ablaze[[@{AblazeNPC}]]">
@@ -4974,7 +4971,6 @@
 					</div>
 				<input type="hidden" name="attr_UnconsciousStat" value="  (@{UnconsciousNPC})*@{ConditionModEnable} " />
 				</div>
-			</div>
 
 				<input type="hidden" name="attr_AdvantageNPCDisplay" value="  @{AdvantageNPC}*10  " />
 				<input type="hidden" name="attr_ConditionModNPC" value="  [[(({[[@{FatiguedStat}]],[[@{BrokenStat}]],[[@{StunedStat}]],[[@{PoisonedStat}]]}kh1)*@{ConditionModEnable})]] " />
@@ -5565,10 +5561,10 @@
 							<input type="checkbox" name="attr_MeleeHack" value="1" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpact"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpact" value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpale"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpale" value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_MeleePenetrating" value="1" />
@@ -5755,10 +5751,10 @@
 							<input type="checkbox" name="attr_MeleeHack2" value="1" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpale2"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpact2"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpact2"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpale2"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_MeleePenetrating2" value="1" />
@@ -5943,10 +5939,10 @@
 							<input type="checkbox" name="attr_MeleeHack3" value="1" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpale3"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpact3"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpact3"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpale3"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_MeleePenetrating3" value="1" />
@@ -6803,6 +6799,7 @@
 					</div>
 				</div>
 			</div>
+	</div>
 		</fieldset>
 		<span class="spacer-l"></span>
 	</div>
@@ -6935,12 +6932,10 @@
 					<button type="action" class="npc-combat" name="act_npcattackranged2roll" style="margin-left: 74px" ><span data-i18n="ABB-RGD">Rdg</span></button>
 				</div>
 
-					<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="0" />
-					<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="1" checked="checked" />
-					
-		<div><hr>
-		<span class="spacer"></span>
-			<div class="col-1-1">
+					</div>
+				<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="1" />
+			<div class="col-1"><hr>
+				<span class="spacer"></span>
 				<div class="row sub-header">
 					<div class="col-1-13 center vert-middle" >
 					<button type="roll" class="conditions-button roll3" name="set_Marker_AblazeNPC" value="!token-mod --set statusmarkers|!3-Ablaze[[@{AblazeNPC}]]">
@@ -7061,7 +7056,6 @@
 					</div>
 				<input type="hidden" name="attr_UnconsciousStat" value="  (@{UnconsciousNPC})*@{ConditionModEnable} " />
 				</div>
-			</div>
 
 				<input type="hidden" name="attr_AdvantageNPCDisplay" value="  @{AdvantageNPC}*10  " />
 				<input type="hidden" name="attr_ConditionModNPC" value="  [[(({[[@{FatiguedStat}]],[[@{BrokenStat}]],[[@{StunedStat}]],[[@{PoisonedStat}]]}kh1)*@{ConditionModEnable})]] " />
@@ -7851,10 +7845,10 @@
 							<input type="checkbox" name="attr_MeleeHack2" value="1" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpale2"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpact2"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpact2"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpale2"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_MeleePenetrating2" value="1" />
@@ -8044,10 +8038,10 @@
 							<input type="checkbox" name="attr_MeleeHack3" value="1" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpale3"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpact3"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpact3"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpale3"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_MeleePenetrating3" value="1" />
@@ -8927,6 +8921,7 @@
 					</div>
 				</div>
 			</div>
+	</div>
 		</fieldset>
 		<span class="spacer-l"></span>
 	</div>
@@ -9059,12 +9054,10 @@
 					<button type="action" class="npc-combat" name="act_npcattackranged2roll" style="margin-left: 74px" ><span data-i18n="ABB-RGD">Rdg</span></button>
 				</div>
 
-					<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="0" />
-					<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="1" checked="checked" />
-					
-		<div><hr>
-		<span class="spacer"></span>
-			<div class="col-1-1">
+					</div>
+				<input type="checkbox" name="attr_npc-box-hide" class="hidden hider" value="1" />
+			<div class="col-1"><hr>
+				<span class="spacer"></span>
 				<div class="row sub-header">
 					<div class="col-1-13 center vert-middle" >
 					<button type="roll" class="conditions-button roll3" name="set_Marker_AblazeNPC" value="!token-mod --set statusmarkers|!3-Ablaze[[@{AblazeNPC}]]">
@@ -9185,7 +9178,6 @@
 					</div>
 				<input type="hidden" name="attr_UnconsciousStat" value="  (@{UnconsciousNPC})*@{ConditionModEnable} " />
 				</div>
-			</div>
 
 				<input type="hidden" name="attr_AdvantageNPCDisplay" value="  @{AdvantageNPC}*10  " />
 				<input type="hidden" name="attr_ConditionModNPC" value="  [[(({[[@{FatiguedStat}]],[[@{BrokenStat}]],[[@{StunedStat}]],[[@{PoisonedStat}]]}kh1)*@{ConditionModEnable})]] " />
@@ -9976,10 +9968,10 @@
 							<input type="checkbox" name="attr_MeleeHack2" value="1" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpale2"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpact2"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpact2"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpale2"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_MeleePenetrating2" value="1" />
@@ -10169,10 +10161,10 @@
 							<input type="checkbox" name="attr_MeleeHack3" value="1" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpale3"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpact3"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
-							<input type="checkbox" name="attr_MeleeImpact3"  value="3" />
+							<input type="checkbox" name="attr_MeleeImpale3"  value="3" />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_MeleePenetrating3" value="1" />
@@ -11052,6 +11044,7 @@
 					</div>
 				</div>
 			</div>
+	</div>
 		</fieldset>
 		<span class="spacer-l"></span>
 	</div>
@@ -29973,11 +29966,12 @@
 								<input type="checkbox" name="attr_UsedRangedOff" value="1" />
 							</div>
 
-			<div class="col-4-100">
-              <label class="col-4-100 center talsetshow-check" style="position: relative;left: 15px;">
-		<input class="talsetshow-check__hide" type="hidden" name="attr_RangedWeapon_settings_hide" value="0"/>
-		<input class="talsetshow-check__hide" type="checkbox" name="attr_RangedWeapon_settings_hide" value="1"/><span class="talsetshow-check__span" style="color: #666666" checked="unchecked">y</span>
-              </label>
+							<div class="col-4-100">
+							<label class="col-4-100 center talsetshow-check" style="position: relative;left: 15px;">
+						<input class="talsetshow-check__hide" type="hidden" name="attr_RangedWeapon_settings_hide" value="0"/>
+						<input class="talsetshow-check__hide" type="checkbox" name="attr_RangedWeapon_settings_hide" value="1"/><span class="talsetshow-check__span" style="color: #666666" checked="unchecked">y</span>
+							</label>
+			</div>
 			</div>
 
 		<div class="talsetshow" style="padding-left: 10px">
@@ -29987,14 +29981,14 @@
 				<div class="col-7-8 wrap-box">
 					<div class="row left" style="padding-bottom: 2px; border-bottom: 1px solid black;">
 
-		<span class="spacer-s"></span>
-					<div class="row sub-header">
+						<span class="spacer-s"></span>
+						<div class="row sub-header">
 						<div class="col-1-9 center small-label vert-middle pad-r-sm"><span data-i18n="ONE-HANDED"></span></div>
 						<div class="col-1-9 center small-label vert-middle pad-r-sm"><span data-i18n="TWO-HANDED"></span></div>
 						<div class="col-1-12 center small-label vert-middle pad-r-sm"><span data-i18n="CREWED"></span></div>
-				<input type="checkbox" name="attr_RangedCrewed" class="hidden hider" value="1"/>
+						<input type="checkbox" name="attr_RangedCrewed" class="hidden hider" value="1"/>
 						<div class="col-1-12 center small-label vert-middle pad-r-sm"><span data-i18n="RATING"></span></div>
-				<input type="checkbox" name="attr_RangedCrewed" class="hidden hider" value="0" checked/>
+						<input type="checkbox" name="attr_RangedCrewed" class="hidden hider" value="0" checked/>
 						<div class="col-1-12 center small-label vert-middle pad-r-sm"></div>
 						<div class="col-1-9 center small-label vert-middle pad-r-sm"></div>
 						<div class="col-1-12 center small-label vert-middle pad-r-sm"><span data-i18n="MAGICAL"></span></div>
@@ -30002,8 +29996,8 @@
 						<div class="col-1-12 center small-label vert-middle pad-r-sm"><span data-i18n="DURABLE"></span></div>
 						<div class="col-1-12 center small-label vert-middle pad-r-sm"><span data-i18n="DMG-RED"></span></div>
 						<div class="col-1-12 center small-label vert-middle pad-r-sm"><span data-i18n="DMG-PTS"></span></div>
-					</div>
-					<div class="row">
+						</div>
+						<div class="row">
 						<div class="col-1-9 center pad-r-sm">
 							<input type="checkbox" name="attr_Used_RangedTwoHanded" value="0" checked/>
 						</div>
@@ -30013,11 +30007,11 @@
 						<div class="col-1-12 center pad-r-sm">
 							<input type="checkbox" name="attr_RangedCrewed" value="1" />
 						</div>
-				<input type="checkbox" name="attr_RangedCrewed" class="hidden hider" value="1"/>
+							<input type="checkbox" name="attr_RangedCrewed" class="hidden hider" value="1"/>
 						<div class="col-1-12 center pad-r-sm">
 							<input type="number" name="attr_RangedCrewedRating" value="0" min="0" max="9"  style="height: 14px;"/>
 						</div>
-				<input type="checkbox" name="attr_RangedCrewed" class="hidden hider" value="0"/>
+							<input type="checkbox" name="attr_RangedCrewed" class="hidden hider" value="0"/>
 						<div class="col-1-12 center pad-r-sm">
 						</div>
 						<div class="col-1-9 center pad-r-sm">
@@ -30031,28 +30025,28 @@
 						<div class="col-1-12 center pad-r-sm">
 							<input class="center" type="number" name="attr_UsedDurable" value="0" min="0" style="height: 15px;" />
 						</div>
-				<input type="checkbox" name="attr_Unbreakable" class="hidden hider" value="0" selected />
+							<input type="checkbox" name="attr_Unbreakable" class="hidden hider" value="0" selected />
 						<div class="col-1-12 center pad-r-sm">
 							<input class="center" type="number" name="attr_UsedDmgTaken" value="0" min="0" style="height: 15px;" />
 						</div>
-				<input type="checkbox" name="attr_Unbreakable" class="hidden hider" value="1"/>
+							<input type="checkbox" name="attr_Unbreakable" class="hidden hider" value="1"/>
 						<div class="col-1-12 center pad-r-sm">
 							<input class="center" type="number" name="attr_UsedDmgTaken" value="0" min="0" style="height: 15px;" disabled />
 						</div>
 						<div class="col-1-12 center pad-r-sm">
 							<input class="center" type="number" name="attr_UsedDmgPtsTaken" value="@{RangedDamage}+@{UsedDurable}-@{UsedDmgTaken}" style="height: 15px;" disabled />
 						</div>
-		<span class="spacer-s"></span>
+						<span class="spacer-s"></span>
 					</div>
-				<input type="checkbox" name="attr_UsedMagic" class="hidden hider" value="1"/>
-					<div class="row" style="height: 34px">
-						<div class="col-1-5 center vert-middle" style="height: 15px; padding-top: 10px">
-							<span data-i18n="MAGICAL-EFFECTS">Magical Effects</span>:
-						</div>
-						<div class="col-2-3 center vert-middle" style="height: 17px">
-						<textarea class="magic-textarea-resize" name="attr_UsedMagicEffect" placeholder="Magic: Does Something" style="height: 22px;"></textarea>
-						</div>
-					</div>
+							<input type="checkbox" name="attr_UsedMagic" class="hidden hider" value="1"/>
+								<div class="row" style="height: 34px">
+									<div class="col-1-5 center vert-middle" style="height: 15px; padding-top: 10px">
+										<span data-i18n="MAGICAL-EFFECTS">Magical Effects</span>:
+									</div>
+									<div class="col-2-3 center vert-middle" style="height: 17px">
+									<textarea class="magic-textarea-resize" name="attr_UsedMagicEffect" placeholder="Magic: Does Something" style="height: 22px;"></textarea>
+									</div>
+								</div>
 					</div>
 
 		<span class="spacer-s"></span>
@@ -31824,7 +31818,7 @@
 								</div>
 								<select class="center spell-name" name="attr_spellname" style="border: 1px solid #c0c0c0; border-radius: 2px">
                                     <option value="" data-i18n="SPELL-SELECT">Select Spell</option>
-                                    <option value="@{customarcname}" data-i18n="SPELL-CUSTOM">Custom Spell Name -- Use field to the right ></option>
+                                    <option value="@{customarcname}" data-i18n="SPELL-CUSTOM">Custom Spell Name -- Use field to the right &gt;</option>
 									<optgroup label="Arcane" data-i18n-label="ARCANE-LORE">
                                         <option value="Aethyric Armour" data-i18n="SPELL-AETHYRIC-ARMOUR">Aethyric Armour</option>
                                         <option value="Aethyric Arms" data-i18n="SPELL-AETHYRIC-ARMS">Aethyric Arms</option>
@@ -32950,6 +32944,7 @@
 			<button class="talsetshow-check__hide" type="action" name="act_custname"/><span class="talsetshow-check__span" checked="unchecked">*</span>
               </label>
 			</div>
+		</div>
 							</div>
 							<div class="col-1-10">
 							</div>
@@ -33291,10 +33286,10 @@
 			<div class="row mar-b-md">
 				<div class="col-1-7"><input type="number" name="attr_bp" value="0" /></div>
 				<div class="col-25-2 pad-r-sm" data-i18n-title="SILVER-TO-BRASS" title="Silver to Brass"><button type="action" name="act_sstobp" ><span>&lt;</span></button></div>
-				<div class="col-25-2 pad-r-sm" data-i18n-title="BRASS-TO-SILVER" title="Brass to Silver"><button type="action" name="act_bptoss" ><span>></span></button></div>
+				<div class="col-25-2 pad-r-sm" data-i18n-title="BRASS-TO-SILVER" title="Brass to Silver"><button type="action" name="act_bptoss" ><span>&gt;</span></button></div>
 				<div class="col-1-7"><input type="number" name="attr_ss" value="0" /></div>
 				<div class="col-25-2 pad-r-sm" data-i18n-title="GOLD-TO-SILVER" title="Gold to Silver"><button type="action" name="act_gctoss" ><span>&lt;</span></button></div>
-				<div class="col-25-2 pad-r-sm" data-i18n-title="SILVER-TO-GOLD" title="Silver to Gold"><button type="action" name="act_sstogc" ><span>></span></button></div>
+				<div class="col-25-2 pad-r-sm" data-i18n-title="SILVER-TO-GOLD" title="Silver to Gold"><button type="action" name="act_sstogc" ><span>&gt;</span></button></div>
 				<div class="col-1-7 pad-r-sm"><input type="number" name="attr_gc" value="0" /></div>
 				<div class="col-1-7 pad-r-sm"><input type="number" name="attr_money_total_gc" value="round(((@{BP} / 240) + (@{SS} / 20) + @{GC})*1000)/1000" disabled /></div>
 				<div class="col-1-3 pad-t-sm pad-r-sm center">
@@ -34903,7 +34898,7 @@
 		<div class="spacer-xl"></div>
 		<!-- FOOTER -->
 		<div class="row footer">
-			<div class="col-1 small-label center">Sheet version 1.76f : Nov 26th 2025 | by Djjus & Pote</div>
+			<div class="col-1 small-label center">Sheet version 1.76g : Dec 10th 2025 | by Djjus & Pote</div>
 		</div>
 			</div>
 		</div>
@@ -38284,8 +38279,8 @@
 										{{#hitlocation}}
 
 										<!-- HEAD HIT -->
-										{{#rollTotal() test 10}}
 										<div class="row">
+										{{#rollTotal() test 10}}
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-HEAD">Hit Head</div>
 										{{#rollGreater() pummel 0}}
@@ -38293,7 +38288,6 @@
 										{{/rollGreater() pummel 0}}
 										{{/rollTotal() test 10}}
 										{{#rollTotal() test 20}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-HEAD">Hit Head</div>
 										{{#rollGreater() pummel 0}}
@@ -38301,7 +38295,6 @@
 										{{/rollGreater() pummel 0}}
 										{{/rollTotal() test 20}}
 										{{#rollTotal() test 30}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-HEAD">Hit Head</div>
 										{{#rollGreater() pummel 0}}
@@ -38309,7 +38302,6 @@
 										{{/rollGreater() pummel 0}}
 										{{/rollTotal() test 30}}
 										{{#rollTotal() test 40}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-HEAD">Hit Head</div>
 										{{#rollGreater() pummel 0}}
@@ -38317,7 +38309,6 @@
 										{{/rollGreater() pummel 0}}
 										{{/rollTotal() test 40}}
 										{{#rollTotal() test 50}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-HEAD">Hit Head</div>
 										{{#rollGreater() pummel 0}}
@@ -38356,81 +38347,67 @@
 											<div class="col-100-100 pad-l-md pad-r-md rt-key-wide"><span style="margin-right: 3px; color: #858585" data-i18n="PUMMEL-EFFECT">Head hits stun (Opposed Str/End)</span><span class="chat-button-ripostedmg" style="height: 10px" data-i18n-title="USE-PUMMEL" >{{RTpummel}}</span></div>
 										{{/rollGreater() pummel 0}}
 										{{/rollTotal() test 90}}
-
+										</div>
 
 										<!-- LEFT ARM HIT -->
-										{{#rollTotal() test 01}}
 										<div class="row">
+										{{#rollTotal() test 01}}
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 01}}
 										{{#rollTotal() test 02}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 02}}
 										{{#rollTotal() test 11}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 11}}
 										{{#rollTotal() test 12}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 12}}
 										{{#rollTotal() test 21}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 21}}
 										{{#rollTotal() test 22}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 22}}
 										{{#rollTotal() test 31}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 31}}
 										{{#rollTotal() test 32}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 32}}
 										{{#rollTotal() test 41}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 41}}
 										{{#rollTotal() test 42}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 42}}
 										{{#rollTotal() test 51}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 51}}
 										{{#rollTotal() test 61}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 61}}
 										{{#rollTotal() test 71}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 71}}
 										{{#rollTotal() test 81}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 81}}
 										{{#rollTotal() test 91}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-ARM">Hit Left Arm</div>
 										{{/rollTotal() test 91}}
@@ -38439,102 +38416,82 @@
 										<!-- RIGHT ARM HIT -->
 
 										{{#rollTotal() test 52}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 52}}
 										{{#rollTotal() test 62}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 62}}
 										{{#rollTotal() test 72}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 72}}
 										{{#rollTotal() test 82}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 82}}
 										{{#rollTotal() test 92}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 92}}
 										{{#rollTotal() test 03}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 03}}
 										{{#rollTotal() test 13}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 13}}
 										{{#rollTotal() test 23}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 23}}
 										{{#rollTotal() test 33}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 33}}
 										{{#rollTotal() test 43}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 43}}
 										{{#rollTotal() test 53}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 53}}
 										{{#rollTotal() test 63}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 63}}
 										{{#rollTotal() test 73}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 73}}
 										{{#rollTotal() test 83}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 83}}
 										{{#rollTotal() test 93}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 93}}
 										{{#rollTotal() test 04}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 04}}
 										{{#rollTotal() test 14}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 14}}
 										{{#rollTotal() test 24}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 24}}
 										{{#rollTotal() test 34}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 34}}
 										{{#rollTotal() test 44}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-ARM">Hit Right Arm</div>
 										{{/rollTotal() test 44}}
@@ -38542,177 +38499,142 @@
 
 										<!-- BODY HIT -->
 										{{#rollTotal() test 54}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 54}}
 										{{#rollTotal() test 64}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 64}}
 										{{#rollTotal() test 74}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 74}}
 										{{#rollTotal() test 84}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 84}}
 										{{#rollTotal() test 94}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 94}}
 										{{#rollTotal() test 05}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 05}}
 										{{#rollTotal() test 15}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 15}}
 										{{#rollTotal() test 25}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 25}}
 										{{#rollTotal() test 35}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 35}}
 										{{#rollTotal() test 45}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 45}}
 										{{#rollTotal() test 55}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 55}}
 										{{#rollTotal() test 65}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 65}}
 										{{#rollTotal() test 75}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 75}}
 										{{#rollTotal() test 85}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 85}}
 										{{#rollTotal() test 95}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 95}}
 										{{#rollTotal() test 06}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 06}}
 										{{#rollTotal() test 16}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 16}}
 										{{#rollTotal() test 26}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 26}}
 										{{#rollTotal() test 36}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 36}}
 										{{#rollTotal() test 46}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 46}}
 										{{#rollTotal() test 56}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 56}}
 										{{#rollTotal() test 66}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 66}}
 										{{#rollTotal() test 76}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 76}}
 										{{#rollTotal() test 86}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 86}}
 										{{#rollTotal() test 96}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 96}}
 										{{#rollTotal() test 07}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 07}}
 										{{#rollTotal() test 17}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 17}}
 										{{#rollTotal() test 27}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 27}}
 										{{#rollTotal() test 37}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 37}}
 										{{#rollTotal() test 47}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 47}}
 										{{#rollTotal() test 57}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 57}}
 										{{#rollTotal() test 67}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 67}}
 										{{#rollTotal() test 77}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 77}}
 										{{#rollTotal() test 87}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 87}}
 										{{#rollTotal() test 97}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-BODY">Hit Body</div>
 										{{/rollTotal() test 97}}
@@ -38721,52 +38643,42 @@
 										<!-- LEFT LEG HIT -->
 
 										{{#rollTotal() test 08}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 08}}
 										{{#rollTotal() test 18}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 18}}
 										{{#rollTotal() test 28}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 28}}
 										{{#rollTotal() test 38}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 38}}
 										{{#rollTotal() test 48}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 48}}
 										{{#rollTotal() test 58}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 58}}
 										{{#rollTotal() test 68}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 68}}
 										{{#rollTotal() test 78}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 78}}
 										{{#rollTotal() test 88}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 88}}
 										{{#rollTotal() test 98}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-LEFT-LEG">Hit Left Leg</div>
 										{{/rollTotal() test 98}}
@@ -38775,57 +38687,47 @@
 										<!-- RIGHT LEG HIT -->
 
 										{{#rollTotal() test 09}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 09}}
 										{{#rollTotal() test 19}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 19}}
 										{{#rollTotal() test 29}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 29}}
 										{{#rollTotal() test 39}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 39}}
 										{{#rollTotal() test 49}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 49}}
 										{{#rollTotal() test 59}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 59}}
 										{{#rollTotal() test 69}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
+										</div>
 										{{/rollTotal() test 69}}
 										{{#rollTotal() test 79}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 79}}
 										{{#rollTotal() test 89}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 89}}
 										{{#rollTotal() test 99}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 99}}
 										{{#rollTotal() test 100}}
-										<div class="row">
 											<div class="col-11-24 pad-l-md pad-r-md rt-key" data-i18n="HIT-LOCATION">Hit Location</div>
 											<div class="col-13-24 pad-l-md pad-r-md rt-value" data-i18n="HIT-RIGHT-LEG">Hit Right Leg</div>
 										{{/rollTotal() test 100}}
@@ -39162,7 +39064,7 @@
 											<div class="col-1 left pad-r-md rt-effects" style="font-size: 10px; padding-left: 5px; text-indent: 0px"><span data-i18n="BEAT-BLADE-TALENT-DESC2">If success Target loses 1 Adv, +1 for each +SL. Does not work Vs Large/unarmed</span></div>
 										{{/grpadv}}
 										{{#rollGreater() grpadv 0}}
-											<div class="col-1 left pad-r-md rt-effects" style="font-size: 10px; padding-left: 5px; text-indent: 0px"><span data-i18n="BEAT-BLADE-TALENT-DESC3">If success Target loses 1 Group Adv, +1 if >5SL. Does not work Vs Large/unarmed</span></div>
+											<div class="col-1 left pad-r-md rt-effects" style="font-size: 10px; padding-left: 5px; text-indent: 0px"><span data-i18n="BEAT-BLADE-TALENT-DESC3">If success Target loses 1 Group Adv, +1 if &gt;5SL. Does not work Vs Large/unarmed</span></div>
 										{{/rollGreater() grpadv 0}}
 										</div>
 										{{/rollGreater() beatblade 0}}
@@ -44041,7 +43943,11 @@
 										{{/roll}}
 									</div>
 								</div>
+				</div>
+				</div>
 	</rolltemplate>
+	</div>
+	</div>
 
 	<script type="text/worker">
 
@@ -55551,10 +55457,12 @@ on('change:armoractiveH1 change:armoractiveH2 change:armoractiveH3 change:armora
 
 	ar = v.armoractiveh1*1 + v.armoractiveh2*1 + v.armoractiveh3*1;
 	if (ar > 0) {ar = 1;} else {ar = 0;}
+
+	if (v.armorprach2 === "1") {helm = 0;} else {helm = 1;}
 	
 			setAttrs({
 				"armorpartial": ar,
-				"armorcoifpenalty": v.armoractiveh2*10-v.armorprach2*10,
+				"armorcoifpenalty": v.armoractiveh2*10*helm,
 			}, {silent: true});	
 
 		});
@@ -56302,7 +56210,7 @@ on('sheet:opened change:talent_distractLvl', function(event) {
 						console.log(sslar);
 		
 				sslo = qual.search("Slow");
-				strap = qual.search("Trap Blade");
+				strap = qual.search("TrapBlade");
 				strip = qual.search("Trip");
 				stiri = qual.search("Tiring");
 				sunbal = qual.search("Unbalanced");

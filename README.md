@@ -7,6 +7,13 @@
 
 Unfortunatley roll20 have decided to delist this sheet due to disagreeing with much of the content included they had been approving for years, talent intergation etc. So in short i will no long be publish a comunity sheet for roll20. But the sheet will contiune as a private endevor and I will update this repo occasionally. Anybody that wishes (GM with Roll20 Pro account) can still use them with the Custom sheet feature on roll20, download the 3 files (Warhammer 4e Character Sheet.html, translation.json, Warhammer 4e Character Sheet.css) and cut & paste the the data inside to the correct tabs in the Custom sheet configuration section on your roll20 game (see https://wiki.roll20.net/Using_Custom_Character_Sheets). All sheets at the time of delisting will be running version v1.76. Sorry.
 
+To install, create a new game and set the character sheet to custom (Pro accounts only). Make sure you are looking at the RAW code on Github
+
+Use CNTL-A to copy all of the HTML code and place it into Roll20 HTML Layout
+Use CNTL-A to copy all of the CSS code and place it into Roll20 CSS Styling
+Use CNTL-A to copy all of the JSON translation and place it into Roll20 Translations
+Save in Roll20 and you are good to go.
+
 -----------------------------
 
 This was a fork of https://github.com/vicberg/Roll20-Warhammer-4e-Character-Sheet, which itself is a port of a original Havoc roll20 WHFRP2e sheet. 
@@ -52,9 +59,8 @@ Please report issues on Github or Discord : Justi#7934
 
 - Custom NPC tab, on sheet area to quickly add NPC for GM and players alike. Not meant to replace a full character sheet, but handy for quick trash mob types. The idea is to make a full char sheet for the "boss" and to have his henchmen as Custom NPC's on the NPC tab.  
 
- 
-///// ============ Usage Notes ============ /////  
 
+///// ============ Usage Notes ============ /////  
 
 - Settings: Check setting (cog) tab ever time when setting up any new Char sheet for all players, and select correct options for your game. 
 - Wounds: ensure correct Race and Hardy level are chosen. Wounds are subtracted by adding damage, and given back by subtracting it. Wounds can not exceed Max Wounds limit. 
@@ -84,13 +90,26 @@ Multiple conditions: You can be subject to the same Condition more than once; in
 Note conditions are not intended for out of combat situations, GM simply makes the roll difficulty harder with a custom roll modifier (-20 etc) if any particular condition is to apply to a situational roll. 
 
  
-///// ============ Major Updates being worked on, with no release date ============ /////  
+///// ============ Major Updates being worked on, with no release date, but probly in 2026 ============ /////  
 
+->> WFRP 5e Compatability* (this will take priority)
 - Character Maker
 - NPC tab rework
 
- 
+
 ///// ============ Change Log ============ /////  
+
+Dec 10th 2025 v1.76g
+
+- Fixed issue which incorrect perception roll calc when Medium/Chain helmet with practical had worn unticked.
+- Fixed problem with Weapon Maker Script assigning the wrong qualities to Parry weapons.
+- Fixed NPC 2nd/3rd Melee Weapon quality impale and impact label mix up.
+- Refactored some of the html code to remove all outstanding non-critical errors, mostly tag-pair errors.
+
+
+Nov 26th 2025 v1.76f
+
+- Fixed Inventory (Old) layout Enc not adding up under all conditions due to a calculation bug.
 
 
 Aug 18th 2025 v1.76e
@@ -98,7 +117,7 @@ Aug 18th 2025 v1.76e
 - Added 3 more Acute Sense (upto 5) , to cover all the normal senses. (Issue https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/3)
 - Added a 9th Arcane Lore, to allow upto 9 lores per PC. Allows all 8 colors + 1 Dark Lore. (Issue https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/3)
 - Removed Small/Large Talents. These are not real talents and have no functionality in the game, they only changed the size option on the Sheet. All 7 Sizes Tiny to Monstrous is a Create trait now, and also accessable in the background tab. (Issue https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/3)
-- AutoXP fixes, fixed a number of Auto XP issues with either XP not adding to total or not showing in text correctly in the XP tab   (Issue https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/2)
+- AutoXP fixes, fixed a number of Auto XP issues with either XP not adding to total or not showing in text correctly in the XP tab (Issue https://github.com/Djjus/WFRP4e-Roll20-Custom/issues/2)
 
 
 July 24rd 2025 v1.76d
