@@ -102,6 +102,7 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 Feb 2nd 2026 v1.76h
 
 - Fixed Rapid Reload not adding to SL count when Reloading
+- Added Strong Back as situational mofifier on Strength rolls
 
 
 Dec 10th 2025 v1.76g

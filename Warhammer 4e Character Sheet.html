@@ -36516,9 +36516,6 @@
 				{{#rollGreater() riposte 0}}
 					<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #55B800">+{{riposte}}SL <span data-i18n="RIPOSTE"></span></div>
 				{{/rollGreater() riposte 0}}
-				{{#rollGreater() strongback 0}}
-					<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #55B800">+{{strongback}}SL <span data-i18n="STRONG-BACK"></span></div>
-				{{/rollGreater() strongback 0}}
 				{{#rollGreater() strongswimmer 0}}
 					<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #55B800">+{{strongswimmer}}SL <span data-i18n="STRONG-SWIMMER"></span></div>
 				{{/rollGreater() strongswimmer 0}}
@@ -37011,6 +37008,9 @@
 							{{#rollGreater() stepaside 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{stepaside}}SL <span  data-i18n="STEP-ASIDE" data-i18n-title="STEP-ASIDE-SIT"></span></div>
 							{{/rollGreater() stepaside 0}}
+							{{#rollGreater() strongback 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{strongback}}SL <span data-i18n="STRONG-BACK"></span></div>
+							{{/rollGreater() strongback 0}}
 							{{#rollGreater() stouthearted 0}}
 								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{stouthearted}}SL <span  data-i18n="STOUT-HEARTED" data-i18n-title="STOUT-HEARTED-SIT"></span></div>
 							{{/rollGreater() stouthearted 0}}
@@ -37086,6 +37086,9 @@
 							{{#rollGreater() fielddressing 0}}
 								<div class="col-1 pad-l-md pad-r-md rt-effects" style="color: #858585"><span  data-i18n="FIELD-DRESSING" data-i18n-title="FIELD-DRESSING-SIT"></span>: <span  data-i18n="USE-REVERSE-DICE"></span></div>
 							{{/rollGreater() fielddressing 0}}
+							{{#rollGreater() strongback 0}}
+								<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #858585">+{{strongback}}SL <span data-i18n="STRONG-BACK"></span></div>
+							{{/rollGreater() strongback 0}}
 							{{#rollGreater() pilot 0}}
 								<div class="col-1 pad-l-md pad-r-md rt-effects" style="color: #858585"><span  data-i18n="PILOT" data-i18n-title="PILOT-SIT"></span>: <span  data-i18n="USE-REVERSE-DICE"></span></div>
 							{{/rollGreater() pilot 0}}
@@ -37096,7 +37099,6 @@
 							</div>
 						{{/rollGreater() test target}}
 					{{/rollGreater() sitfail 0}}
-
 
 
 						{{#sl}}
@@ -52247,7 +52249,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	
    on('clicked:strengthroll clicked:toughnessroll clicked:initiativeroll clicked:willpowerroll', (eventInfo) => {
 	
-   let roll = '{{sl=[[0 [Roll SL]]]}} {{slbonus=[[0>addsl<]]}} {{sladd=[[0>sladd<]]}} {{slbonusatk=[[0>addsl<]]}} {{sitmod=[[0>sitmod<]]}} {{modvalue=[[?{@{translation_modifier}|0}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{cond=[[@{condgen_see}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{title=^{>Charcap<}}} {{character_name=@{character_name}}} {{target=[[ [[((@{condgen}-@{DrunkMod})*-1)]] [COND] + @{>Char<} [CHAR] + ?{@{translation_modifier}|0} [MOD] ]]}} {{chartest=true}} {{SLmod=[[?{SL Modifier|@{>Char<SL}}]]}} {{skilltest=true}} {{test=[[@{roll_rule}]]}} {{reroll=@{RT-reroll}>Char<roll)}}';
+   let roll = '{{sl=[[0 [Roll SL]]]}} {{slbonus=[[0>addsl<]]}} {{sladd=[[0>sladd<]]}} {{slbonusatk=[[0>addsl<]]}} {{sitmod=[[0>sitmod<]]}} {{sitfail=[[0>sitmod<]]}} {{modvalue=[[?{@{translation_modifier}|0}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{cond=[[@{condgen_see}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{title=^{>Charcap<}}} {{character_name=@{character_name}}} {{target=[[ [[((@{condgen}-@{DrunkMod})*-1)]] [COND] + @{>Char<} [CHAR] + ?{@{translation_modifier}|0} [MOD] ]]}} {{chartest=true}} {{SLmod=[[?{SL Modifier|@{>Char<SL}}]]}} {{skilltest=true}} {{test=[[@{roll_rule}]]}} {{reroll=@{RT-reroll}>Char<roll)}}';
    var trigger = eventInfo.triggerName.slice(8, -4);
    var triggercap = trigger.toUpperCase();		
    var prefix = trigger.split('_').slice(0,3).join('_');
@@ -52259,6 +52261,10 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 
 	if (trigger === 'willpower') {trig = ' {{magicdefiance=[[@{Talent_MagicDefianceLvl}]]}}';
 	sitmods = '+@{Talent_MagicDefianceLvl}';
+	rollPart = rollPart2.replaceAll('>sitmod<', sitmods);} else {rollPart = rollPart2; trig = "";}
+
+	if (trigger === 'strength') {trig = ' {{strongback=[[@{Talent_StrongBackLvl}]]}}';
+	sitmods = '+@{Talent_StrongBackLvl}';
 	rollPart = rollPart2.replaceAll('>sitmod<', sitmods);} else {rollPart = rollPart2; trig = "";}
 	
                console.log(rollPart);	
