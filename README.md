@@ -99,6 +99,11 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 
 ///// ============ Change Log ============ /////  
 
+Feb 2nd 2026 v1.76h
+
+- Fixed Rapid Reload not adding to SL count when Reloading
+
+
 Dec 10th 2025 v1.76g
 
 - Fixed issue which incorrect perception roll calc when Medium/Chain helmet with practical had worn unticked.
