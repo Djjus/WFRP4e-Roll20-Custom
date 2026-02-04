@@ -34898,7 +34898,7 @@
 		<div class="spacer-xl"></div>
 		<!-- FOOTER -->
 		<div class="row footer">
-			<div class="col-1 small-label center">Sheet version 1.76g : Dec 10th 2025 | by Djjus & Pote</div>
+			<div class="col-1 small-label center">Sheet version 1.76h : Feb 2nd 2026 | by Djjus & Pote</div>
 		</div>
 			</div>
 		</div>
@@ -36605,6 +36605,9 @@
 				{{#rollGreater() gunner 0}}
 					<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #55B800">+{{gunner}}SL <span data-i18n="GUNNER"></span></div>
 				{{/rollGreater() gunner 0}}
+				{{#rollGreater() rapidreload 0}}
+					<div class="col-1 center pad-l-md pad-r-md rt-slmod" style="color: #55B800">+{{rapidreload}}SL <span data-i18n="RAPID-RELOAD"></span></div>
+				{{/rollGreater() rapidreload 0}}
 
 				{{#^rollGreater() computed::slbonus 0}}
 				{{#rollGreater() test target}}
@@ -44142,7 +44145,6 @@
 		
 		getAttrs(["sheetcheck", 'WeaponSkillAdv', 'WeaponSkillXP', 'BallisticSkillAdv', 'BallisticSkillXP', 'StrengthAdv', 'StrengthXP', 'ToughnessAdv', 'ToughnessXP', 'InitiativeAdv', 'InitiativeXP', 'AgilityAdv', 'AgilityXP', 'DexterityAdv', 'DexterityXP', 'IntelligenceAdv', 'IntelligenceXP', 'WillPowerAdv', 'WillPowerXP', 'FellowshipAdv', 'FellowshipXP'], function (x) {
 			
-		console.log(stat + ' XP change');
 			if (x.WeaponSkillAdv > 0) { var out1 = getTranslationByKey('WEAPONSKILL') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.WeaponSkillAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.WeaponSkillXP + '  ✥  '; } else { var out1 = '';}
 			if (x.BallisticSkillAdv > 0) { var out2 = getTranslationByKey('BALLISTICSKILL') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.BallisticSkillAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.BallisticSkillXP + '  ✥  '; } else { var out2 = '';}
 			if (x.StrengthAdv > 0) { var out3 = getTranslationByKey('STRENGTH') + ' -' + ' ' + getTranslationByKey('ABBREVIATE-ADVANCE') + ': ' + x.StrengthAdv + ' -' + ' ' + getTranslationByKey('XP') + ': ' + x.StrengthXP + '  ✥  '; } else { var out3 = '';}
@@ -49734,7 +49736,6 @@ on('sheet:opened change:Talents_XP_Dis change:XP_Display3 change:XP_Mode', funct
 		dis1 = v.Talents_XP_Dis || "";
 		out2 = v.Talents_XP || 0;
 		dis2 = v.XP_Display3 || " ";
-	console.log("Talent XP change");
 			out = dis1 + ' ' + dis2;
 	if (v.Advantage_casting > 0) {spa = v.Advantage_casting; console.log("Casting Adv Set");} else {spa = 0}
     	
@@ -49979,24 +49980,19 @@ on('sheet:opened change:initiative_houserule', function(event) {
 			getAttrs(["initiative_houserule"], function(v) {
 					const out = v.initiative_houserule;
                     const output = {};
-               console.log(out);
 				getSectionIDs("repeating_npc-tab-page", function (ids) {
-			console.log(out);
                     ids.forEach(id =>  {output[`repeating_npc-tab-page_${id}_init_rule`] = out, setAttrs(output, {silent: true})});
                     });
                     setAttrs(output, {silent: true});
 				getSectionIDs("repeating_npc-tab-page2", function (ids) {
-			console.log(out);
                     ids.forEach(id =>  {output[`repeating_npc-tab-page2_${id}_init_rule`] = out, setAttrs(output, {silent: true})});
                     });
                     setAttrs(output, {silent: true});
 				getSectionIDs("repeating_npc-tab-page3", function (ids) {
-			console.log(out);
                     ids.forEach(id =>  {output[`repeating_npc-tab-page3_${id}_init_rule`] = out, setAttrs(output, {silent: true})});
                     });
                     setAttrs(output, {silent: true});
 				getSectionIDs("repeating_npc-tab-page4", function (ids) {
-			console.log(out);
                     ids.forEach(id =>  {output[`repeating_npc-tab-page4_${id}_init_rule`] = out, setAttrs(output, {silent: true})});
                     });
                     setAttrs(output, {silent: true});
@@ -51336,7 +51332,7 @@ on('clicked:rangedatk clicked:rangedatkreroll', (eventInfo) => {
 on('clicked:rangedweaponrld', (eventInfo) => {
 	getAttrs(["initiative_houserule", "GroupAdv", "Talent_GunnerLvl", "Talent_RapidReloadLvl"], function(v) {	
 	
-   let roll = '{{sl=[[0 [Roll SL]]]}} {{slbonus=[[@{Talent_GunnerLvl} [SL TOTAL]]]}} {{slbonusatk=[[@{Talent_GunnerLvl}]]}} {{sladd=[[0]]}} {{test=[[@{roll_rule}]]}} {{modvalue=[[?{Reload Roll Modifier|@{Used_RangedBonus}}]]}} {{title=@{Used_RangedWeaponName}}} {{advantage=[[@{AdvantageDisplay}]]}} {{character_name=@{character_name}}} {{attacktype=^{RELOAD}}} {{target=[[ [[@{condgen_see_move}*-1]] [COND] + [[@{Used_RangedBalisticSkill}]] [SKILL] + [[@{Advantage}*10]] [ADV] +?{Reload Roll Modifier|0} [MOD] ]]}} {{SLmod=[[?{SL Modifier|0} [SL Mod]]]}} {{hitlocation=true}} {{ammo=[[@{Used_RangedAmmo}]]}} {{ammotype=@{Used_RangedAmmoType}}} {{reach=@{Used_WeaponRange}}} {{qualities=@{Used_RangedQualities}}} {{unconscious=[[@{UnconsciousMod}]]}} {{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{NPC=[[0]]}} {{reroll=@{RT-reroll}RangedWeaponRld)}} {{reload=[[1]]}} {{reloadrating=[[@{Used_RangedReloadRatingInput}*@{Used_RangedReload}]]}} {{gunner=[[@{Talent_GunnerLvl}]]}} {{rapidreload=[[@{Talent_RapidReloadLvl}]]}} {{assess=[[@{Talent_GunnerLvl}+@{Talent_RapidReloadLvl}]]}}';
+   let roll = '{{sl=[[0 [Roll SL]]]}} {{slbonus=[[@{Talent_GunnerLvl}+@{Talent_RapidReloadLvl} [SL TOTAL]]]}} {{slbonusatk=[[@{Talent_GunnerLvl}+@{Talent_RapidReloadLvl}]]}} {{sladd=[[0]]}} {{test=[[@{roll_rule}]]}} {{modvalue=[[?{Reload Roll Modifier|@{Used_RangedBonus}}]]}} {{title=@{Used_RangedWeaponName}}} {{advantage=[[@{AdvantageDisplay}]]}} {{character_name=@{character_name}}} {{attacktype=^{RELOAD}}} {{target=[[ [[@{condgen_see_move}*-1]] [COND] + [[@{Used_RangedBalisticSkill}]] [SKILL] + [[@{Advantage}*10]] [ADV] +?{Reload Roll Modifier|0} [MOD] ]]}} {{SLmod=[[?{SL Modifier|0} [SL Mod]]]}} {{hitlocation=true}} {{ammo=[[@{Used_RangedAmmo}]]}} {{ammotype=@{Used_RangedAmmoType}}} {{reach=@{Used_WeaponRange}}} {{qualities=@{Used_RangedQualities}}} {{unconscious=[[@{UnconsciousMod}]]}} {{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{NPC=[[0]]}} {{reroll=@{RT-reroll}RangedWeaponRld)}} {{reload=[[1]]}} {{reloadrating=[[@{Used_RangedReloadRatingInput}*@{Used_RangedReload}]]}} {{gunner=[[@{Talent_GunnerLvl}]]}} {{rapidreload=[[@{Talent_RapidReloadLvl}]]}} {{assess=[[@{Talent_GunnerLvl}+@{Talent_RapidReloadLvl}]]}}';
    var trigger = eventInfo.triggerName.slice(8);
    var prefix = trigger.split('_').slice(0,3).join('_') + '_';
    let rollBegins = '@{Whisper} &{template:whfrp2e}';
