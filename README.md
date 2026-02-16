@@ -99,10 +99,16 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 
 ///// ============ Change Log ============ /////  
 
+Feb 16th 2026 v1.76i
+
+- Added new roll query to perception and stealth tests, if armor with penality is worn it till trigger a addition pop up when rolling these skills giving a choice of "Add Armor Modifier; Yes/No", default is Yes.
+
+
 Feb 2nd 2026 v1.76h
 
 - Fixed Rapid Reload not adding to SL count when Reloading
-- Added Strong Back as situational mofifier on Strength rolls
+- Added Strong Back as situational modifier on Strength rolls
+- Changed Vomit effect text to reflect TB yds range, rather then fixed 2 yds.
 
 
 Dec 10th 2025 v1.76g

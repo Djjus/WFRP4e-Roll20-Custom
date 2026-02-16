@@ -39004,7 +39004,7 @@
 
 										{{#vomit}}
 											<div class="row">
-												<div class="col-1 left pad-r-md rt-effects" style="font-size: 10px; padding-left: 5px; text-indent: 0px"><span data-i18n="VOMIT-DESC1"></span></div>
+												<div class="col-1 left pad-r-md rt-effects no-yellow-bg" style="font-size: 10px; padding-left: 5px; text-indent: 0px"><span data-i18n="VOMIT-DESC1"></span> {{vomitdmg}} <span data-i18n="VOMIT-DESC1.2"></span></div>
 												<div class="col-1 left pad-r-md rt-effects" style="font-size: 10px; padding-left: 5px; text-indent: 0px"><span data-i18n="VOMIT-DESC2"></span></div>
 											</div>
 										{{/vomit}}
@@ -52413,7 +52413,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 
 	if (trigger === 'tentacles') {trig2 = ' {{modvalue=[[?{@{translation_modifier}|0}]]}} {{test=[[@{roll_rule}]]}} {{target=[[ [[(@{condgen}*-1)]] [COND] + @{weaponskill} [CHAR] + ?{@{translation_modifier}|0} [MOD] ]]}} {{attacktest=true}} {{hitlocation=true}} {{attacktype=^{FREE-ATTACK}}} {{showdmg=[[1]]}} {{damage=[[@{Trait_Tentacles_Rating}+@{MeleeMode_Frenzy}]]}} {{SLmod=[[?{SL Modifier|@{weaponskillSL}}]]}} {{rolltype=[[0]]}} {{impact=[[0]]}} {{damaging=[[0]]}} {{sizemod=[[@{MeleeSizeMod}]]}} {{tentacles=true}} {{RTcrit=@{RT-critical}}} {{RTfumble=@{RT-fumble}}}';}
 
-	if (trigger === 'vomit') {trig2 = ' {{modvalue=[[?{@{translation_modifier}|0}]]}} {{test=[[@{roll_rule}]]}} {{target=[[ [[(@{condgen}*-1)]] [COND] + @{ballisticskill} [CHAR] + ?{@{translation_modifier}|0} [MOD] ]]}} {{attacktest=true}} {{attacktype=^{FREE-ATTACK}}} {{showdmg=[[1]]}} {{damage=[[@{toughnessbonus}+4]]}} {{SLmod=[[?{SL Modifier|@{ballisticskillSL}}]]}} {{range=[[@{toughnessbonus}]]}} {{vomit=true}}';}
+	if (trigger === 'vomit') {trig2 = ' {{modvalue=[[?{@{translation_modifier}|0}]]}} {{test=[[@{roll_rule}]]}} {{target=[[ [[(@{condgen}*-1)]] [COND] + @{ballisticskill} [CHAR] + ?{@{translation_modifier}|0} [MOD] ]]}} {{attacktest=true}} {{attacktype=^{FREE-ATTACK}}} {{showdmg=[[1]]}} {{damage=[[@{toughnessbonus}+4]]}} {{SLmod=[[?{SL Modifier|@{ballisticskillSL}}]]}} {{range=[[@{toughnessbonus}]]}} {{vomit=true}} {{vomitdmg=[[@{ToughnessBonus}]]}}';}
 
 	if (trigger === 'breath') {trig2 = ' {{modvalue=[[?{@{translation_modifier}|0}]]}} {{test=[[@{roll_rule}]]}} {{target=[[ [[(@{condgen}*-1)]] [COND] + @{ballisticskill} [CHAR] + ?{@{translation_modifier}|0} [MOD] ]]}} {{attacktest=true}} {{attacktype=^{FREE-ATTACK}}} {{showdmg=[[1]]}} {{damage=[[@{Trait_Breath_Rating}]]}} {{SLmod=[[?{SL Modifier|@{ballisticskillSL}}]]}} {{range=[[20+@{toughnessbonus}]]}} {{breath=true}} {{breatheffect=@{Trait_Breath_Effect}}} {{sbmod=[[@{strengthbonus}]]}}';}
 
@@ -52500,7 +52500,8 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	
    on('clicked:artroll clicked:athleticsroll clicked:briberyroll clicked:charmroll clicked:charmanimalroll clicked:climbroll clicked:consumealcoholroll clicked:driveroll clicked:enduranceroll clicked:entertainroll clicked:gambleroll clicked:gossiproll clicked:haggleroll clicked:intimidateroll clicked:intuitionroll clicked:leadershiproll clicked:navigationroll clicked:outdoorsurvivalroll clicked:perceptionroll clicked:rideroll clicked:rowroll clicked:stealthroll clicked:animalcareroll clicked:auguryroll clicked:channellingfireroll clicked:channellingheavensroll clicked:channellingmetalroll clicked:channellingbeastsroll clicked:channellingliferoll clicked:channellinglightroll clicked:channellingdeathroll clicked:channellingshadowsroll clicked:channellinghighmagicroll clicked:channellingwitchroll clicked:channellingdarkroll clicked:channellingchaosroll clicked:channellinggreatmawroll clicked:channellingmiscroll clicked:evaluateroll clicked:psychometryroll clicked:picklockroll clicked:prayroll clicked:researchroll clicked:runesmithingroll clicked:settraproll clicked:sleightofhandroll clicked:swimroll clicked:trackroll', (eventInfo) => {
 	
-   let roll = '{{test=[[@{roll_rule}]]}} {{sl=[[0]]}} {{slbonus=[[0>addsl<]]}} {{sladd=[[0>sladd<]]}} {{slbonusatk=[[0>addsl<]]}} {{modvalue=[[?{@{translation_modifier}|0}]]}} {{title=^{>Charcap<}}} {{skill=^{BASIC-SKILL}}} {{character_name=@{character_name}}} {{target=[[ [[cond-*-1]] [COND] + [[(@{>Char<Char}+@{>Char<Adv}+@{>Char<Misc})>addtak<]] [SKILL] + ?{@{translation_modifier}|0} [MOD] ]]}} {{skilltest=true}} {{SLmod=[[?{SL Modifier|0}]]}} {{sitmod=[[0>sitmod<]]}} {{sitfail=[[0>sitfail<]]}} {{mod1type=[[@{>Char<_modtype1}]]}} {{mod1=@{>Char<_mod1}}} {{mod2type=[[@{>Char<_modtype2}]]}} {{mod2=@{>Char<_mod2}}} {{mod3type=[[@{>Char<_modtype3}]]}} {{mod3=@{>Char<_mod3}}} {{reroll=@{RT-reroll}>Char<roll)}}';
+   let roll = '{{test=[[@{roll_rule}]]}} {{sl=[[0]]}} {{slbonus=[[0>addsl<]]}} {{sladd=[[0>sladd<]]}} {{slbonusatk=[[0>addsl<]]}} {{modvalue=[[?{@{translation_modifier}|0}]]}} {{title=^{>Charcap<}}} {{skill=^{BASIC-SKILL}}} {{character_name=@{character_name}}} {{SLmod=[[?{SL Modifier|0}]]}} {{target=[[ [[cond-*-1]] [COND] + [[(@{>Char<Char}+@{>Char<Adv}+@{>Char<Misc})>addtak<]] [SKILL] + ?{@{translation_modifier}|0} [MOD] ]]}} {{skilltest=true}} {{sitmod=[[0>sitmod<]]}} {{sitfail=[[0>sitfail<]]}} {{mod1type=[[@{>Char<_modtype1}]]}} {{mod1=@{>Char<_mod1}}} {{mod2type=[[@{>Char<_modtype2}]]}} {{mod2=@{>Char<_mod2}}} {{mod3type=[[@{>Char<_modtype3}]]}} {{mod3=@{>Char<_mod3}}} {{reroll=@{RT-reroll}>Char<roll)}}';
+	getAttrs(["armormailpenalty", "armorplatepenalty", "armorcoifpenalty", "armorhelmpenalty", "armorplatelegspenalty"], function(v) {
    var trigger = eventInfo.triggerName.slice(8, -4);
    var triggercap = trigger.toUpperCase();		
    var prefix = trigger.split('_').slice(0,3).join('_') + '_';
@@ -52508,16 +52509,27 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
    let rollPartPart = roll.replaceAll('>Char<', trigger);
    let rollPart4 = rollPartPart.replaceAll('>Charcap<', triggercap);
                console.log(trigger);	
+	
+               console.log(rollPart4);
 			   
-	if (trigger === 'perception') {var pen = '[COND] + [[(@{armorpenaltyperception})*-1]] [PEN]';}
+		let aper = v.armorcoifpenalty*1 + v.armorhelmpenalty*1;
+		let aste = v.armormailpenalty*1 + v.armorplatepenalty*1 + v.armorplatelegspenalty*1;
+
+    if (aper > 0) {
+	if (trigger === 'perception') {var pen = '[COND] + [[?{Add Armor Modifier?|Yes, (@{armorpenaltyperception})*-1|No, 0}]] [PEN]';}
 	if (trigger === 'perception') {rollPart3 = rollPart4.replaceAll('[COND]', pen);} else {rollPart3 = rollPart4;}
-	
-	if (trigger === 'stealth') {var pen = '[COND] + [[(@{armorpenaltystealth})*-1]] [PEN]';}
+	if (trigger === 'perception') {rollpen1 = '{{armorpen=[[?{Add Armor Modifier?|Yes, (@{armorpenaltyperception})*-1|No, 0}]]}}';} else {rollpen1 = '';} 
+	} else {rollPart3 = rollPart4; rollpen1 = '';}
+
+    if (aste > 0) {	
+	if (trigger === 'stealth') {var pen = '[COND] + [[?{Add Armor Modifier?|Yes, (@{armorpenaltystealth})*-1|No, 0}]] [PEN]';}
 	if (trigger === 'stealth') {rollPart2 = rollPart3.replaceAll('[COND]', pen);} else {rollPart2 = rollPart3;}
-	
-	if (trigger === 'perception') {rollpen = '{{armorpen=[[(@{armorpenaltyperception})*-1]]}}';} 
-	else if (trigger === 'stealth') {rollpen = '{{armorpen=[[(@{armorpenaltystealth})*-1]]}}';} else {rollpen = '';}
-	
+	if (trigger === 'stealth') {rollpen2 = '{{armorpen=[[?{Add Armor Modifier?|Yes, (@{armorpenaltystealth})*-1|No, 0}]]}}';} else {rollpen2 = '';}
+	} else {rollPart2 = rollPart3; rollpen2 = '';}
+		
+               console.log(rollPart2);
+
+
 	addsl = '';
 	sitmod = '';
 	sitfail = '';
@@ -52527,12 +52539,12 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	addsl = '+@{Talent_ArtisticLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see}`).replaceAll('>addsl<', addsl);}   
 	else if (trigger === 'evaluate') {cond = '{{cond=[[@{condgen_see}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}}  {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{numismatics=[[@{Talent_NumismaticsLvl}]]}} {{supernumerate=[[@{Talent_SuperNumerateLvl}]]}}';
-	addtak= '*@{EvaluateTaken}';
+	addtak = '*@{EvaluateTaken}';
 	sitmods = '+@{Talent_NumismaticsLvl}';	
 	addsl = '+@{Talent_SuperNumerateLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see}`).replaceAll('>addtak<', addtak).replaceAll('>sitmod<', sitmods).replaceAll('>addsl<', addsl);} 
 	else if (trigger === 'psychometry') {cond = '{{cond=[[@{condgen_see}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}}  {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}}';
-	addtak= '*@{PsychometryTaken}';
+	addtak = '*@{PsychometryTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see}`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'picklock') {cond = '{{cond=[[@{condgen_see}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}}  {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}}';
 	addtak= '*@{PickLockTaken}';
@@ -52540,12 +52552,12 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	else if (trigger === 'play') {cond = '{{cond=[[@{condgen_see}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}}  {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see}`);}   
 	else if (trigger === 'research') {cond = '{{cond=[[@{condgen_see}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}}  {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{bookish=[[@{Talent_BookishLvl}]]}} {{speedreader=[[@{Talent_SpeedreaderLvl}]]}}';
-	addtak= '*@{ResearchTaken}';
+	addtak = '*@{ResearchTaken}';
 	addsl = '+@{Talent_BookishLvl}';
 	sitmods = '+@{Talent_SpeedreaderLvl}';	
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see}`).replaceAll('>addtak<', addtak).replaceAll('>addsl<', addsl).replaceAll('>sitmod<', sitmods);}   
 	else if (trigger === 'runesmithing') {cond = '{{cond=[[@{condgen_see}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}}  {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{masterrunemagic=[[@{Talent_MasterRuneMAgicLvl}]]}} {{runemagic=[[@{Talent_RuneMagicLvl}]]}}';
-	addtak= '*@{RunesmithingTaken}';
+	addtak = '*@{RunesmithingTaken}';
 	addsl = '+@{Talent_RuneMagicLvl}+@{Talent_MasterRuneMagicLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see}`).replaceAll('>addtak<', addtak).replaceAll('>addsl<', addsl);}
 	else if (trigger === 'athletics') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{strider1=[[@{Talent_Strider1Lvl}]]}} {{strider1name=@{Talent_Strider1}}} {{strider2=[[@{Talent_Strider2Lvl}]]}} {{strider2name=@{Talent_Strider2}}} {{strider3=[[@{Talent_Strider3Lvl}]]}} {{strider3name=@{Talent_Strider3}}}';
@@ -52553,8 +52565,8 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see_move}`).replaceAll('>sitmod<', sitmods);}   	
 	else if (trigger === 'climb') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{scalesurface=[[@{Talent_ScaleSheerSurfaceLvl}]]}} {{arboreal=[[@{Trait_Arboreal}*@{AgilityBonus}]]}}';
 	addsl = '+@{Talent_ScaleSheerSurfaceLvl}';
-	sitmods= '+(@{Trait_Arboreal}*@{AgilityBonus})';
-	sitfail= '+(@{Trait_Arboreal}*@{AgilityBonus})';
+	sitmods = '+(@{Trait_Arboreal}*@{AgilityBonus})';
+	sitfail = '+(@{Trait_Arboreal}*@{AgilityBonus})';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addsl<', addsl).replaceAll('>sitmod<', sitmods).replaceAll('>sitfail<', sitfail);}   
 	else if (trigger === 'drive') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{crackthewhip=[[@{Talent_CracktheWhipLvl}]]}}';
 	sitmods = '+@{Talent_CracktheWhipLvl}';
@@ -52570,8 +52582,8 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	else if (trigger === 'stealth') {cond = '{{cond=[[@{condgen_see_move_stealth}-@{DrunkStealthMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod} - @{DrunkStealthMod}]]}} {{fatigued=[[@{FatiguedMod} - @{FatiguedStealthMod}]]}} {{broken=[[@{BrokenMod} - @{BrokenStealthMod}]]}} {{stuned=[[@{StunedMod} - @{StunedStealthMod}]]}} {{poisoned=[[@{PoisonedMod} - @{PoisonedStealthMod}]]}} {{prone=[[@{ProneMod} - @{ProneStealthMod}]]}} {{entangled=[[@{EntangledMod} - @{EntangledStealthMod}]]}} {{blinded=[[@{BlindedMod} - @{BlindedStealthMod}]]}} {{deafened=[[0]]}} {{alleycat=[[@{Talent_AlleyCatLvl}]]}} {{tunnelrat=[[@{Talent_TunnelRatLvl}]]}} {{rover=[[@{Talent_RoverLvl}]]}} {{beneathnotice=[[@{Talent_BeneathNoticeLvl}]]}} {{stealthy=[[@{Trait_Stealthy}*@{AgilityBonus}]]}} {{arboreal=[[@{Trait_Arboreal}*@{AgilityBonus}]]}}';
 	addsl = '+(@{Trait_Stealthy}*@{AgilityBonus})';
 	sladd = '+(@{Trait_Stealthy}*@{AgilityBonus})';
-	sitmods= '+@{Talent_AlleyCatLvl}+@{Talent_TunnelRatLvl}+@{Talent_BeneathNoticeLvl}+@{Talent_RoverLvl}+(@{Trait_Arboreal}*@{AgilityBonus})';
-	sitfail= '+@{Talent_AlleyCatLvl}+(@{Trait_Arboreal}*@{AgilityBonus})';
+	sitmods = '+@{Talent_AlleyCatLvl}+@{Talent_TunnelRatLvl}+@{Talent_BeneathNoticeLvl}+@{Talent_RoverLvl}+(@{Trait_Arboreal}*@{AgilityBonus})';
+	sitfail = '+@{Talent_AlleyCatLvl}+(@{Trait_Arboreal}*@{AgilityBonus})';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see_move_stealth}`).replaceAll('>addsl<', addsl).replaceAll('>sladd<', sladd).replaceAll('>sitmod<', sitmods).replaceAll('>sitfail<', sitfail);} 
 	else if (trigger === 'channellingfire') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_1}]]}}';
 	addtak= '*@{ChannellingFireTaken}';
@@ -52580,60 +52592,60 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	addtak= '*@{ChannellingHeavensTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  	
 	else if (trigger === 'channellingmetal') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_3}]]}}';
-	addtak= '*@{ChannellingMetalTaken}';
+	addtak = '*@{ChannellingMetalTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  	
 	else if (trigger === 'channellingbeasts') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_4}]]}}';
-	addtak= '*@{ChannellingBeastsTaken}';
+	addtak = '*@{ChannellingBeastsTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'channellinglife') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_5}]]}}';
-	addtak= '*@{ChannellingLifeTaken}';
+	addtak = '*@{ChannellingLifeTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'channellinglight') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_6}]]}}';
-	addtak= '*@{ChannellingLightTaken}';
+	addtak = '*@{ChannellingLightTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'channellingdeath') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_7}';
-	addtak= '*@{ChannellingDeathTaken}';
+	addtak = '*@{ChannellingDeathTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'channellingshadows') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_8}';
 	addtak= '*@{ChannellingShadowsTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'd') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{lileathsblessing=[[@{Talent_LileathsblessingLvl}*2]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_9}';
-	addtak= '*@{ChannellingHighMagicTaken}';
+	addtak = '*@{ChannellingHighMagicTaken}';
 	addsl = '+@{Talent_LileathsblessingLvl}*2';
 	sladd = '+@{Talent_LileathsblessingLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak).replaceAll('>addsl<', addsl).replaceAll('>sladd<', sladd);}  
 	else if (trigger === 'channellingwitch') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_10}';
-	addtak= '*@{ChannellingWitchTaken}';
+	addtak = '*@{ChannellingWitchTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'channellingdark') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_11}';
-	addtak= '*@{ChannellingDarkTaken}';
+	addtak = '*@{ChannellingDarkTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'channellingchaos') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_12}';
-	addtak= '*@{ChannellingChaosTaken}';
+	addtak = '*@{ChannellingChaosTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}   
 	else if (trigger === 'channellinggreatmaw') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_13}';
-	addtak= '*@{ChannellingGreatMawTaken}';
+	addtak = '*@{ChannellingGreatMawTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}   
 	else if (trigger === 'channellingmisc') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{robes=[[@{Used_Wizard_Robes}]]}} {{sptal1=[[@{Talent_AethyricAttunementLvl}]]}} {{accuchanexlsl=[[@{Quick_Spell_AccuSL_14}';
-	addtak= '*@{ChannellingMiscTaken}';
+	addtak = '*@{ChannellingMiscTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'settrap') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{trapper=[[@{Talent_TrapperLvl}]]}}';
-	addtak= '*@{SetTrapTaken}';
+	addtak = '*@{SetTrapTaken}';
 	addsl = '+@{Talent_TrapperLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see_move}`).replaceAll('>addtak<', addtak).replaceAll('>addsl<', addsl);}  
 	else if (trigger === 'sleightofhand') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{cardsharp=[[@{Talent_CardsharpLvl}]]}} {{diceman=[[@{Talent_DicemanLvl}]]}} {{fasthands=[[@{Talent_FastHandsLvl}]]}}';
-	addtak= '*@{SleightOfHandTaken}';
+	addtak = '*@{SleightOfHandTaken}';
 	sitmods = '+@{Talent_CardsharpLvl}+@{Talent_DicemanLvl}+@{Talent_FastHandsLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen_see_move}`).replaceAll('>addtak<', addtak).replaceAll('>sitmod<', sitmods);}   	
 	else if (trigger === 'swim') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{strongback=[[@{Talent_StrongBackLvl}]]}} {{strongswimmer=[[@{Talent_StrongSwimmerLvl}]]}} {{amphibious=[[@{Trait_Amphibious}*@{AgilityBonus}]]}}'
 	addsl = '+@{Talent_StrongSwimmerLvl}+@{Talent_StrongBackLvl}+(@{Trait_Amphibious}*@{AgilityBonus})';
 	sladd = '+(@{Trait_Amphibious}*@{AgilityBonus})';
-	addtak= '*@{SwimTaken}';
+	addtak = '*@{SwimTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addsl<', addsl).replaceAll('>sladd<', sladd).replaceAll('>addtak<', addtak);}      	
 	else if (trigger === 'track') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{tracker=[[@{Trait_Tracker}*@{InitiativeBonus}]]}}';
 	addsl = '+(@{Trait_Tracker}*@{InitiativeBonus})';
 	sladd = '+(@{Trait_Tracker}*@{InitiativeBonus})';
-	addtak= '*@{TrackTaken}';
+	addtak = '*@{TrackTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_move}-@{DrunkMod})`).replaceAll('>addsl<', addsl).replaceAll('>sladd<', sladd).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'bribery') {cond = '{{cond=[[@{condgen_see_move}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{briber=[[@{Talent_BriberLvl}]]}}';
 	addsl = '+@{Talent_BriberLvl}';
@@ -52645,7 +52657,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	addsl = '+@{Talent_AnimalAffinityLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen}-@{DrunkMod})`).replaceAll('>addsl<', addsl);}    
 	else if (trigger === 'consumealcohol') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{carousersl=[[@{Talent_CarouserLvl}]]}} {{liquidfortification=[[@{Talent_LiquidFortificationLvl}]]}}';
-	addsl= '+@{Talent_CarouserLvl}+@{Talent_LiquidFortificationLvl}';
+	addsl = '+@{Talent_CarouserLvl}+@{Talent_LiquidFortificationLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen}-@{DrunkMod})`).replaceAll('>addsl<', addsl);} 
 	else if (trigger === 'endurance') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[0]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}} {{resistance1=[[@{Talent_Resistance1Lvl}]]}} {{resistance1name=@{Talent_Resistance1}}} {{resistance2=[[@{Talent_Resistance2Lvl}]]}} {{resistance2name=@{Talent_Resistance2}}} {{resistance3=[[@{Talent_Resistance3Lvl}]]}} {{resistance3name=@{Talent_Resistance3}}} {{tenacious=[[@{Talent_TenaciousLvl}]]}} {{ironjaw=[[@{Talent_IronJawLvl}]]}}';
 	sitmods = '+@{Talent_Resistance1Lvl}+@{Talent_Resistance2Lvl}+@{Talent_Resistance3Lvl}+@{Talent_TenaciousLvl}+@{Talent_IronJawLvl}';
@@ -52679,13 +52691,13 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	sitfail = '+@{Talent_PilotLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen}-@{DrunkMod})`).replaceAll('>addsl<', addsl).replaceAll('>sitmod<', sitmods).replaceAll('>sitfail<', sitfail);}
 	else if (trigger === 'animalcare') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}}';
-	addtak= '*@{AnimalCareTaken}';
+	addtak = '*@{AnimalCareTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen}`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'augury') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}}';
-	addtak= '*@{AuguryTaken}';
+	addtak = '*@{AuguryTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `@{condgen}`).replaceAll('>addtak<', addtak);}  
 	else if (trigger === 'pray') {cond = '{{cond=[[@{condgen}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[0]]}} {{deafened=[[0]]}}';
-	addtak= '*@{PrayTaken}';
+	addtak = '*@{PrayTaken}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen}-@{DrunkMod})`).replaceAll('>addtak<', addtak);} 
 	else if (trigger === 'intuition') {cond = '{{cond=[[@{condgen_see_hear}-@{DrunkMod}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{drunk=[[0]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[@{DeafenedMod}]]}} {{sixthsense=[[@{Talent_SixthSenseLvl}]]}} {{detectartefact=[[@{Talent_DetectArtefactLvl}]]}} {{holyvisions=[[@{Talent_HolyVisionsLvl}]]}}';
 	sitmods = '+@{Talent_SixthSenseLvl}+@{Talent_DetectArtefactLvl}+@{Talent_HolyVisionsLvl}';
@@ -52713,7 +52725,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
                console.log(rollPart);
                console.log(cond);			
  
-        startRoll(rollBegins + rollPartReady + rollpen + cond + rollBesmirch, (results) => {
+        startRoll(rollBegins + rollPartReady + rollpen1 + rollpen2 + cond + rollBesmirch, (results) => {
             const target = results.results.target.result
             const test = results.results.test.result
             const sl = results.results.sl.result
@@ -52836,6 +52848,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 		}
         });
     });
+	});	
     });
 	
    on('clicked:coolroll clicked:dodgeroll clicked:meleebasicroll clicked:meleebrawlingroll clicked:meleecavalryroll clicked:meleefencingroll clicked:meleeflailroll clicked:meleeparryroll clicked:meleepolearmroll clicked:meleetwohandedroll clicked:langmagickroll clicked:rangedblackpowderroll clicked:rangedbowroll clicked:rangedcrossbowroll clicked:rangedengineeringroll clicked:rangedentanglingroll clicked:rangedexplosivesroll clicked:rangedslingroll clicked:rangedthrowingroll', (eventInfo) => {
@@ -53049,7 +53062,8 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 
     on('clicked:repeating_artspecializationr:artspecializationroll clicked:repeating_entertainspecialization:entertainspecializationroll clicked:repeating_ridespecialization:ridespecializationroll clicked:repeating_stealthspecialization:stealthspecializationroll', (eventInfo) => {
 	
-   let roll = '{{test=[[@{roll_rule}]]}} {{sl=[[0]]}} {{slbonus=[[0>addsl<]]}} {{sladd=[[0>sladd<]]}} {{slbonusatk=[[0>addsl<]]}} {{target=[[ [[cond-*-1]] [COND] + [[@{prefix-Char}+@{prefix-Adv}+@{prefix-Misc}]] [SKILL] +?{@{translation_modifier}|0} [MOD] ]]}} {{modvalue=[[?{@{translation_modifier}|0}]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{title=@{prefix-Name}}} {{skill=^{>Skill<}}} {{character_name=@{character_name}}} {{skilltest=true}} {{SLmod=[[?{SL Modifier|0}]]}} {{sitmod=[[0>sitmod<]]}} {{mod1type=[[@{prefix2-_Custom_modtype1}]]}} {{mod1=@{prefix2-_Custom_mod1}}} {{mod2type=[[@{prefix2-_Custom_modtype2}]]}} {{mod2=@{prefix2-_Custom_mod2}}} {{sitfail=[[0>sitfail<]]}} {{mod3type=[[@{prefix2-_Custom_modtype3}]]}} {{mod3=@{prefix2-_Custom_mod3}}} {{reroll=@{RT-reroll}prefix2-specializationroll)}}';
+   let roll = '{{test=[[@{roll_rule}]]}} {{sl=[[0]]}} {{slbonus=[[0>addsl<]]}} {{sladd=[[0>sladd<]]}} {{slbonusatk=[[0>addsl<]]}} {{modvalue=[[?{@{translation_modifier}|0}]]}} {{SLmod=[[?{SL Modifier|0}]]}} {{target=[[ [[cond-*-1]] [COND] + [[@{prefix-Char}+@{prefix-Adv}+@{prefix-Misc}]] [SKILL] +?{@{translation_modifier}|0} [MOD] ]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{title=@{prefix-Name}}} {{skill=^{>Skill<}}} {{character_name=@{character_name}}} {{skilltest=true}} {{sitmod=[[0>sitmod<]]}} {{mod1type=[[@{prefix2-_Custom_modtype1}]]}} {{mod1=@{prefix2-_Custom_mod1}}} {{mod2type=[[@{prefix2-_Custom_modtype2}]]}} {{mod2=@{prefix2-_Custom_mod2}}} {{sitfail=[[0>sitfail<]]}} {{mod3type=[[@{prefix2-_Custom_modtype3}]]}} {{mod3=@{prefix2-_Custom_mod3}}} {{reroll=@{RT-reroll}prefix2-specializationroll)}}';
+	getAttrs([`${trigger}Char`, "Besmirched", "armormailpenalty", "armorplatepenalty", "armorplatelegspenalty"], function(v) { 
    var trigger = eventInfo.triggerName.slice(8, -4);
    var prefix = trigger.split('_').slice(0,3).join('_') + '_';
    var prefix2 = eventInfo.triggerName.slice(8, -18);
@@ -53059,9 +53073,22 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
    let rollBegins = '@{Whisper} &{template:whfrp2e}';
    let rollPart3 = roll.replaceAll('prefix-', `${trigger}`).replaceAll('prefix2-', `${prefix2}`).replaceAll('>Skill<', `${skillcap}`);
 
-	if (skill === 'stealth') {var pen = '[SKILL] + [[(@{armormailpenalty}+@{armorplatepenalty}+@{armorplatelegspenalty})*-1]] [PEN]';}
+		let aste = v.armormailpenalty*1 + v.armorplatepenalty*1 + v.armorplatelegspenalty*1;
+
+
+
+
+               console.log(" TESTTTT ");	
+               console.log(aste);	
+
+    if (aste > 0) {	
+               console.log(" TESTTTT 11");	
+	if (skill === 'stealth') {var pen = '[SKILL] + [[?{Add Armor Modifier?|Yes, (@{armorpenaltystealth})*-1|No, 0}]] [PEN]';}
 	if (skill === 'stealth') {rollPart2 = rollPart3.replaceAll('[SKILL]', pen);} else {rollPart2 = rollPart3;}
-	if (skill === 'stealth') {rollpen = '{{armorpen=[[(@{armormailpenalty}+@{armorplatepenalty}+@{armorplatelegspenalty})*-1]]}}';} else {rollpen = ''}
+	if (skill === 'stealth') {rollpen = '{{armorpen=[[?{Add Armor Modifier?|Yes, (@{armorpenaltystealth})*-1|No, 0}]]}}';} else {rollpen = '';}
+	} else {console.log(" TESTTTT 111");rollPart2 = rollPart3; rollpen = '';}
+
+               console.log(rollPart2);	
 
 	if (skill === 'art') {cond = '{{cond=[[@{condgen_see}-@{DrunkMod}]]}} {{drunk=[[@{DrunkMod}]]}}  {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[0]]}} {{entangled=[[0]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{artistic=[[@{Talent_ArtisticLvl}]]}}';
 	addsl = '+@{Talent_ArtisticLvl}';
@@ -53083,7 +53110,6 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	
 	else {cond = ''}
 
-	getAttrs([`${trigger}Char`, "Besmirched"], function(v) { 
 
 			bes = JSON.stringify(v[`${trigger}Char`]);
 			
@@ -53097,6 +53123,9 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 			rollBesmirch = ' {{besmirched=[[0]]}}';} 
 		} else {besmirch = 0; rollBesmirch = ' ';}
 		
+
+               console.log(rollPart);	
+
         startRoll(rollBegins + rollPart + rollpen + cond + rollBesmirch, (results) => {
             const target = results.results.target.result
             const test = results.results.test.result

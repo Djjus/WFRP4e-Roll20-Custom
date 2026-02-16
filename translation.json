@@ -1959,7 +1959,8 @@
 	"VAMPIRIC": "Vampiric",
 	"VAMPIRIC-EFFECT": "Vampiric: On hit, Gain wounds equal to wounds lost",
 	"VOMIT": "Vomit",
-	"VOMIT-DESC1": "Vomit: All 2 yds of target Oppose with Dodge test",
+	"VOMIT-DESC1": "Vomit: All",
+	"VOMIT-DESC1.2": "yds of target Oppose with Dodge test",
 	"VOMIT-DESC2": "If lost it suffer Dmg and Stunned condition, and all armor and weapons carried suffer 1 dmg",
 	"WARD": "Ward",
 	"WARD-EFFECT": "Ward: If lost, roll d10, Rating+ avoid all Dmg",
@@ -2039,10 +2040,10 @@
 	"WEAPON-MILITARY-FLAIL": "2H,Military Flail,Flail,2,Long,6,Distract-Impact-Tiring-Wrap,",
 	"WEAPON-WHIRLING-BLADES-OF-DEATH": "1H,Whirling blades of death,Flail,2,Long,5,Distract-Hack-Impact-Tiring-Wrap,",
 
-	"WEAPON-CLOAK": "1H,Cloak,Parry,1,Short,0,Distract-Wrap,",
-	"WEAPON-MAIN-GAUCHE": "1H,Main Gauche,Parry,0,Very Short,2,Distract-Wrap,",
-	"WEAPON-SWORDBREAKER": "1H,Swordbreaker,Parry,1,Short,1,Distract-Wrap,",
-	"WEAPON-WEIGHTED-NET": "2H,Weighted Net,Parry,1,Short,0,Distract-Wrap,",
+	"WEAPON-CLOAK": "1H,Cloak,Parry,1,Short,0,Entangle-Defensive-Undamaging,",
+	"WEAPON-MAIN-GAUCHE": "1H,Main Gauche,Parry,0,Very Short,2,Defensive,",
+	"WEAPON-SWORDBREAKER": "1H,Swordbreaker,Parry,1,Short,1,Defensive-TrapBlade,",
+	"WEAPON-WEIGHTED-NET": "2H,Weighted Net,Parry,1,Short,0,Entangle-Defensive-Shield1-Slow-Undamaging-Wrap,",
 
 	"WEAPON-AHLSPIESS": "2H,Ahlspiess,Polearm,2,Very Long,3,Impale-Penetrating,",
 	"WEAPON-BILL": "2H,Bill,Polearm,3,Long,4,Defensive-Hack+Trip,",
@@ -2078,10 +2079,10 @@
 	"WEAPON-BOW": "2H,Bow,Bow,2,50,1,3,none,",
 	"WEAPON-SHORTBOW": "2H,Shortbow,Bow,1,20,1,2,none,",
 
-	"WEAPON-CROSSBOW-PISTOL": "1H,Crossbow Pistol,Crossbow,0,10,0,7,Pistol,",
-	"WEAPON-HEAVY-CROSSBOW": "2H,Heavy Crossbow,Crossbow,3,100,0,9,Damaging-Reload2,",
-	"WEAPON-CROSSBOW": "2H,Crossbow,Crossbow,1,60,0,9,Reload1,",
-	"WEAPON-DWARF-CROSSBOW": "2H,Dwarf Crossbow,Crossbow,1,80,0,9,Precise-Damaging-Reload 1,",
+	"WEAPON-CROSSBOW-PISTOL": "1H,Crossbow Pistol,Crossbow,0,10,0,7,Impale-Pistol,",
+	"WEAPON-HEAVY-CROSSBOW": "2H,Heavy Crossbow,Crossbow,3,100,0,9,Impale-Damaging-Reload2,",
+	"WEAPON-CROSSBOW": "2H,Crossbow,Crossbow,1,60,0,9,Impale-Reload1,",
+	"WEAPON-DWARF-CROSSBOW": "2H,Dwarf Crossbow,Crossbow,1,80,0,10,Impale-Precise-Damaging-Reload 1,",
 
 	"WEAPON-REPEATER-HANDGUN": "2H,Repeater Handgun,Engineering,3,30,0,9,Blackpowder-Dangerous-Reload5-Repeater4,",
 	"WEAPON-REPEATER-PISTOL": "1H,Repeater Pistol,Engineering,1,10,0,8,Blackpowder-Dangerous-Pistol-Reload4-Repeater4,",
@@ -2112,6 +2113,9 @@
 	"WEAPON-THROWING-AXE": "1H,Throwing Axe,Throwing,1,SB2,1,3,Hack,",
 	"WEAPON-DWARF-THROWING-AXE": "1H,Dwarf Throwing Axe,Throwing,1,SB2,1,4,Hack,",
 	"WEAPON-BLACKBRIAR-JAVELIN": "1H,Blackbriar Javelin,Throwing,1,SB3,1,3,Impale,Inflicts 1 Poison on hit",
+
+
+	"CAREER-APOTHECARY": "Apothecary’s Apprentice;T,Dex,Int;Brass 3;Consume Alcohol,Heal,Language (Classical),Lore (Chemistry),Lore (Medicine),Lore (Plants),Trade (Apothecary),Trade (Poisoner);Concoct,Craftsman (Apothecary),Etiquette (Scholar),Read/Write;Book (Blank),Healing Draught,Leather Jerkin,Pestle and Mortar:Apothecary;Fel;Silver 1;Charm,Haggle,Lore (Science),Gossip,Language (Guilder),Perception;Criminal,Dealmaker,Etiquette (Guilder),Pharmacist;Guild Licence,Trade Tools:Master Apothecary;I;Silver 3;Intuition,Leadership,Research,Secret Signs (Guilder);Bookish,Master Tradesman (Apothecary),Resistance (Poison),Savvy;Book (Apothecary),Apprentice,Workshop:Apothecary-General;WP;Gold 1;Intimidate,Ride (Horse);Acute Sense (Taste),Coolheaded,Master Tradesman (Poisoner),Savant (Apothecary);Commission Papers,Large Workshop",
 
 	"OVERCAST-TABLE": "               --=( Overcast Table )=-- \n SL  Targets  Damage  Range  AoE   Duration \n 1     +1       +1            x2        N/a    N/a \n 2     +1       +2            x2        N/a    x2 \n 3     +1       +3            x2        x2      x2 \n 5     +2       +4            x3        x2      x2 \n 8     +2       +5            x3        x2      x3 \n 13   +2       +6            x3        x3      x3 \n 21   +3       +7            x4        x3      x3"
 }
