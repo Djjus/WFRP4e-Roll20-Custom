@@ -34646,10 +34646,10 @@
 		<div class="row mar-b-md">
 			<div class="col-9-10 pad-r-md">
 				<select class="select-no-arrow" name="attr_UlricsFury">
-					<option value="0" data-i18n="HOUSERULE1-ULRICS-FURY">Houserule 1: No additional Crit Dmg  --  *Core Book Default*</option>
+					<option value="0" selected="selected" data-i18n="HOUSERULE1-ULRICS-FURY">Houserule 1: No additional Crit Dmg  --  *Core Book Default*</option>
 					<option value="1" data-i18n="HOUSERULE2-ULRICS-FURY">Houserule 2: Add custom Crit Dmg wounds</option>
 					<option value="2" data-i18n="HOUSERULE3-ULRICS-FURY">Houserule 3: Replace normal Crit dmg with custom Crit Dmg wounds</option>
-					<option value="3" selected="selected" data-i18n="HOUSERULE4-ULRICS-FURY">Houserule 4: Replace normal Crit dmg with Crit dmg wounds derived from the crit roll Tens Die, if the crit roll is a dubs it will roll again and add up the damage. (by Dom)</option>
+					<option value="3" data-i18n="HOUSERULE4-ULRICS-FURY">Houserule 4: Replace normal Crit dmg with Crit dmg wounds derived from the crit roll Tens Die, if the crit roll is a dubs it will roll again and add up the damage. (by Dom)</option>
 					</select>
 			</div>
 			<div class="col-1-10 pad-r-md">
@@ -34679,7 +34679,7 @@
 		<div class="row mar-b-md">
 			<div class="col-1 pad-r-md">
 				<select class="select-whisper" name="attr_ConditionModEnable">
-					<option value="0" data-i18n="HOUSERULE1-COND-TRACKER">Houserule 1: Minimal Condition Tracking	(Advantage is automatically integrated as roll modifier on applicable skill rolls)</option>
+					<option value="0" data-i18n="HOUSERULE1-COND-TRACKER">Houserule 1: Minimal Condition Tracking (Advantage is automatically integrated as roll modifier on applicable skill rolls)</option>
 					<option value="1" selected="selected" data-i18n="HOUSERULE2-COND-TRACKER">Houserule 2: Full Condition Tracking	(Highest Condition, except Ablaze/Bleeding and Fear, is added to roll modifier automatically, multiple conds do not stack.)</option>
 				</select>
 			</div>
@@ -34706,26 +34706,27 @@
 			</div>
 			<div class="row mar-b-md">
 				<div class="col-1 pad-r-md">
-					<select class="select-no-arrow" name="attr_TwohandedRules">
-						<option value="0" data-i18n="HOUSERULE1-DEFAULT">Houserule 1: Core Rule Book (Default)</option>
-						<option value="1" selected="selected" data-i18n="HOUSERULE2-TWOHANDED-RULES"> Houserule 2: Strike Mighty Blow adds +2 dmg per lvl to 2h melee weapons / Melee Two-handed Quality: Defender -1SL when parrying</option>
+					<select class="select-no-arrow" name="attr_TwohandedRulesSet">
+						<option value="0" selected="selected" data-i18n="HOUSERULE1-DEFAULT">Houserule 1: Core Rule Book (Default)</option>
+						<option value="1" data-i18n="HOUSERULE2-TWOHANDED-RULES"> Houserule 2: Strike Mighty Blow adds +2 dmg per lvl to 2h melee weapons / Melee Two-handed Quality: Defender -1SL when parrying vs 1h</option>
+						<option value="2" data-i18n="HOUSERULE3-TWOHANDED-RULES"> Houserule 3: Strike Mighty Blow adds +2 dmg per lvl to 2h melee weapons </option>
 					</select>
 				</div>
 			</div>
-			<hr />
-				<div class="row spell-header">
-					<div class="col-1 vert-bottom left small-label pad-l-md">
-						<span data-i18n="HOUSERULE-COMBAT-DEF" >Custom Melee Defensive Talent Rules</span>
-					</div>
+		<hr />
+			<div class="row spell-header">
+				<div class="col-1 vert-bottom left small-label pad-l-md">
+					<span data-i18n="HOUSERULE-COMBAT-DEF" >Custom Melee Defensive Talent Rules</span>
 				</div>
-				<div class="row mar-b-md">
-					<div class="col-1 pad-r-md">
-						<select class="select-no-arrow" name="attr_DefensiveTalentRules">
-							<option value="0" data-i18n="HOUSERULE1-DEFAULT">Houserule 1: Core Rule Book (Default)</option>
-							<option value="1" selected="selected" data-i18n="HOUSERULE2-COMBAT-DEF-RULES"> Houserule 2: Reversal test SL bonus changed to Parry weapons only, Riposte test SL bonus now only adds when riposting with fencing&fast weapon.</option>
-						</select>
-					</div>
+			</div>
+			<div class="row mar-b-md">
+				<div class="col-1 pad-r-md">
+					<select class="select-no-arrow" name="attr_DefensiveTalentRules">
+						<option value="0" selected="selected" data-i18n="HOUSERULE1-DEFAULT">Houserule 1: Core Rule Book (Default)</option>
+						<option value="1" data-i18n="HOUSERULE2-COMBAT-DEF-RULES"> Houserule 2: Reversal test SL bonus changed to Parry weapons only, Riposte test SL bonus now only adds when riposting with fencing&fast weapon.</option>
+					</select>
 				</div>
+			</div>
 		<hr />
 			<div class="row spell-header">
 				<div class="col-1 vert-bottom left small-label pad-l-md">
@@ -34898,7 +34899,7 @@
 		<div class="spacer-xl"></div>
 		<!-- FOOTER -->
 		<div class="row footer">
-			<div class="col-1 small-label center">Sheet version 1.76i : Feb 16th 2026 | by Djjus & Pote</div>
+			<div class="col-1 small-label center">Sheet version 1.76j : Feb 23rd 2026 | by Djjus & Pote</div>
 		</div>
 			</div>
 		</div>
@@ -38995,7 +38996,7 @@
 										{{/rollGreater() reversaleffect 0}}
 										{{/grpadv}}
 										{{#rollGreater() twohanded 0}}
-											<div class="col-100-100 pad-l-md pad-r-md rt-effects"><span style="margin-right: 3px; color: #858585" >Twohanded: Defender -1SL when parrying</span></div>
+											<div class="col-100-100 pad-l-md pad-r-md rt-effects"><span style="margin-right: 3px; color: #858585" data-i18n="TWOHANDED-EFFECT" >Twohanded: Defender -1SL when parrying with 1h</span></div>
 										{{/rollGreater() twohanded 0}}
 
 										{{#rollGreater() undamaging 0}}
@@ -50182,7 +50183,7 @@ on('clicked:meleeattackmain clicked:furiousassaultmain clicked:meleechargemain c
     });
 			   } else {
 			   
-   let roll = '{{sl=[[0 [Roll SL]]]}} {{slbonus=[[@{Used_MeleePrecise}+@{Used_MeleePractical}>addsl< [SL TOTAL]]]}} {{slbonusatk=[[@{slbonusAtkMain}>addsl<]]}} {{sladd=[[0]]}} {{test=[[>test<]]}} {{sitmod=[[@{Mainattcustadd}]]}} {{sitfail=[[0>sitfail<]]}} {{csloc=[[0>csloc<]]}} {{cscount=[[0>cscount<]]}} {{modvalue=[[?{Opposed Attack Modifier|@{Used_MeleeBonus}}]]}} {{title=@{Used_MeleeWeapon}}} {{advantage=[[@{AdvantageDisplay}]]}} {{character_name=@{character_name}}} {{attacktype=>atype<}} {{target=[[>target<]]}} {{attacktest=true}} {{showdmg=[[1]]}} {{SLmod=[[?{SL Modifier|0} [SL Mod]]]}} >hitloc< {{damaging=[[@{Used_MeleeDamaging}]]}} {{reach=@{Used_MeleeReach}}} {{rolltype=[[@{Used_MeleeImpale}]]}} {{qualities=@{Used_MeleeQualities}}} {{damage=[[@{Used_MeleeStrengthBonus}+@{Used_MeleeDamageBonus}+@{Talent_StrikeMightyBlowLvl}+(@{Talent_StrikeMightyBlowLvl}*@{Used_MeleeTwoHanded}*@{TwohandedRules})>adddmg<-{[[@{Used_MeleeDmgTaken}-@{Used_MeleeDurable}]],[[0]]}kh1]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{cond=[[@{condgen_see_move_atk}-@{DrunkMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod} - @{ProneAtkMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{mod1type=[[@{Used_Melee_modtype1}]]}} {{mod1=@{Used_Melee_mod1}}} {{mod2type=[[@{Used_Melee_modtype2}]]}} {{mod2=@{Used_Melee_mod2}}} {{mod3type=[[@{Used_Melee_modtype3}]]}} {{mod3=@{Used_Melee_mod3}}} {{NPC=[[0]]}} {{RTcrit=@{RT-critical}}} {{RTfumble=@{RT-fumble}}} {{fast=[[@{Used_MeleeFast}]]}} {{slow=[[@{Used_MeleeSlow}]]}} {{hack=[[@{Used_MeleeHack}]]}} {{precise=[[@{Used_MeleePrecise}]]}} {{impact=[[@{Used_MeleeImpact}]]}} {{tiring=[[@{Used_MeleeTiring}]]}} {{penetrating=[[@{Used_MeleePenetrating}]]}} {{warpstone=[[@{Used_MeleeWarpstone}]]}} {{zzap=[[@{Used_MeleeZZAP}]]}} {{pummel=[[@{Used_MeleePummel}]]}} {{practical=[[@{Used_MeleePractical}]]}} {{wrap=[[@{Used_MeleeWrap}]]}} {{trip=[[@{Used_MeleeTrip}]]}} {{slash=[[@{Used_MeleeSlash}*@{Used_MeleeSlashRating}]]}} {{distract=[[@{Used_MeleeDistract}]]}} {{entangle=[[@{Used_MeleeEntangle}]]}} {{undamaging=[[@{Used_MeleeUndamaging}]]}} {{battlerage=[[@{Talent_BattleRageLvl}]]}} {{frenzy=[[@{Talent_FrenzyLvl}*@{MeleeMode_Frenzy}]]}} {{slayer=[[@{Talent_SlayerLvl}*@{StrengthBonusStart}]]}} {{carefulstrike=[[@{Talent_CarefulStrikeLvl}]]}} {{bne=[[@{MeleeMode_VsObject}]]}} {{dis=[[@{MeleeMode_Disarm}]]}} {{inf=[[@{MeleeMode_Infight}]]}} {{usedmagic=[[@{Used_MeleeMagic}]]}}  {{usedmagiceffect=@{Used_MeleeMagicEffect}}} {{RTpummel=@{RT-pummel}}} {{demolisher=[[@{Talent_Demolisherlvl}]]}} {{twohanded=[[@{TwohandedRules}*@{Used_MeleeTwohanded}]]}} {{reversaleffect=[[@{Talent_ReversalLvl}]]}} {{constrictor=[[@{Trait_Constrictor}]]}} {{distractingtrait=[[@{Trait_Distracting}]]}} {{web=[[@{Trait_Web}]]}} {{webrating=[[@{Trait_Web_Rating}]]}} {{magical=[[@{Trait_Magical}]]}} {{infected=[[@{Trait_Infected}]]}} {{infectedeffect=@{Trait_Infected_Effect}}}';
+   let roll = '{{sl=[[0 [Roll SL]]]}} {{slbonus=[[@{Used_MeleePrecise}+@{Used_MeleePractical}>addsl< [SL TOTAL]]]}} {{slbonusatk=[[@{slbonusAtkMain}>addsl<]]}} {{sladd=[[0]]}} {{test=[[>test<]]}} {{sitmod=[[@{Mainattcustadd}]]}} {{sitfail=[[0>sitfail<]]}} {{csloc=[[0>csloc<]]}} {{cscount=[[0>cscount<]]}} {{modvalue=[[?{Opposed Attack Modifier|@{Used_MeleeBonus}}]]}} {{title=@{Used_MeleeWeapon}}} {{advantage=[[@{AdvantageDisplay}]]}} {{character_name=@{character_name}}} {{attacktype=>atype<}} {{target=[[>target<]]}} {{attacktest=true}} {{showdmg=[[1]]}} {{SLmod=[[?{SL Modifier|0} [SL Mod]]]}} >hitloc< {{damaging=[[@{Used_MeleeDamaging}]]}} {{reach=@{Used_MeleeReach}}} {{rolltype=[[@{Used_MeleeImpale}]]}} {{qualities=@{Used_MeleeQualities}}} {{damage=[[@{Used_MeleeStrengthBonus}+@{Used_MeleeDamageBonus}+@{Talent_StrikeMightyBlowLvl}+(@{Talent_StrikeMightyBlowLvl}*@{Used_MeleeTwoHanded}*@{TwohandedRules})>adddmg<-{[[@{Used_MeleeDmgTaken}-@{Used_MeleeDurable}]],[[0]]}kh1]]}} {{unconscious=[[@{UnconsciousMod}]]}} {{cond=[[@{condgen_see_move_atk}-@{DrunkMod}]]}} {{drunk=[[@{DrunkMod}]]}} {{fatigued=[[@{FatiguedMod}]]}} {{broken=[[@{BrokenMod}]]}} {{stuned=[[@{StunedMod}]]}} {{distracted=[[@{DistractedMod}]]}} {{poisoned=[[@{PoisonedMod}]]}} {{prone=[[@{ProneMod} - @{ProneAtkMod}]]}} {{entangled=[[@{EntangledMod}]]}} {{blinded=[[@{BlindedMod}]]}} {{deafened=[[0]]}} {{mod1type=[[@{Used_Melee_modtype1}]]}} {{mod1=@{Used_Melee_mod1}}} {{mod2type=[[@{Used_Melee_modtype2}]]}} {{mod2=@{Used_Melee_mod2}}} {{mod3type=[[@{Used_Melee_modtype3}]]}} {{mod3=@{Used_Melee_mod3}}} {{NPC=[[0]]}} {{RTcrit=@{RT-critical}}} {{RTfumble=@{RT-fumble}}} {{fast=[[@{Used_MeleeFast}]]}} {{slow=[[@{Used_MeleeSlow}]]}} {{hack=[[@{Used_MeleeHack}]]}} {{precise=[[@{Used_MeleePrecise}]]}} {{impact=[[@{Used_MeleeImpact}]]}} {{tiring=[[@{Used_MeleeTiring}]]}} {{penetrating=[[@{Used_MeleePenetrating}]]}} {{warpstone=[[@{Used_MeleeWarpstone}]]}} {{zzap=[[@{Used_MeleeZZAP}]]}} {{pummel=[[@{Used_MeleePummel}]]}} {{practical=[[@{Used_MeleePractical}]]}} {{wrap=[[@{Used_MeleeWrap}]]}} {{trip=[[@{Used_MeleeTrip}]]}} {{slash=[[@{Used_MeleeSlash}*@{Used_MeleeSlashRating}]]}} {{distract=[[@{Used_MeleeDistract}]]}} {{entangle=[[@{Used_MeleeEntangle}]]}} {{undamaging=[[@{Used_MeleeUndamaging}]]}} {{battlerage=[[@{Talent_BattleRageLvl}]]}} {{frenzy=[[@{Talent_FrenzyLvl}*@{MeleeMode_Frenzy}]]}} {{slayer=[[@{Talent_SlayerLvl}*@{StrengthBonusStart}]]}} {{carefulstrike=[[@{Talent_CarefulStrikeLvl}]]}} {{bne=[[@{MeleeMode_VsObject}]]}} {{dis=[[@{MeleeMode_Disarm}]]}} {{inf=[[@{MeleeMode_Infight}]]}} {{usedmagic=[[@{Used_MeleeMagic}]]}}  {{usedmagiceffect=@{Used_MeleeMagicEffect}}} {{RTpummel=@{RT-pummel}}} {{demolisher=[[@{Talent_Demolisherlvl}]]}} {{twohanded=[[@{TwohandedRulesDisp}*@{Used_MeleeTwohanded}]]}} {{reversaleffect=[[@{Talent_ReversalLvl}]]}} {{constrictor=[[@{Trait_Constrictor}]]}} {{distractingtrait=[[@{Trait_Distracting}]]}} {{web=[[@{Trait_Web}]]}} {{webrating=[[@{Trait_Web_Rating}]]}} {{magical=[[@{Trait_Magical}]]}} {{infected=[[@{Trait_Infected}]]}} {{infectedeffect=@{Trait_Infected_Effect}}}';
    var trigger = eventInfo.triggerName.slice(8);
    var prefix = trigger.split('_').slice(0,3).join('_') + '_';
    let rollBegins = '@{Whisper} &{template:whfrp2e}';
@@ -50790,7 +50791,7 @@ on('clicked:meleeattackoff clicked:meleechargeoff clicked:furiousassaultoff clic
     });   
 			   } else {
 
-   let roll = '{{test=[[>test<]]}} {{sl=[[0]]}} {{slbonus=[[@{Used_DefensePrecise}+@{Used_DefensePractical}>addsl< [SL TOTAL]]]}} {{slbonusatk=[[@{slbonusAtkOff}>addsl<]]}} {{sladd=[[0]]}} {{sitmod=[[0]]}} {{sitfail=[[0>sitfail<]]}} {{csloc=[[0>csloc<]]}} {{cscount=[[0>cscount<]]}} {{modvalue=[[?{Opposed Attack Modifier|@{Used_DefenseBonus}}]]}} {{title=@{Used_DefenseWeapon}}} {{advantage=[[@{AdvantageDisplay}]]}} {{character_name=@{character_name}}} {{attacktype=>atype<}} {{target=[[>target<]]}} {{offpen=[[>ambi<]]}} {{attacktest=true}} {{showdmg=[[1]]}} {{SLmod=[[?{SL Modifier|0}]]}} >hitloc< {{reach=@{Used_DefenseReach}}} {{damaging=[[@{Used_DefenseDamaging}]]}} {{rolltype=[[@{Used_DefenseImpale}]]}} {{qualities=@{Used_DefenseQualities}}} {{damage=[[@{Used_DefenseStrengthBonus}+@{Used_DefenseDamageBonus}+@{Talent_StrikeMightyBlowLvl}+@{Talent_StrikeMightyBlowLvl}*@{Used_MeleeTwoHanded}*@{TwohandedRules}>adddmg<-{[[@{Used_DefenseDmgTaken}-@{Used_DefenseDurable}]],[[0]]}kh1]]}} {{NPC=[[0]]}} {{RTcrit=@{RT-critical}}} {{RTfumble=@{RT-fumble}}} {{unconscious=[[@{UnconsciousMod}]]}} {{cond=[[@{condgen_see_move_atkoff}-@{DrunkAtkMod}-@{DistractedAtkMod}]]}} {{drunk=[[@{DrunkAtkMod}]]}} {{fatigued=[[@{FatiguedMod} - @{FatiguedAtkMod}]]}} {{broken=[[@{BrokenMod} - @{BrokenAtkMod}]]}} {{stuned=[[@{StunedMod} - @{StunedAtkMod}]]}} {{distracted=[[@{DistractedMod} - @{DistractedAtkMod}]]}} {{poisoned=[[@{PoisonedMod} - @{PoisonedAtkMod}]]}} {{prone=[[@{ProneMod} - @{ProneAtkMod}]]}} {{fast=[[@{Used_DefenseFast}]]}} {{slow=[[@{Used_DefenseSlow}]]}} {{entangled=[[@{EntangledMod} - @{EntangledAtkMod}]]}} {{blinded=[[@{BlindedMod} - @{BlindedAtkMod}]]}} {{deafened=[[0]]}} {{tiring=[[@{Used_DefenseTiring}]]}} {{penetrating=[[@{Used_DefensePenetrating}]]}} {{pummel=[[@{Used_DefensePummel}]]}} {{hack=[[@{Used_DefenseHack}]]}} {{precise=[[@{Used_DefensePrecise}]]}} {{impact=[[@{Used_DefenseImpact}]]}} {{practical=[[@{Used_DefensePractical}]]}} {{wrap=[[@{Used_DefenseWrap}]]}} {{trip=[[@{Used_DefenseTrip}]]}} {{slash=[[@{Used_DefenseSlash}*@{Used_DefenseSlashRating}]]}} {{distract=[[@{Used_DefenseDistract}]]}} {{entangle=[[@{Used_DefenseEntangle}]]}} {{undamaging=[[@{Used_DefenseUndamaging}]]}} {{mod1type=[[@{Used_Defense_att_modtype1}]]}} {{mod1=@{Used_Defense_att_mod1}}} {{mod2type=[[@{Used_Defense_att_modtype2}]]}} {{mod2=@{Used_Defense_att_mod2}}} {{mod3type=[[@{Used_Defense_att_modtype3}]]}} {{mod3=@{Used_Defense_att_mod3}}} {{battlerage=[[@{Talent_BattleRageLvl}]]}} {{frenzy=[[@{Talent_FrenzyLvl}*@{MeleeMode_Frenzy}]]}} {{carefulstrike=[[@{Talent_CarefulStrikeLvl}]]}} {{bne=[[@{MeleeMode_VsObject}]]}} {{inf=[[@{MeleeMode_Infight}]]}} {{usedmagic=[[@{Used_DefenseMagic}]]}} {{usedmagiceffect=@{Used_DefenseMagicEffect}}} {{RTpummel=@{RT-pummel}}} {{demolisher=[[@{Talent_Demolisherlvl}]]}} {{twohanded=[[@{TwohandedRules}*@{Used_MeleeTwohanded}]]}} {{reversaleffect=[[@{Talent_ReversalLvl}]]}} {{constrictor=[[@{Trait_Constrictor}]]}} {{distractingtrait=[[@{Trait_Distracting}]]}} {{web=[[@{Trait_Web}]]}} {{webrating=[[@{Trait_Web_Rating}]]}} {{magical=[[@{Trait_Magical}]]}} {{infected=[[@{Trait_Infected}]]}} {{infectedeffect=@{Trait_Infected_Effect}}}';
+   let roll = '{{test=[[>test<]]}} {{sl=[[0]]}} {{slbonus=[[@{Used_DefensePrecise}+@{Used_DefensePractical}>addsl< [SL TOTAL]]]}} {{slbonusatk=[[@{slbonusAtkOff}>addsl<]]}} {{sladd=[[0]]}} {{sitmod=[[0]]}} {{sitfail=[[0>sitfail<]]}} {{csloc=[[0>csloc<]]}} {{cscount=[[0>cscount<]]}} {{modvalue=[[?{Opposed Attack Modifier|@{Used_DefenseBonus}}]]}} {{title=@{Used_DefenseWeapon}}} {{advantage=[[@{AdvantageDisplay}]]}} {{character_name=@{character_name}}} {{attacktype=>atype<}} {{target=[[>target<]]}} {{offpen=[[>ambi<]]}} {{attacktest=true}} {{showdmg=[[1]]}} {{SLmod=[[?{SL Modifier|0}]]}} >hitloc< {{reach=@{Used_DefenseReach}}} {{damaging=[[@{Used_DefenseDamaging}]]}} {{rolltype=[[@{Used_DefenseImpale}]]}} {{qualities=@{Used_DefenseQualities}}} {{damage=[[@{Used_DefenseStrengthBonus}+@{Used_DefenseDamageBonus}+@{Talent_StrikeMightyBlowLvl}+@{Talent_StrikeMightyBlowLvl}*@{Used_MeleeTwoHanded}*@{TwohandedRules}>adddmg<-{[[@{Used_DefenseDmgTaken}-@{Used_DefenseDurable}]],[[0]]}kh1]]}} {{NPC=[[0]]}} {{RTcrit=@{RT-critical}}} {{RTfumble=@{RT-fumble}}} {{unconscious=[[@{UnconsciousMod}]]}} {{cond=[[@{condgen_see_move_atkoff}-@{DrunkAtkMod}-@{DistractedAtkMod}]]}} {{drunk=[[@{DrunkAtkMod}]]}} {{fatigued=[[@{FatiguedMod} - @{FatiguedAtkMod}]]}} {{broken=[[@{BrokenMod} - @{BrokenAtkMod}]]}} {{stuned=[[@{StunedMod} - @{StunedAtkMod}]]}} {{distracted=[[@{DistractedMod} - @{DistractedAtkMod}]]}} {{poisoned=[[@{PoisonedMod} - @{PoisonedAtkMod}]]}} {{prone=[[@{ProneMod} - @{ProneAtkMod}]]}} {{fast=[[@{Used_DefenseFast}]]}} {{slow=[[@{Used_DefenseSlow}]]}} {{entangled=[[@{EntangledMod} - @{EntangledAtkMod}]]}} {{blinded=[[@{BlindedMod} - @{BlindedAtkMod}]]}} {{deafened=[[0]]}} {{tiring=[[@{Used_DefenseTiring}]]}} {{penetrating=[[@{Used_DefensePenetrating}]]}} {{pummel=[[@{Used_DefensePummel}]]}} {{hack=[[@{Used_DefenseHack}]]}} {{precise=[[@{Used_DefensePrecise}]]}} {{impact=[[@{Used_DefenseImpact}]]}} {{practical=[[@{Used_DefensePractical}]]}} {{wrap=[[@{Used_DefenseWrap}]]}} {{trip=[[@{Used_DefenseTrip}]]}} {{slash=[[@{Used_DefenseSlash}*@{Used_DefenseSlashRating}]]}} {{distract=[[@{Used_DefenseDistract}]]}} {{entangle=[[@{Used_DefenseEntangle}]]}} {{undamaging=[[@{Used_DefenseUndamaging}]]}} {{mod1type=[[@{Used_Defense_att_modtype1}]]}} {{mod1=@{Used_Defense_att_mod1}}} {{mod2type=[[@{Used_Defense_att_modtype2}]]}} {{mod2=@{Used_Defense_att_mod2}}} {{mod3type=[[@{Used_Defense_att_modtype3}]]}} {{mod3=@{Used_Defense_att_mod3}}} {{battlerage=[[@{Talent_BattleRageLvl}]]}} {{frenzy=[[@{Talent_FrenzyLvl}*@{MeleeMode_Frenzy}]]}} {{carefulstrike=[[@{Talent_CarefulStrikeLvl}]]}} {{bne=[[@{MeleeMode_VsObject}]]}} {{inf=[[@{MeleeMode_Infight}]]}} {{usedmagic=[[@{Used_DefenseMagic}]]}} {{usedmagiceffect=@{Used_DefenseMagicEffect}}} {{RTpummel=@{RT-pummel}}} {{demolisher=[[@{Talent_Demolisherlvl}]]}} {{twohanded=[[@{TwohandedRulesDisp}*@{Used_MeleeTwohanded}]]}} {{reversaleffect=[[@{Talent_ReversalLvl}]]}} {{constrictor=[[@{Trait_Constrictor}]]}} {{distractingtrait=[[@{Trait_Distracting}]]}} {{web=[[@{Trait_Web}]]}} {{webrating=[[@{Trait_Web_Rating}]]}} {{magical=[[@{Trait_Magical}]]}} {{infected=[[@{Trait_Infected}]]}} {{infectedeffect=@{Trait_Infected_Effect}}}';
    var trigger = eventInfo.triggerName.slice(8);
    var prefix = trigger.split('_').slice(0,3).join('_') + '_';
    let rollBegins = '@{Whisper} &{template:whfrp2e} ';
@@ -52501,7 +52502,7 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
    on('clicked:artroll clicked:athleticsroll clicked:briberyroll clicked:charmroll clicked:charmanimalroll clicked:climbroll clicked:consumealcoholroll clicked:driveroll clicked:enduranceroll clicked:entertainroll clicked:gambleroll clicked:gossiproll clicked:haggleroll clicked:intimidateroll clicked:intuitionroll clicked:leadershiproll clicked:navigationroll clicked:outdoorsurvivalroll clicked:perceptionroll clicked:rideroll clicked:rowroll clicked:stealthroll clicked:animalcareroll clicked:auguryroll clicked:channellingfireroll clicked:channellingheavensroll clicked:channellingmetalroll clicked:channellingbeastsroll clicked:channellingliferoll clicked:channellinglightroll clicked:channellingdeathroll clicked:channellingshadowsroll clicked:channellinghighmagicroll clicked:channellingwitchroll clicked:channellingdarkroll clicked:channellingchaosroll clicked:channellinggreatmawroll clicked:channellingmiscroll clicked:evaluateroll clicked:psychometryroll clicked:picklockroll clicked:prayroll clicked:researchroll clicked:runesmithingroll clicked:settraproll clicked:sleightofhandroll clicked:swimroll clicked:trackroll', (eventInfo) => {
 	
    let roll = '{{test=[[@{roll_rule}]]}} {{sl=[[0]]}} {{slbonus=[[0>addsl<]]}} {{sladd=[[0>sladd<]]}} {{slbonusatk=[[0>addsl<]]}} {{modvalue=[[?{@{translation_modifier}|0}]]}} {{title=^{>Charcap<}}} {{skill=^{BASIC-SKILL}}} {{character_name=@{character_name}}} {{SLmod=[[?{SL Modifier|0}]]}} {{target=[[ [[cond-*-1]] [COND] + [[(@{>Char<Char}+@{>Char<Adv}+@{>Char<Misc})>addtak<]] [SKILL] + ?{@{translation_modifier}|0} [MOD] ]]}} {{skilltest=true}} {{sitmod=[[0>sitmod<]]}} {{sitfail=[[0>sitfail<]]}} {{mod1type=[[@{>Char<_modtype1}]]}} {{mod1=@{>Char<_mod1}}} {{mod2type=[[@{>Char<_modtype2}]]}} {{mod2=@{>Char<_mod2}}} {{mod3type=[[@{>Char<_modtype3}]]}} {{mod3=@{>Char<_mod3}}} {{reroll=@{RT-reroll}>Char<roll)}}';
-	getAttrs(["armormailpenalty", "armorplatepenalty", "armorcoifpenalty", "armorhelmpenalty", "armorplatelegspenalty"], function(v) {
+	getAttrs([`${trigger}Char`, "Besmirched", "armormailpenalty", "armorplatepenalty", "armorcoifpenalty", "armorhelmpenalty", "armorplatelegspenalty"], function(v) {
    var trigger = eventInfo.triggerName.slice(8, -4);
    var triggercap = trigger.toUpperCase();		
    var prefix = trigger.split('_').slice(0,3).join('_') + '_';
@@ -52706,7 +52707,6 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 	sitmods = '+@{Talent_AcuteSense1Lvl}+@{Talent_AcuteSense2Lvl}+@{Talent_CombatAwareLvl}+@{Talent_LipreadingLvl}+@{Talent_NightVisionLvl}+@{Talent_NoseForTroubleLvl}+@{Talent_SecondSightLvl}+@{Talent_TrapperLvl}';
 	rollPart = rollPart2.replaceAll('cond-', `(@{condgen_see_hear_perception})`).replaceAll('>sitmod<', sitmods);} else {cond = ''}
 
-	getAttrs([`${trigger}Char`, "Besmirched"], function(v) {
 
 			bes = JSON.stringify(v[`${trigger}Char`]);
 			
@@ -52847,7 +52847,6 @@ on('clicked:repeating_divinemiracles:miracle clicked:repeating_divinemiracles:mi
 				});
 		}
         });
-    });
 	});	
     });
 	
@@ -56796,9 +56795,31 @@ on('sheet:opened change:talent_distractLvl', function(event) {
 												console.log(id2);
 											});
 									});
-
-
-
 		}
+
+
+		//	"CAREER-APOTHECARY": "Apothecary’s Apprentice;T,Dex,Int;Brass 3;Consume Alcohol,Heal,Language (Classical),Lore (Chemistry),
 		
+on('sheet:opened change:twohandedrulesset', function(event) {
+	
+
+getAttrs(["twohandedrulesset"], function(v) {	
+	console.log("Two Handed Rules Change");
+
+		let opt = v.twohandedrulesset;
+	console.log(opt);
+
+		if (opt === "1") {out = 1; outd = 1;}
+		if (opt === "2") {out = 1; outd = 0;}
+
+		setAttrs({
+			"TwohandedRules": out,
+			"TwohandedRulesDisp": outd,
+		}, {silent: true});
+	
+});
+});
+
+
+
 </script>
