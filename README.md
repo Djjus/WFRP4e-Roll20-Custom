@@ -99,6 +99,12 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 
 ///// ============ Change Log ============ /////  
 
+Feb 23th 2026 v1.76j
+
+- Adjusted the Custom Twohanded house rule 2, the Defender -1SL when parrying bonus is only vs 1h.
+- Added new Twohanded house rule 3, this still doubles the Strike Mighty Blow Talent bonus on 2h but does not add the Defender -1SL when parrying with 1h part.
+
+
 Feb 16th 2026 v1.76i
 
 - Added new roll query to perception and stealth tests, if armor with penality is worn it till trigger a addition pop up when rolling these skills giving a choice of "Add Armor Modifier; Yes/No", default is Yes.
