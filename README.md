@@ -99,13 +99,15 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 
 ///// ============ Change Log ============ /////  
 
-July 21st 2026 v1.80a
+July 21st 2026 v1.81
 
-- Added the missing translation label for Hatred
+- V2 Chararcter Maker release, it now activates automatically when a New Character Page is created. New Monster Maker section added.
 - Flagellant Talent added to Custom SL modifers, work similar to Resistance (Threat)
 - Berserk Charge fixed and now adds correctly to Melee SLs and Dmg. Also added to Declare Actions in Mini bar, this effect lingers after a Charge for any subsequant hit that round. Then has to be removed manually for the next round.
 - Changed to rolltemplate title section, name is a bit bigger and seperated from the rest with a line. Also swapped skill type and skill name around. New order top to bottom is: Name > <line> > Skill type > Skill name. This makes the template a bit cleaner and easier to identify.
 - Attempt to fix a rare issue with Attack modifier sometimes recalling a old value if the page reloads, particularly charge +10. Modifier should now reset if the page reloads for any reason.
+- Added the missing translation label for Hatred
+
 
 Mar 3rd 2026 v1.80
 
