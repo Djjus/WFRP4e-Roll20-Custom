@@ -3125,9 +3125,11 @@ cursor: pointer;
 }
 .sheet-rolltemplate-whfrp2e .sheet-rt-title {
 	font-size: 1.5em;
+	    text-shadow: 0.5px 0.5px black;
 }
 .sheet-rolltemplate-whfrp2e .sheet-rt-subheader {
 	line-height: 120%;
+	    text-shadow: 0.5px 0.5px black;
 }
 
 /* Melee header*/
