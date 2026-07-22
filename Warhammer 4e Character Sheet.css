@@ -274,7 +274,7 @@ input[type=checkbox][name=attr_npc-box-hide]{
 	background-size: contain;
 	margin-top:4px;
 	margin-left:4px;
-	z-index: 9999;
+	z-index: 999;
 }
 
 input[type=checkbox][name=attr_npc-box-hide]:checked{
@@ -293,7 +293,7 @@ input[type=checkbox][name*=attr_container-minimize]{
 	background-size: contain;
 	margin-top:4px;
 	margin-left:4px;
-	z-index: 9999;
+	z-index: 999;
 }
 
 input[type=checkbox][name*=attr_container-minimize]:checked{
@@ -1394,7 +1394,7 @@ input[class*="tab"] {
 	cursor: pointer;
 	position: relative;
 	opacity: 0;
-	z-index: 9999;
+	z-index: 999;
 }
 
 span[class*="tab"] {
@@ -2560,7 +2560,6 @@ span.spacer-ml,
 	text-align: center;
 	font-weight: bold;
 }
-
 .footer-row {
 	text-align: center;
 	font-weight: bold;
@@ -2668,12 +2667,15 @@ input[disabled].passive-skill-score {
 	color: white;    
 	text-shadow: 0 1px 1px rgba(0,0,0,0.75);
 }
-
 .footer {
 	vertical-align: bottom;
 	margin-top: 3px;
 }
-
+.footer2 { 
+    right: 5px;
+    position: absolute;
+    bottom: 0
+}
 .spell-header {
 	background-color: #D2CFBF;
 	vertical-align: bottom;
