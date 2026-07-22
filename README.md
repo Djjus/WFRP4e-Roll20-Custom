@@ -93,11 +93,28 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 ///// ============ Major Updates being worked on, with no release date, but probly in 2026 ============ /////  
 
 ->> WFRP 5e Compatability* (this will take priority)
-- Character Maker
-- NPC tab rework 
+- Character Maker > Add Monsters/Creatures
+- NPC tab rework
 
 
 ///// ============ Change Log ============ /////  
+
+July 21st 2026 v1.80a
+
+- Added the missing translation label for Hatred
+- Flagellant Talent added to Custom SL modifers, work similar to Resistance (Threat)
+- Berserk Charge fixed and now adds correctly to Melee SLs and Dmg. Also added to Declare Actions in Mini bar, this effect lingers after a Charge for any subsequant hit that round. Then has to be removed manually for the next round.
+- Changed to rolltemplate title section, name is a bit bigger and seperated from the rest with a line. Also swapped skill type and skill name around. New order top to bottom is: Name > <line> > Skill type > Skill name. This makes the template a bit cleaner and easier to identify.
+- Attempt to fix a rare issue with Attack modifier sometimes recalling a old value if the page reloads, particularly charge +10. Modifier should now reset if the page reloads for any reason.
+
+Mar 3rd 2026 v1.80
+
+- V1 Character Maker release, allows to either Create any Career as starting Player Character (Tier 0 - it will tick the right boxes in Attributes) or Generate NPC with prefilled career of all 4/5 Tiers, with upto +5/10/15/20 Attributes and +1/2/3/4 Talents. Supports Multi Career builds, upto 2 combined at once. (Eg. Tier 3 Soldier & Tier 1 Physician). Should have all career's from Core and all supp books, Great for Quickly generating NPCs. 
+- Added Melee (Engineering) skill - From the Dwarf Player Guide, Dwarf Miner.
+- Added Ranged (Catapult) skill - From Up in Arms.
+- Added Wilfull Corruption Talent - From DOTR Companion.
+- Changed Rune Magic and Master Rune Magic Talents to a Lore/Type can be assigned to them and added multiple instances of each.
+
 
 Feb 23th 2026 v1.76j
 
