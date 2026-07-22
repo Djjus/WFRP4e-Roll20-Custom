@@ -101,7 +101,7 @@ Note conditions are not intended for out of combat situations, GM simply makes t
 
 July 21st 2026 v1.81
 
-- V2 Chararcter Maker release, it now activates automatically when a New Character Page is created. New Monster Maker section added.
+- V2 Character Maker release, it now activates automatically when a New Character Page is created. New Monster Maker section added.
 - Flagellant Talent added to Custom SL modifers, work similar to Resistance (Threat)
 - Berserk Charge fixed and now adds correctly to Melee SLs and Dmg. Also added to Declare Actions in Mini bar, this effect lingers after a Charge for any subsequant hit that round. Then has to be removed manually for the next round.
 - Changed to rolltemplate title section, name is a bit bigger and seperated from the rest with a line. Also swapped skill type and skill name around. New order top to bottom is: Name > <line> > Skill type > Skill name. This makes the template a bit cleaner and easier to identify.
